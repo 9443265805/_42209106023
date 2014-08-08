@@ -11,7 +11,26 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140806132808) do
+ActiveRecord::Schema.define(:version => 20140808104640) do
+
+  create_table "questions", :force => true do |t|
+    t.string   "question_text"
+    t.string   "answer"
+    t.string   "option1"
+    t.string   "option2"
+    t.string   "option3"
+    t.string   "option4"
+    t.integer  "quiz_id"
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
+  end
+
+  create_table "quizzes", :force => true do |t|
+    t.string   "quizname"
+    t.time     "duration"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -20,6 +39,7 @@ ActiveRecord::Schema.define(:version => 20140806132808) do
     t.string   "name",                                   :null => false
     t.integer  "age",                                    :null => false
     t.integer  "phonenumber",                            :null => false
+    t.string   "school",                                 :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

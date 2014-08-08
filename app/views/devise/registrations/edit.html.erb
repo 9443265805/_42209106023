@@ -27,6 +27,9 @@
 
   <div><%=f.label :role %><br />
   <%= f.select :role,["Admin","Teacher","Student"] %></div>
+  
+  <div><%= f.label :school %><br />
+  <%=f.text_field :school  %></div>
 
   <div><%= f.label :phonenumber %><br />
   <%= f.number_field :phonenumber %></div>

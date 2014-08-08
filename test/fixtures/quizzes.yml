@@ -1,0 +1,9 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  quizname: MyString
+  duration: 2014-08-08 16:16:40
+
+two:
+  quizname: MyString
+  duration: 2014-08-08 16:16:40
