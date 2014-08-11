@@ -1,0 +1,21 @@
+<h1>Listing Questions</h1>
+<table>
+<tr>
+<th>Question</th>
+<th>Option1</th>
+<th>Option2</th>
+<th>Option3</th>
+<th>Option4</th>
+<th>Answer</th>
+</tr>
+<% @questions.each do |question| %>
+<tr>
+<td><%= question.question_text %></td>
+<td><%= question.option1 %></td>
+<td><%= question.option2 %></td>
+<td><%= question.option3 %></td>
+<td><%= question.option4 %></td>
+<td><%= question.answer %></td>
+</tr>
+<% end %>
+</table>
