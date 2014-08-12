@@ -1,6 +1,7 @@
 OTTS::Application.routes.draw do
   devise_for :users
 
+  resources :quizzes
   resources :questions
 
   # The priority is based upon order of creation:

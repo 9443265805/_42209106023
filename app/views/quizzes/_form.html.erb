@@ -1,0 +1,29 @@
+<%= form_for(@quiz) do |f| %>
+<% if @quiz.errors.any? %>
+<div id="Error-Explanation" >  
+
+<h3><%= pluralize(@quiz.errors.count,"error") %> prohibited this quiz from being saved : </h3>
+<ul><%= @quiz.errors.full_messages.each do |msg|	%>
+<li><%= msg %></li>
+<% end %>
+</ul>
+</div>
+<% end %>
+<div><%= f.label :quizname %>
+<%= f.text_field :quizname %></div>
+
+<div><%= f.label :starttime %>
+<%= f.time_select :starttime   %></div>
+
+
+<div><%= f.label :endtime %>
+<%= f.time_select :endtime   %></div>
+
+<div><%= f.label :date %>
+<%= f.date_select :date %></div>
+
+<div><%= f.label :category %>
+<%= f.select :category ,["English","Science","Maths","General"]%></div>
+
+<div><%= f.submit %>
+<% end %>

@@ -1,0 +1,23 @@
+<p>
+<b>Quiz Name</b>
+<%= @quiz.quizname %>
+</p>
+<p>
+<b>Category</b>
+<%= @quiz.category %>
+</p>
+<p>
+<b>Starttime</b>
+<%= @quiz.starttime.strftime('%H:%M') %>
+</p>
+<p>
+<b>Endtime</b>
+<%= @quiz.endtime.strftime('%H:%M') %>
+</p>
+<p>
+<b>Date</b>
+<%= @quiz.date %>
+</p>
+
+<%= link_to 'Edit',edit_quiz_path(@quiz) %>
+<%= link_to 'Back',quizzes_path %>

@@ -21,13 +21,17 @@ ActiveRecord::Schema.define(:version => 20140808104640) do
     t.string   "option3"
     t.string   "option4"
     t.integer  "quiz_id"
+    t.string   "category"
     t.datetime "created_at",    :null => false
     t.datetime "updated_at",    :null => false
   end
 
   create_table "quizzes", :force => true do |t|
     t.string   "quizname"
-    t.time     "duration"
+    t.time     "starttime"
+    t.time     "endtime"
+    t.date     "date"
+    t.string   "category"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

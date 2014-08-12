@@ -8,6 +8,7 @@ class CreateQuestions < ActiveRecord::Migration
       t.string :option3
       t.string :option4
       t.integer :quiz_id 
+      t.string :category
       
       t.timestamps
     end

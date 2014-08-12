@@ -1,0 +1,22 @@
+<h1>Listing Quizzes </h1>
+<table>
+<tr>
+<th>Quiz Name</th>
+<th>Category</th>
+<th>Starttime</th>
+<th>Endtime</th>
+<th>Date</th>
+</tr>
+<% @quizzes.each do |f| %>
+	<tr>
+		<td><%= f.quizname %></td>
+		<td><%= f.category %></td>
+		<td><%= f.starttime.strftime('%H:%M') %></td>
+		<td><%= f.endtime.strftime('%H:%M') %></td>
+		<td><%= f.date %></td>
+		<td><%= link_to 'Show', f %></td>
+		<td><%= link_to 'Edit' ,edit_quiz_path(f) %></td>
+		<td><%= link_to 'Delete', f , method: :Delete ,date: {confrim:"Are you sure?" }  %></td>
+	</tr>
+	<% end %>
+</table>
