@@ -12,11 +12,17 @@ end
 def create
 @quiz =Quiz.new(params[:quiz])
 
-if @quiz.save
-redirect_to @quiz
-else
+
+#if @quiz.endtime- @quiz.starttime >= 900
+	if @quiz.save
+	redirect_to @quiz
+	else
 	render action: "new"
-end
+	end
+#else 
+#@quiz.errors.add("Duration should be greater than or equal to 15 minutes")
+#redirect_to :back 
+#end
 end
 def show
 	@quiz=Quiz.find(params[:id])

@@ -16,7 +16,7 @@
 </p>
 <p>
 <b>Date</b>
-<%= @quiz.date %>
+<%= @quiz.date.strftime("%d/%m/%Y") %>
 </p>
 
 <%= link_to 'Edit',edit_quiz_path(@quiz) %>

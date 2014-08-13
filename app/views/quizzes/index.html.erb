@@ -13,7 +13,7 @@
 		<td><%= f.category %></td>
 		<td><%= f.starttime.strftime('%H:%M') %></td>
 		<td><%= f.endtime.strftime('%H:%M') %></td>
-		<td><%= f.date %></td>
+		<td><%= f.date.strftime("%d/%m/%Y") %></td>
 		<td><%= link_to 'Show', f %></td>
 		<td><%= link_to 'Edit' ,edit_quiz_path(f) %></td>
 		<td><%= link_to 'Delete', f , method: :Delete ,date: {confrim:"Are you sure?" }  %></td>

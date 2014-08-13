@@ -3,7 +3,7 @@
 <div id="Error-Explanation" >  
 
 <h3><%= pluralize(@quiz.errors.count,"error") %> prohibited this quiz from being saved : </h3>
-<ul><%= @quiz.errors.full_messages.each do |msg|	%>
+<ul><% @quiz.errors.full_messages.each do |msg|	%>
 <li><%= msg %></li>
 <% end %>
 </ul>
