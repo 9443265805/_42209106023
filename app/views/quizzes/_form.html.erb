@@ -13,11 +13,11 @@
 <%= f.text_field :quizname %></div>
 
 <div><%= f.label :starttime %>
-<%= f.time_select :starttime   %></div>
+<%= f.time_select :starttime ,{minute_step: 15}  %></div>
 
 
 <div><%= f.label :endtime %>
-<%= f.time_select :endtime   %></div>
+<%= f.time_select :endtime ,{minute_step: 15}  %></div>
 
 <div><%= f.label :date %>
 <%= f.date_select :date %></div>

@@ -3,7 +3,20 @@ class Quiz < ActiveRecord::Base
 	
 	validates_presence_of :starttime, :endtime ,:quizname ,:date
 
-	validate  :valid_duration
+	validate  :valid_duration, :valid_date, :valid_starttime
+
+	def valid_date
+		if date < Date.today
+            self.errors.add :base, ("Date cannot be before the current date")
+        end
+    end
+    
+    def valid_starttime
+    	
+    	if starttime.hour < Time.now.hour 
+		self.errors.add :base, ("Start time cannot be before current time")
+		end
+	end
 
 	def valid_duration
 		if endtime - starttime < 900  
