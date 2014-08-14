@@ -1,5 +1,6 @@
 class QuestionsController < ApplicationController
-
+    
+    before_filter :validate_user_role 
 
 	def index 
 	@questions=Question.all
@@ -38,5 +39,11 @@ class QuestionsController < ApplicationController
 
 	redirect_to action: "index"
 	end 
+
+	def validate_user_role 
+		if current_user.role == "Student"	
+			redirect_to root_path , notice: "you are not allowed to view this page "
+	end
+end
 
 end
