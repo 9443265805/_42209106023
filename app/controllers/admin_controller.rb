@@ -17,12 +17,13 @@ def markquestions
 	else 
 	Question.update_all(["quiz_id=?",session[:quiz_id]], :id => params[:generalquestion_ids])
 	@quiz=Quiz.find(session[:quiz_id])
-	@quiz.count=quizquestions_count
-	if quizquestions_count = 10 
+	quizquestions_count=Question.where(:quiz_id=> session[:quiz_id]).count
+	if quizquestions_count == 10 
 		@quiz.status="Completed"
 	else
 		@quiz.status="Not Completed"
 	end
+	@quiz.count=quizquestions_count
 	@quiz.save
 	redirect_to :back
 end
@@ -32,7 +33,7 @@ def unmarkquestions
 	Question.update_all(["quiz_id=?", nil], :id => params[:question_ids])
 	@quiz=Quiz.find(session[:quiz_id])
 	@quiz.count=Question.where(:quiz_id=> session[:quiz_id]).count
-	if @quiz.count = 10 
+	if @quiz.count == 10 
 		@quiz.status="Completed"
 	else
 		@quiz.status="Not Completed"
