@@ -1,5 +1,6 @@
 class QuizzesController < ApplicationController
 
+
 def index 
 @quizzes =Quiz.all
 end 
@@ -11,18 +12,14 @@ end
 
 def create
 @quiz =Quiz.new(params[:quiz])
-
-
-#if @quiz.endtime- @quiz.starttime >= 900
+@quiz.count=0
+@quiz.status="Not Completed"
 	if @quiz.save
 	redirect_to @quiz
 	else
 	render action: "new"
 	end
-#else 
-#@quiz.errors.add("Duration should be greater than or equal to 15 minutes")
-#redirect_to :back 
-#end
+
 end
 def show
 	@quiz=Quiz.find(params[:id])

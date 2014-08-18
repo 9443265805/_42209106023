@@ -32,6 +32,8 @@ ActiveRecord::Schema.define(:version => 20140808104640) do
     t.time     "endtime"
     t.date     "date"
     t.string   "category"
+    t.integer  "count"
+    t.string   "status"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

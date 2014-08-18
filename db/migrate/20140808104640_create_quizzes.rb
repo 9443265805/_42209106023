@@ -6,7 +6,8 @@ class CreateQuizzes < ActiveRecord::Migration
       t.time :endtime
       t.date :date
       t.string :category
-      
+      t.integer :count
+      t.string :status
       t.timestamps
     end
   end
