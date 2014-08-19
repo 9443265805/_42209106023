@@ -1,0 +1,19 @@
+<%= form_tag teacher_markstudents_path ,:method => :put do %> 
+<table>
+<tr>
+<th>tag Students</th>
+<th>Name</th>
+<th>Age</th>
+<th>School</th>
+</tr>
+<% for student in @students %>
+<tr>
+<td><%= check_box_tag "generalstudent_ids[]", student.id %> 
+<td><%= student.name %></td>	
+<td><%=student.age %></td>
+<td><%=student.school %></td>
+</tr>
+<% end %>
+</table>
+<%= submit_tag "Tag Students" %> 
+<% end %>

@@ -1,0 +1,19 @@
+<%= form_tag teacher_unmarkstudents_path ,:method => :put do %> 
+<table>
+<tr>
+<th>UnTag Students</th>
+<th>Name</th>
+<th>Age</th>
+<th>School</th>
+</tr>
+<% for student in @markedstudents %>
+<tr>
+<td><%= check_box_tag "markedstudent_ids[]", student.id %> 
+<td><%= student.name %></td>	
+<td><%=student.age %></td>
+<td><%=student.school %></td>
+</tr>
+<% end %>
+</table>
+<%= submit_tag "Untag Students" %> 
+<% end %>
