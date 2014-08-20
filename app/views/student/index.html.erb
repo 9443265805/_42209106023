@@ -1,0 +1,15 @@
+<h1>Listing Quiz</h1>
+<table>
+<tr>
+<th>Quiz Name</th>
+<th>Score</th>
+<th></th>
+</tr>
+<% for quiz in @studentquizlist %>
+<tr>
+<td><%= quiz.quiz.quizname %></td>
+<td><%= quiz.score %></td>
+<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:quiz.quiz_id) %></td>
+</tr>
+<% end %>
+</table>

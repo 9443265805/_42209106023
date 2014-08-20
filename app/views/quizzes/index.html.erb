@@ -7,6 +7,7 @@
 <th>Endtime</th>
 <th>Date</th>
 <th>Manage Questions</th>
+<th>Manage Students</th>
 <th>Questions Assigned</th>
 <th>Status 
 </tr>
@@ -19,6 +20,7 @@
 		<td><%= f.endtime.strftime('%H:%M') %></td>
 		<td><%= f.date.strftime("%d/%m/%Y") %></td>
 		<td><%= link_to 'Manage Questions' , admin_assignquestions_path(quiz_id:f.id) %></td>
+		<td><%= link_to 'Manage Students' , teacher_assignstudents_path(quiz_id:f.id) %></td>
 		<td><%= f.count %></td>
 		<td><%= f.status %></td>
 		<td><%= link_to 'Show', f %></td>
