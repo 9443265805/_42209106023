@@ -11,6 +11,7 @@ OTTS::Application.routes.draw do
   match 'teacher/markstudents', to: 'teacher#markstudents', via: [:put]
   match 'teacher/unmarkstudents', to: 'teacher#unmarkstudents', via: [:put]
   match 'student/startquiz', to: 'student#startquiz'
+  match 'student/endquiz', to: 'student#endquiz'
  match ':controller(/:action(/:id))(.:format)'
   # The priority is based upon order of creation:
   # first created -> highest priority.
