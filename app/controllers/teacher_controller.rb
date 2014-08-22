@@ -1,5 +1,7 @@
 class TeacherController < ApplicationController
 
+	before_filter :authenticate_student!
+
 	def assignstudents
 		session[:quiz_id]=params[:quiz_id]
 		@students=User.where(role: 'Student')
@@ -30,5 +32,11 @@ class TeacherController < ApplicationController
 	def unmarkstudents
 		StudentQuizResult.delete_all(quiz_id: session[:quiz_id],user_id: params[:markedstudent_ids])
 		redirect_to :back
+	end
+
+	def authenticate_student!
+		if current_user.role=="Student"
+			redirect_to student_index_path,notice: "you dont have the permission to see this page"	
+		end
 	end
 end

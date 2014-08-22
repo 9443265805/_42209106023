@@ -4,7 +4,28 @@ OTTS::Application.routes.draw do
   resources :quizzes
   resources :questions
 
-  match 'admin/assignquestions', to: 'admin#assignquestions'
+
+
+  #resources :admin, :only =>[] do
+   #   put :markquestions
+    #  put :unmarkquestions
+     # post :assignquestions
+    #end
+
+#  resources :teacher, :only =>[] do
+ #     put :markstudents
+  #    put :unmarkstudents
+   #   post :assignstudents
+   # end 
+
+ # resources :student, :only =>[:index] do
+  #   member do
+   #   post :startquiz
+    #  post :endquiz
+   # end  
+   # end
+
+ match 'admin/assignquestions', to: 'admin#assignquestions'
   match 'admin/markquestions', to: 'admin#markquestions', via: [:put]
   match 'admin/unmarkquestions', to: 'admin#unmarkquestions', via: [:put]
   match 'teacher/assignstudents', to: 'teacher#assignstudents'
@@ -12,7 +33,8 @@ OTTS::Application.routes.draw do
   match 'teacher/unmarkstudents', to: 'teacher#unmarkstudents', via: [:put]
   match 'student/startquiz', to: 'student#startquiz'
   match 'student/endquiz', to: 'student#endquiz'
- match ':controller(/:action(/:id))(.:format)'
+  match 'student/index', to: 'student#index'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -62,7 +84,7 @@ OTTS::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-   root :to => 'static#index'
+   #root :to =>  new_user_session
 
   # See how all your routes lay out with "rake routes"
 

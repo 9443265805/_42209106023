@@ -1,5 +1,6 @@
 class QuizzesController < ApplicationController
-
+	
+	before_filter :authenticate_student!
 
 	def index 
 		@quizzes =Quiz.all
@@ -43,4 +44,11 @@ class QuizzesController < ApplicationController
 		@quiz.destroy
 		redirect_to quizzes_path
 	end
+
+	def authenticate_student!
+		if current_user.role=="Student"
+			redirect_to student_index_path,notice: "you dont have the permission to see this page"	
+		end
+	end
+	
 end
