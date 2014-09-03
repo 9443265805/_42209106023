@@ -3,7 +3,7 @@ class QuizzesController < ApplicationController
 	before_filter :authenticate_student!
 
 	def index 
-		@quizzes =Quiz.all
+		@quizzes =Quiz.all		
 	end 
 
 

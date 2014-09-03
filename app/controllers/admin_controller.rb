@@ -1,6 +1,6 @@
 class AdminController < ApplicationController
 
-	before_filter :authenticate_admin, 
+	before_filter :authenticate_admin
 
 	def assignquestions
 	   session[:quiz_id]=params[:quiz_id]
@@ -46,11 +46,13 @@ class AdminController < ApplicationController
 		redirect_to :back
 	end
 
+
+
 	def authenticate_admin
-		if current_user.role=="Teacher"
-			redirect_to quizzes_path,notice: "you dont have the permission to see this page"	
-		else 
-			if current_user.role=="Student"
+		unless current_user.role=="Admin"
+			if current_user.role=="Teacher" 
+				redirect_to quizzes_path,notice: "you dont have the permission to see this page"	
+			elsif current_user.role=="Student" 
 				redirect_to student_index_path,notice: "you dont have the permission to see this page"	
 			end
 		end

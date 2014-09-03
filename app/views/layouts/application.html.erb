@@ -1,23 +1,58 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Online Test Taking System</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
-  <%= javascript_include_tag "application" %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-<div class="nav-right">
- 	<% if user_signed_in?  %>
-  Logged in as <strong><%= current_user.name %></strong>.
-  <%= link_to 'Edit profile', edit_user_registration_path  %> |
-  <%= link_to "Logout", destroy_user_session_path, method: :delete  %>
-<% end %>
-<br>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7 ]> <html class="ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--> <html lang="en"> <!--<![endif]-->
+  <head>
+  	<meta charset="utf-8" />
 
-</div>
-<p class="notice"><%= notice %></p>
-<p class="alert"><%= alert %></p>
-<%= yield %>
-</body>
+  	<!-- Uncomment to make IE8 render like IE7 -->
+  	<!-- <meta http-equiv="X-UA-Compatible" content="IE=7" /> -->
+
+  	<!-- Set the viewport width to device width for mobile -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+
+  	<%= stylesheet_link_tag    "application" %>
+  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= csrf_meta_tags %>
+  </head>
+
+  <body>
+  <% if user_signed_in?  %>
+  <nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+    <% path_temp="quizzes_path" 
+    if current_user.role=="Student"
+    	path_temp="student_index_path" 
+    	end %>
+      <h1><%= link_to "Online Test Taking System", path_temp  %></a></h1>
+    </li>
+  </ul>
+   <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li><%= link_to "Logged in as #{current_user.name}" %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Edit Profile",edit_user_registration_path %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Logout", destroy_user_session_path, method: :delete  %>
+      <li class="divider"></li>
+      <li><%= link_to "Contact Me" %></li>
+      </ul>
+  </section>
+
+</nav>
+<% end %>
+<p ><%= notice %></p>
+<p ><%= alert %></p>
+    <%= yield %>
+
+    
+    <%= javascript_include_tag "application" %>
+    <div id="footer" ><p>Copyright@Ethiraj</p></div>
+  </body>
 </html>
