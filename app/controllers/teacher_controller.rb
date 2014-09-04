@@ -4,7 +4,7 @@ class TeacherController < ApplicationController
 
 	def assignstudents
 		session[:quiz_id]=params[:quiz_id]
-		@students=User.where(role: 'Student')
+		@students=User.where(role: 'Student').paginate(:page => params[:page], :per_page => 10)		
 		@markedstudents=[]
 		StudentQuizResult.where(quiz_id: session[:quiz_id]).each {|p| @markedstudents.push(p.user)}
 	end

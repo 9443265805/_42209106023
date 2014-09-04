@@ -5,7 +5,7 @@ class AdminController < ApplicationController
 	def assignquestions
 	   session[:quiz_id]=params[:quiz_id]
 	   @quizquestions=Question.where(:quiz_id=> session[:quiz_id])
-	   @generalquestions=Question.where(:quiz_id=>nil)
+	   @generalquestions=Question.where(:quiz_id=>nil).paginate(:page => params[:page], :per_page => 10)		
 	   @quizname=Quiz.find(session[:quiz_id]).quizname
 	end
 

@@ -1,5 +1,6 @@
 
 <%= form_tag teacher_markstudents_path ,:method => :put do %> 
+
 <table>
 <tr>
 <th>tag Students</th>
@@ -16,5 +17,8 @@
 </tr>
 <% end %>
 </table>
+<div class="apple_pagination">
+<%= will_paginate @students %>
+</div>
 <%= submit_tag "Tag Students" %> 
 <% end %>

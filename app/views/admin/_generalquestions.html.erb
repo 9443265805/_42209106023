@@ -1,4 +1,4 @@
-<%= form_tag admin_markquestions_path ,:method => :put do %> 
+<%= form_tag admin_markquestions_path ,:method => :put do %>
 <table>
 <tr>
 <th>Add Question</th>
@@ -26,5 +26,8 @@
 </tr>
 <% end %>
 </table>
+<div class="apple_pagination">
+<%= will_paginate @generalquestions %>
+</div>
 <%= submit_tag "Update Quiz Questions" %> 
 <% end %>
