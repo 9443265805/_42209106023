@@ -5,11 +5,11 @@
 <th>Score</th>
 <th></th>
 </tr>
-<% for quiz in @studentquizlist %>
+<% for studentquiz in @studentquizlist %>
 <tr>
-<td><%= quiz.quiz.quizname %></td>
-<td><%= quiz.score %></td>
-<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:quiz.quiz_id) %></td>
+<td><%= studentquiz.quiz.quizname %></td>
+<td><%= studentquiz.score %></td>
+<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:studentquiz.quiz_id) %></td>
 </tr>
 <% end %>
 </table>

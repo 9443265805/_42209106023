@@ -25,9 +25,9 @@
   <nav class="top-bar">
     <ul class="title-area">
       <li class="name">
-    <% path_temp="quizzes_path" 
+    <% path_temp=quizzes_path
     if current_user.role=="Student"
-    	path_temp="student_index_path" 
+    	path_temp=student_index_path 
     	end %>
       <h1><%= link_to "Online Test Taking System", path_temp  %></a></h1>
     </li>

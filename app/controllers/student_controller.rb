@@ -7,11 +7,30 @@ class StudentController < ApplicationController
 
 	def startquiz
 		session[:quiz_id]=params[:quiz_id]
-		@questions=Quiz.find(session[:quiz_id]).questions
+		time=Time.now
+		@quiz=Quiz.find(session[:quiz_id])
+		if @quiz.date != Date.today
+		  redirect_to student_index_path,notice: "you cannot take the test today"
+		else
+             #endtime=@quiz.endtime
+			 #endtime=endtime+(time.year - endtime.year).years + (time.month - endtime.month).months + (time.day - endtime.day).days
+             #puts endtime -endtime.localtime
+             #puts time
+            # puts endtime - time 
+			#if @quiz.endtime - @quiz.starttime > endtime - time
+			if @quiz.starttime.hour >= time.hour && @quiz.endtime.hour <= time.hour  &&	@quiz.starttime.min <= time.min  && @quiz.endtime.min >= time.min 
+				@questions=@quiz.questions
+
+			else
+				redirect_to student_index_path,notice: "you cannot take the test now"
+			end
+		end
+
 	end
 
 	def endquiz
 		@score=0
+		@quizname=Quiz.find(session[:quiz_id]).quizname
 		for question in Quiz.find(session[:quiz_id]).questions
 			if params["answers_#{question.id}"]== question.answer
 				@score=@score+10
