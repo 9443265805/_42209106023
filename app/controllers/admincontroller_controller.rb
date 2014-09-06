@@ -1,2 +1,0 @@
-class AdmincontrollerController < ApplicationController
-end
