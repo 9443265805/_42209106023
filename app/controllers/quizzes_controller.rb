@@ -15,8 +15,6 @@ class QuizzesController < ApplicationController
 		@quiz =Quiz.new(params[:quiz])
 		@quiz.count=0
 		@quiz.status="Not Completed"
-		#@quiz.starttime=@quiz.starttime.localtime
-		#@quiz.endtime=@quiz.endtime.localtime
 		if @quiz.save
 			redirect_to @quiz
 		else

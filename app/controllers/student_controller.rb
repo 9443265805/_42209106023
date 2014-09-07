@@ -7,18 +7,20 @@ class StudentController < ApplicationController
 
 	def startquiz
 		session[:quiz_id]=params[:quiz_id]
-		time=Time.now
+		time=Time.now.to_s(:db).to_time
 		@quiz=Quiz.find(session[:quiz_id])
 		if @quiz.date != Date.today
 		  redirect_to student_index_path,notice: "you cannot take the test today"
 		else
-             #endtime=@quiz.endtime
-			 #endtime=endtime+(time.year - endtime.year).years + (time.month - endtime.month).months + (time.day - endtime.day).days
-             #puts endtime -endtime.localtime
-             #puts time
-            # puts endtime - time 
-			#if @quiz.endtime - @quiz.starttime > endtime - time
-			if @quiz.starttime.hour >= time.hour && @quiz.endtime.hour <= time.hour  &&	@quiz.starttime.min <= time.min  && @quiz.endtime.min >= time.min 
+             endtime=@quiz.endtime
+			 endtime=endtime+(time.year - endtime.year).years + (time.month - endtime.month).months + (time.day - endtime.day).days
+             starttime=@quiz.starttime
+             starttime=starttime+(time.year - starttime.year).years + (time.month - starttime.month).months + (time.day - starttime.day).days
+             #puts @quiz.endtime - @quiz.starttime
+             puts starttime
+             puts time
+             puts  endtime
+             if   time >= starttime && time <= endtime
 				@questions=@quiz.questions
 
 			else
@@ -29,6 +31,7 @@ class StudentController < ApplicationController
 	end
 
 	def endquiz
+		@user=current_user
 		@score=0
 		@quizname=Quiz.find(session[:quiz_id]).quizname
 		for question in Quiz.find(session[:quiz_id]).questions
@@ -37,7 +40,7 @@ class StudentController < ApplicationController
 			end
 		end
 		StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id).first.update_attributes(:score=>@score)
-
+         StudentMailer.certificate_email(@user,@score,@quizname).deliver
 	end
 
 	def authenticate_student
