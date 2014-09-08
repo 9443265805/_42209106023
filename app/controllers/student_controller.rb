@@ -6,18 +6,18 @@ class StudentController < ApplicationController
 	end
 
 	def startquiz
-		
-		#Prevent second attempt
-		#if StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id).first.score?
-        #redirect_to :back,notice: "you have already taken the test"
-		#end
-
-
 		session[:quiz_id]=params[:quiz_id]
-		# local to UTC 
-		
-		time=Time.now.to_s(:db).to_time
 		@quiz=Quiz.find(session[:quiz_id])
+		#Prevent second attempt
+		unless StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id,score: nil).count>0
+        redirect_to :back,notice: "you have already taken the test"
+		else @quiz.status="Not Completed"
+			redirect_to student_index_path,notice: "Quiz status incomplete"
+		end
+			
+		# local to UTC 
+		time=Time.now.to_s(:db).to_time
+				
 		if @quiz.date != Date.today
 		  redirect_to student_index_path,notice: "you cannot take the test today"
 		else
@@ -46,6 +46,7 @@ class StudentController < ApplicationController
 				@score=@score+10
 			end
 		end
+		puts @score
 		StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id).first.update_attributes(:score => @score)
          #StudentMailer.certificate_email(@user,@score,@quizname).deliver
 	end
