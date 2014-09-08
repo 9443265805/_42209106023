@@ -12,6 +12,9 @@
  *= require foundation_and_overrides
  *= require_tree .
  */
+
+ 
+
 .footer {
 	overflow: visible;
 	width:100%;
@@ -28,3 +31,5 @@
 	text-align: center;
 	margin:10px;
 } 
+
+@import 'jquery.countdown'

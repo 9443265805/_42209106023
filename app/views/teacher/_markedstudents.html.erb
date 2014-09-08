@@ -1,7 +1,7 @@
 <%= form_tag teacher_unmarkstudents_path ,:method => :put do %> 
 <table>
 <tr>
-<th>UnTag Students</th>
+<th><%= check_box_tag "Select_All" %> Untag Student </th>
 <th>Name</th>
 <th>Age</th>
 <th>School</th>
