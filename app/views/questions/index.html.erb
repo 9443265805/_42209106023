@@ -1,3 +1,4 @@
+<%= link_to "New Question", new_question_path , class: "button radius"%> 
 <h1>Listing Questions</h1>
 <table>
 <tr>
@@ -18,9 +19,12 @@
 <td><%= question.option3 %></td>
 <td><%= question.option4 %></td>
 <td><%= question.answer %></td>
-<td><%= link_to 'Show', question %></td>
-<td><%= link_to 'Edit', edit_question_path(question) %></td>
-<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }%></td>
+<td><%= link_to 'Show', question , class: "button radius" %></td>
+<td><%= link_to 'Edit', edit_question_path(question) , class: "button radius"%></td>
+<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "button radius"%></td>
 </tr>
 <% end %>
 </table>
+<div class="apple_pagination">
+<%= will_paginate @quizzes %>
+</div>

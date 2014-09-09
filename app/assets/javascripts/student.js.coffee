@@ -16,7 +16,7 @@ $(document).ready ->
     return
 
   $("#timer").countdown
-    until: 10 #$("#dur").data("duration")
+    until: $("#dur").data("duration")
     onExpiry: endquiz
     format: "HMS"
 

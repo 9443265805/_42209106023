@@ -9,7 +9,7 @@
 <tr>
 <td><%= studentquiz.quiz.quizname %></td>
 <td><%= studentquiz.score %></td>
-<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:studentquiz.quiz_id) %></td>
+<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:studentquiz.quiz_id) , class: "button radius" %></td>
 </tr>
 <% end %>
 </table>

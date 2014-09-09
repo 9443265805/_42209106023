@@ -1,4 +1,4 @@
-<%= form_tag admin_unmarkquestions_path ,:method => :put do %>  
+<%= form_tag admin_unmarkquestions_path ,:method => :put  do %>  
 <table>
 <tr>
 <th><%= check_box_tag "Select_All" %> Delete Question </th>
@@ -20,11 +20,11 @@
 <td><%= question.option3 %></td>
 <td><%= question.option4 %></td>
 <td><%= question.answer %></td>
-<td><%= link_to 'Show', question %></td>
-<td><%= link_to 'Edit', edit_question_path(question) %></td>
-<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }%></td>
+<td><%= link_to 'Show', question , class: "button radius"%></td>
+<td><%= link_to 'Edit', edit_question_path(question), class: "button radius" %></td>
+<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "button radius"%></td>
 </tr>
 <% end %>
 </table>
-<%= submit_tag "Delete Quiz Questions" %> 
+<%= submit_tag "Delete Quiz Questions" , class: "button radius" %> 
 <% end %>

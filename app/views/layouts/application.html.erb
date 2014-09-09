@@ -13,7 +13,7 @@
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
+  	<title><%= content_for?(:title) ? yield(:title) : "OTTS" %></title>
     <%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
@@ -33,12 +33,37 @@
   </ul>
    <section class="top-bar-section">
     <ul class="right">
+    <% if current_user.role != "Student" %>
+      <li class="divider"></li>
+      <li><%= link_to "Quizzes",quizzes_path %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Questions",questions_path %></li>
+      <% end %>
       <li class="divider"></li>
       <li><%= link_to "Logged in as #{current_user.name}" %></li>
       <li class="divider"></li>
       <li><%= link_to "Edit Profile",edit_user_registration_path %></li>
       <li class="divider"></li>
       <li><%= link_to "Logout", destroy_user_session_path, method: :delete  %>
+      <li class="divider"></li>
+      <li><%= link_to "Contact Me" %></li>
+      </ul>
+  </section>
+
+</nav>
+<% else %>
+<nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+      <h1><%= link_to "Online Test Taking System" %></a></h1>
+    </li>
+  </ul>
+   <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li><%= link_to "Sign in", new_session_path(resource_name) %>
+      <li class="divider"></li>
+      <li><%=  link_to "Sign up", new_registration_path(resource_name) %>
       <li class="divider"></li>
       <li><%= link_to "Contact Me" %></li>
       </ul>

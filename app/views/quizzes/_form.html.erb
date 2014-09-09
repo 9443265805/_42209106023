@@ -1,4 +1,5 @@
-<%= form_for(@quiz) do |f| %>
+<%= form_for(@quiz ,  html: { class: :custom }) do |f| %>
+
 <% if @quiz.errors.any? %>
 <div id="Error-Explanation" >  
 
@@ -7,23 +8,44 @@
 <li><%= msg %></li>
 <% end %>
 </ul>
-</div>
+</div> 
 <% end %>
-<div><%= f.label :quizname %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :quizname, class: "right inline" %></div>
+<div class="small-9 columns">
 <%= f.text_field :quizname %></div>
+</div>
 
-<div><%= f.label :starttime %>
-<%= f.time_select :starttime ,{minute_step: 15}  %></div>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :starttime, class: "right inline" %></div>
+<div class="small-9 columns " id="starttime">
+<%= f.time_select :starttime ,{minute_step: 15} %></div>
+</div>
 
-
-<div><%= f.label :endtime %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :endtime,  class: "right inline" %></div>
+<div class="small-9 columns ">
 <%= f.time_select :endtime ,{minute_step: 15}  %></div>
+</div>
 
-<div><%= f.label :date %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :date,  class: "right inline"  %></div>
+<div class="small-9 columns ">
 <%= f.date_select :date %></div>
+</div>
 
-<div><%= f.label :category %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :category ,class: "right inline"  %></div>
+<div class="small-9 columns ">
 <%= f.select :category ,["English","Science","Maths","General"]%></div>
+</div>
 
-<div><%= f.submit %>
+<div class="row collapse">
+  <div class="small-9 small-offset-3 columns" ><%= f.submit  :class => 'button radius'  %></div>
+</div>
 <% end %>
