@@ -71,9 +71,18 @@
 
 </nav>
 <% end %>
-<p ><%= notice %></p>
-<p ><%= alert %></p>
+<% if notice %>
+    <p class="alert-box"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p class="alert-box"><%= alert %></p>
+<% end %>
+<div class= "row">
+<div class="small-10 columns">
     <%= yield %>
+    </div>
+    </div>
+
 
     
     <%= javascript_include_tag "application" %>

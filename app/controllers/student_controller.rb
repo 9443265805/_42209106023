@@ -3,6 +3,8 @@ class StudentController < ApplicationController
 
 	def index
 		@studentquizlist=StudentQuizResult.where(user_id: current_user.id )
+		@studentquizlist_count=@studentquizlist.count
+		@studentquizlist=@studentquizlist.paginate(:page => params[:page], :per_page => 10)	
 	end
 
 	def startquiz
@@ -46,7 +48,7 @@ class StudentController < ApplicationController
 				@score=@score+10
 			end
 		end
-		puts @score
+		
 		StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id).first.update_attributes(:score => @score)
          #StudentMailer.certificate_email(@user,@score,@quizname).deliver
 	end

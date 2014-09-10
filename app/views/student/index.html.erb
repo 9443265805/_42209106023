@@ -9,7 +9,12 @@
 <tr>
 <td><%= studentquiz.quiz.quizname %></td>
 <td><%= studentquiz.score %></td>
-<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:studentquiz.quiz_id) , class: "button radius" %></td>
+<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:studentquiz.quiz_id) , class: "small button radius" %></td>
 </tr>
 <% end %>
 </table>
+<% if @studentquizlist_count >  10 %>
+<div class="apple_pagination">
+<%= will_paginate @studentquizlist  %>
+</div>
+<% end %>

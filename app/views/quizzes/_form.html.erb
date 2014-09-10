@@ -20,7 +20,7 @@
 <div class="row collapse">
   <div class="small-3 columns">
 <%= f.label :starttime, class: "right inline" %></div>
-<div class="small-9 columns " id="starttime">
+<div class="small-9 columns  " >
 <%= f.time_select :starttime ,{minute_step: 15} %></div>
 </div>
 
@@ -46,6 +46,6 @@
 </div>
 
 <div class="row collapse">
-  <div class="small-9 small-offset-3 columns" ><%= f.submit  :class => 'button radius'  %></div>
+  <div class="small-9 small-offset-3 columns" ><%= f.submit  :class => 'small button radius'  %></div>
 </div>
 <% end %>

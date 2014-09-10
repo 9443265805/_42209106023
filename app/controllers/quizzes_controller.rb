@@ -3,7 +3,10 @@ class QuizzesController < ApplicationController
 	before_filter :authenticate_student!
 
 	def index 
-		@quizzes =Quiz.all.paginate(:page => params[:page], :per_page => 10)		
+		@quizzes =Quiz.all
+		@quizzes_count = @quizzes.count
+		@quizzes=@quizzes.paginate(:page => params[:page], :per_page => 10)		
+	
 	end 
 
 

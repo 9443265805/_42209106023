@@ -20,14 +20,16 @@
 <td><%= question.option3 %></td>
 <td><%= question.option4 %></td>
 <td><%= question.answer %></td>
-<td><%= link_to 'Show', question, class: "button radius" %></td>
-<td><%= link_to 'Edit', edit_question_path(question) , class: "button radius"%></td>
-<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "button radius"%></td>
+<td><%= link_to 'Show', question, class: "small button radius" %></td>
+<td><%= link_to 'Edit', edit_question_path(question) , class: "small button radius"%></td>
+<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "small button radius"%></td>
 </tr>
 <% end %>
 </table>
+<% if @generalquestions_count > 10 %>
 <div class="apple_pagination">
-<%= will_paginate @generalquestions %>
+<%= will_paginate @generalquestions  %>
 </div>
-<%= submit_tag "Update Quiz Questions" , class: "button radius" %> 
+<% end %>
+<%= submit_tag "Update Quiz Questions" , class: "small button radius" %> 
 <% end %>

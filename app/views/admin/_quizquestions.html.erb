@@ -20,11 +20,11 @@
 <td><%= question.option3 %></td>
 <td><%= question.option4 %></td>
 <td><%= question.answer %></td>
-<td><%= link_to 'Show', question , class: "button radius"%></td>
-<td><%= link_to 'Edit', edit_question_path(question), class: "button radius" %></td>
-<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "button radius"%></td>
+<td><%= link_to 'Show', question , class: "small button radius"%></td>
+<td><%= link_to 'Edit', edit_question_path(question), class: "small button radius" %></td>
+<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "small button radius"%></td>
 </tr>
 <% end %>
 </table>
-<%= submit_tag "Delete Quiz Questions" , class: "button radius" %> 
+<%= submit_tag "Delete Quiz Questions" , class: "small button radius" %> 
 <% end %>

@@ -1,6 +1,10 @@
-<%= link_to "New Quiz", new_quiz_path , class: "button radius" %> 
-<h1>Listing Quizzes </h1>
-<table>
+ 
+<div class="row ">
+<div class="small-9  columns "><h1 >Listing Quizzes </h1></div>
+<div class="small-3  columns ">
+<%= link_to "New Quiz", new_quiz_path , class: "small button radius right " %> </div>
+</div>
+<table > 
 <tr>
 <th>Quiz Name</th>
 <th>Category</th>
@@ -12,7 +16,7 @@
 <% end %>
 <th>Manage Students</th>
 <th>Questions Assigned</th>
-<th>Status 
+<th>Status</th>
 </tr>
 <% @quizzes.each do |f| %>
 
@@ -23,19 +27,23 @@
 		<td><%= f.endtime.strftime('%H:%M') %></td>
 		<td><%= f.date.strftime("%d/%m/%Y") %></td>
 		<% if current_user.role=="Admin" %>
-		<td><%= link_to 'Manage Questions' , admin_assignquestions_path(quiz_id:f.id)  , class: "button radius" %></td>
+		<td><%= link_to 'Manage Questions' , admin_assignquestions_path(quiz_id:f.id)  , class: "small button radius" %></td>
 		<% end %>
-		<td><%= link_to 'Manage Students' , teacher_assignstudents_path(quiz_id:f.id) , class: "button radius" %></td>
+		<td><%= link_to 'Manage Students' , teacher_assignstudents_path(quiz_id:f.id) , class: "small button radius" %></td>
 		<td><%= f.count %></td>
 		<td><%= f.status %></td>
-		<td><%= link_to 'Show', f  , class: "button radius"%></td>
+		<td><%= link_to 'Show', f  , class: "small button radius"%></td>
 		<% if current_user.role=="Admin" %>
-		<td><%= link_to 'Edit' ,edit_quiz_path(f) , class: "button radius"%></td>
-		<td><%= link_to 'Delete', f , method: :Delete ,date: {confrim:"Are you sure?" } , class: "button radius" %></td>
+		<td><%= link_to 'Edit' ,edit_quiz_path(f) , class: "small button radius"%></td>
+		<td><%= link_to 'Delete', f , method: :Delete ,date: {confrim:"Are you sure?" } , class: "small button radius" %></td>
 		<% end %>
 	</tr>
 	<% end %>
 </table>
+
+
+<%if  @quizzes_count > 10 %>
 <div class="apple_pagination">
-<%= will_paginate @quizzes %>
+<%= will_paginate @quizzes   %>
 </div>
+<% end %>
