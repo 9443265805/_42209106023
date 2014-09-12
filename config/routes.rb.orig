@@ -4,9 +4,13 @@ OTTS::Application.routes.draw do
   resources :quizzes
   resources :questions
 
- 
+<<<<<<< HEAD
+resources :users 
 
   
+=======
+
+>>>>>>> f8f5ccd9e37abdbdb7f7def3f6fbd153c5a2ce5f
 
   #resources :admin, :only =>[] do
    #   put :markquestions
@@ -37,10 +41,13 @@ OTTS::Application.routes.draw do
   match 'student/endquiz', to: 'student#endquiz'
   match 'student/index', to: 'student#index'
 
+<<<<<<< HEAD
    resources :conversations do
     resources :messages
   end
 
+=======
+>>>>>>> f8f5ccd9e37abdbdb7f7def3f6fbd153c5a2ce5f
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
