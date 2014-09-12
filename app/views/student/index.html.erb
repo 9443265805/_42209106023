@@ -1,0 +1,20 @@
+<h1>Listing Quiz</h1>
+<table>
+<tr>
+<th>Quiz Name</th>
+<th>Score</th>
+<th></th>
+</tr>
+<% for studentquiz in @studentquizlist %>
+<tr>
+<td><%= studentquiz.quiz.quizname %></td>
+<td><%= studentquiz.score %></td>
+<td><%= link_to 'Take Quiz',student_startquiz_path(quiz_id:studentquiz.quiz_id) , class: "small button radius" %></td>
+</tr>
+<% end %>
+</table>
+<% if @studentquizlist_count >  10 %>
+<div class="apple_pagination">
+<%= will_paginate @studentquizlist  %>
+</div>
+<% end %>

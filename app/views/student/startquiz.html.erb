@@ -1,0 +1,27 @@
+<div id="dur" data-duration=<%= @duration %>></div>
+<div id="timer"></div>
+<%= form_tag student_endquiz_path do %>
+<table>
+<tr>
+<th>Category</th>
+<th>Question</th>
+<th>Option1</th>
+<th>Option2</th>
+<th>Option3</th>
+<th>Option4</th>
+</tr>
+
+<% @questions.each do |question| %>
+<tr>
+<td><%= question.category %></td>
+<td><%= question.question_text %></td>
+<td><%= question.option1 %></td>
+<td><%= question.option2 %></td>
+<td><%= question.option3 %></td>
+<td><%= question.option4 %></td>
+<td><%= select_tag("answers_#{question.id}",options_for_select(["option1","option2","option3","option4"]))%></td>
+</tr>
+<% end %>
+</table>
+<%= submit_tag "Submit Answers" %> 
+<% end %>

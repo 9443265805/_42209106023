@@ -1,0 +1,31 @@
+<p>
+<b>Quiz Name</b>
+<%= @quiz.quizname %>
+</p>
+<p>
+<b>Category</b>
+<%= @quiz.category %>
+</p>
+<p>
+<b>Starttime</b>
+<%= @quiz.starttime.strftime('%H:%M') %>
+</p>
+<p>
+<b>Endtime</b>
+<%= @quiz.endtime.strftime('%H:%M') %>
+</p>
+<p>
+<b>Date</b>
+<%= @quiz.date.strftime("%d/%m/%Y") %>
+</p>
+<p>
+<b>Questions Added</b>
+<%= @quiz.count %>
+</p>
+<p>
+<b>Status</b>
+<%= @quiz.status %>
+</p>
+
+<%= link_to 'Edit',edit_quiz_path(@quiz) , class: "small button radius"%>
+<%= link_to 'Back',quizzes_path , class: "small button radius"%>

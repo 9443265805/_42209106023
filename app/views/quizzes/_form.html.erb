@@ -1,0 +1,51 @@
+<%= form_for(@quiz ,  html: { class: :custom }) do |f| %>
+
+<% if @quiz.errors.any? %>
+<div id="Error-Explanation" >  
+
+<h3><%= pluralize(@quiz.errors.count,"error") %> prohibited this quiz from being saved : </h3>
+<ul><% @quiz.errors.full_messages.each do |msg|	%>
+<li><%= msg %></li>
+<% end %>
+</ul>
+</div> 
+<% end %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :quizname, class: "right inline" %></div>
+<div class="small-9 columns">
+<%= f.text_field :quizname %></div>
+</div>
+
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :starttime, class: "right inline" %></div>
+<div class="small-9 columns  " >
+<%= f.time_select :starttime ,{minute_step: 15} %></div>
+</div>
+
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :endtime,  class: "right inline" %></div>
+<div class="small-9 columns ">
+<%= f.time_select :endtime ,{minute_step: 15}  %></div>
+</div>
+
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :date,  class: "right inline"  %></div>
+<div class="small-9 columns ">
+<%= f.date_select :date %></div>
+</div>
+
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :category ,class: "right inline"  %></div>
+<div class="small-9 columns ">
+<%= f.select :category ,["English","Science","Maths","General"]%></div>
+</div>
+
+<div class="row collapse">
+  <div class="small-9 small-offset-3 columns" ><%= f.submit  :class => 'small button radius'  %></div>
+</div>
+<% end %>

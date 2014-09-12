@@ -1,0 +1,30 @@
+<%= form_tag admin_unmarkquestions_path ,:method => :put  do %>  
+<table>
+<tr>
+<th><%= check_box_tag "Select_All" %> Delete Question </th>
+<th>Category</th>
+<th>Question</th>
+<th>Option1</th>
+<th>Option2</th>
+<th>Option3</th>
+<th>Option4</th>
+<th>Answer</th>
+</tr>
+<% @quizquestions.each do |question| %>
+<tr>
+<td><%= check_box_tag "question_ids[]", question.id %> 
+<td><%= question.category %></td>
+<td><%= question.question_text %></td>
+<td><%= question.option1 %></td>
+<td><%= question.option2 %></td>
+<td><%= question.option3 %></td>
+<td><%= question.option4 %></td>
+<td><%= question.answer %></td>
+<td><%= link_to 'Show', question , class: "small button radius"%></td>
+<td><%= link_to 'Edit', edit_question_path(question), class: "small button radius" %></td>
+<td><%= link_to 'Delete' ,question , method: :delete, data: { confirm: 'Are you sure?' }, class: "small button radius"%></td>
+</tr>
+<% end %>
+</table>
+<%= submit_tag "Delete Quiz Questions" , class: "small button radius" %> 
+<% end %>
