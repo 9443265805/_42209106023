@@ -83,7 +83,7 @@
 <% end %>
 <div class= "row">
 
-<div class= "small-3 columns">
+<!--<div class= "small-3 columns">
  <% if user_signed_in?  %>
 <% User.where("id != ?",current_user.id).order("created_at DESC").each_with_index do |user, index| %>
     <tr>
@@ -96,7 +96,7 @@
     </tr>
 <% end %>
 <% end %>
-</div>
+</div> !-->
 <div class="small-9 columns">
     <%= yield %>
     </div>
