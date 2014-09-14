@@ -13,8 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require foundation
-//= require jquery.plugin
+//= require jquery.timerplugin
+//= require jquery.timeplugin
 //= require jquery.countdown
+//= require jquery.timeentry
 //= require_tree 
 
 $(function(){ $(document).foundation(); });

@@ -32,4 +32,6 @@
 	margin:10px;
 } 
 
-@import 'jquery.countdown'
+
+@import 'jquery.countdown';
+@import 'jquery.timeentry';

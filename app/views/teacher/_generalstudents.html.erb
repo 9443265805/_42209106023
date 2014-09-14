@@ -17,8 +17,11 @@
 </tr>
 <% end %>
 </table>
+<% if @students_count >  10 %>
 <div class="apple_pagination">
-<%= will_paginate @students %>
+<%= will_paginate @students  %>
 </div>
-<%= submit_tag "Tag Students" %> 
+<% end %>
+<br>
+<%= submit_tag "Tag Students"  , class: "small button radius"%> 
 <% end %>

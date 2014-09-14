@@ -3,6 +3,8 @@ class StudentController < ApplicationController
 
 	def index
 		@studentquizlist=StudentQuizResult.where(user_id: current_user.id )
+		@studentquizlist_count=@studentquizlist.count
+		@studentquizlist=@studentquizlist.paginate(:page => params[:page], :per_page => 10)	
 	end
 
 	def startquiz
@@ -11,30 +13,30 @@ class StudentController < ApplicationController
 		#Prevent second attempt
 		unless StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id,score: nil).count>0
         redirect_to :back,notice: "you have already taken the test"
-		else @quiz.status="Not Completed"
-			redirect_to student_index_path,notice: "Quiz status incomplete"
-		end
-			
-		# local to UTC 
-		time=Time.now.to_s(:db).to_time
-				
-		if @quiz.date != Date.today
-		  redirect_to student_index_path,notice: "you cannot take the test today"
 		else
-             # set to current date
-             endtime=@quiz.endtime
-			 endtime=endtime+(time.year - endtime.year).years + (time.month - endtime.month).months + (time.day - endtime.day).days
-             starttime=@quiz.starttime
-             starttime=starttime+(time.year - starttime.year).years + (time.month - starttime.month).months + (time.day - starttime.day).days
-             #puts @quiz.endtime - @quiz.starttime
-            if   time >= starttime && time <= endtime
-				@questions=@quiz.questions
-                @duration=endtime - time  
-			else
-				redirect_to student_index_path,notice: "you cannot take the test now"
-			end
+			if @quiz.status=="Not Completed"
+			redirect_to student_index_path,notice: "Quiz status incomplete"
+			else 			
+			# local to UTC 
+				time=Time.now.to_s(:db).to_time
+				if @quiz.date != Date.today
+			  		redirect_to student_index_path,notice: "you cannot take the test today"
+				else
+		             # set to current date
+		             endtime=@quiz.endtime
+					 endtime=endtime+(time.year - endtime.year).years + (time.month - endtime.month).months + (time.day - endtime.day).days
+		             starttime=@quiz.starttime
+		             starttime=starttime+(time.year - starttime.year).years + (time.month - starttime.month).months + (time.day - starttime.day).days
+		             #puts @quiz.endtime - @quiz.starttime
+		            if   time >= starttime && time <= endtime
+						@questions=@quiz.questions
+		                @duration=endtime - time  
+					else
+						redirect_to student_index_path,notice: "you cannot take the test now"
+					end
+				end
+		    end
 		end
-
 	end
 
 	def endquiz
@@ -46,7 +48,7 @@ class StudentController < ApplicationController
 				@score=@score+10
 			end
 		end
-		puts @score
+		
 		StudentQuizResult.where(quiz_id: session[:quiz_id] ,user_id: current_user.id).first.update_attributes(:score => @score)
          #StudentMailer.certificate_email(@user,@score,@quizname).deliver
 	end

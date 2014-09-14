@@ -12,9 +12,13 @@
 
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta content='<%= user_signed_in? ? current_user.id : "" %>' name='user-id'/>
 
-  	<title><%= content_for?(:title) ? yield(:title) : "Untitled" %></title>
-    <%= stylesheet_link_tag    "application" %>
+
+  	<title><%= content_for?(:title) ? yield(:title) : "OTTS" %></title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
@@ -33,6 +37,12 @@
   </ul>
    <section class="top-bar-section">
     <ul class="right">
+    <% if current_user.role != "Student" %>
+      <li class="divider"></li>
+      <li><%= link_to "Quizzes",quizzes_path %></li>
+      <li class="divider"></li>
+      <li><%= link_to "Questions",questions_path %></li>
+      <% end %>
       <li class="divider"></li>
       <li><%= link_to "Logged in as #{current_user.name}" %></li>
       <li class="divider"></li>
@@ -45,13 +55,57 @@
   </section>
 
 </nav>
+<% else %>
+<nav class="top-bar">
+    <ul class="title-area">
+      <li class="name">
+      <h1><%= link_to "Online Test Taking System" %></a></h1>
+    </li>
+  </ul>
+   <section class="top-bar-section">
+    <ul class="right">
+      <li class="divider"></li>
+      <li><%= link_to "Sign in", new_session_path(resource_name) %>
+      <li class="divider"></li>
+      <li><%=  link_to "Sign up", new_registration_path(resource_name) %>
+      <li class="divider"></li>
+      <li><%= link_to "Contact Me" %></li>
+      </ul>
+  </section>
+
+</nav>
 <% end %>
-<p ><%= notice %></p>
-<p ><%= alert %></p>
+<% if notice %>
+    <p class="alert-box"><%= notice %></p>
+<% end %>
+<% if alert %>
+    <p class="alert-box"><%= alert %></p>
+<% end %>
+<div class= "row">
+
+<div class= "small-3 columns">
+ <% if user_signed_in?  %>
+<% User.where("id != ?",current_user.id).order("created_at DESC").each_with_index do |user, index| %>
+    <tr>
+      <td><%= index +=1 %></td>
+      <td><%= user.name %></td>
+      <td>
+        <%= link_to "Send Message", "#", class: "btn btn-success btn-xs start-conversation",
+                    "data-sid" => current_user.id, "data-rip" => user.id %>
+      </td>
+    </tr>
+<% end %>
+<% end %>
+</div>
+<div class="small-9 columns">
     <%= yield %>
+    </div>
+    <audio id="chatAudio"><source src="/sounds/notification.mp3" type="audio/mpeg"></audio>
+    </div>
+
 
     
-    <%= javascript_include_tag "application" %>
+   
   <nav  class="top-bar footer" ><p>Copyright@Ethiraj</p></nav> 
   </body>
 

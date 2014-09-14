@@ -9,5 +9,7 @@ class User < ActiveRecord::Base
   # attr_accessible :title, :body
   validates_presence_of :name ,:age, :phonenumber, :school
   validates :phonenumber , format: { with: /^[0-9]{10}$/, message: " must be 10 digits" }
+
+   has_many :conversations, :foreign_key => :sender_id
 end
 

@@ -1,7 +1,7 @@
-<%= form_for(@question) do |f| %>
+<%= form_for(@question ,  html: { class: :custom }) do |f| %>
 <%if @question.errors.any? %>
 <div id="error-explanantion">
-<h3><%= pluralize(@hotel.errors.count, "error") %> prohibited  this question from being saved :</h3>
+<h3><%= pluralize(@question.errors.count, "error") %> prohibited  this question from being saved :</h3>
 <ul>
 <% @question.errors.full_messages.each do |msg| %>
 <li><%= msg %></li>
@@ -9,29 +9,56 @@
 </ul>
 </div>
 <% end %>
-
-<div><%= f.label :question %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :question , class: "right inline" %></div>
+<div class="small-9 columns">
 <%= f.text_area :question_text %></div>
+</div>
 
-<div><%= f.label :option1 %>
+<div class="row collapse">
+  <div class="small-3 columns">
+  <%= f.label :option1 , class: "right inline"  %></div>
+  <div class="small-9 columns">
 <%= f.text_field :option1 %></div>
+</div>
 
-<div><%= f.label :option2 %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :option2 , class: "right inline"  %></div>
+<div class="small-9 columns">
 <%= f.text_field :option2 %></div>
+</div>
 
-<div><%= f.label :option3 %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :option3 , class: "right inline" %></div>
+<div class="small-9 columns">
 <%= f.text_field :option3 %></div>
+</div>
 
-
-<div><%= f.label :option4 %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :option4  , class: "right inline" %></div>
+<div class="small-9 columns">
 <%= f.text_field :option4 %></div>
+</div>
 
-<div><%= f.label :answer %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :answer , class: "right inline"  %></div>
+<div class="small-9 columns">
 <%= f.select :answer,["option1","option2","option3","option4"] %></div>
+</div>
 
-<div><%= f.label :category %>
+<div class="row collapse">
+  <div class="small-3 columns">
+<%= f.label :category , class: "right inline"  %></div>
+<div class="small-9 columns">
 <%= f.select :category ,["English","Science","Maths","General"]%></div>
+</div>
 
-<div><%= f.submit %>
+<div class="row collapse">
+  <div class="small-9 small-offset-3 columns"><%= f.submit   :class => "small button radius" %></div>
 </div>
 <% end %>

@@ -24,6 +24,9 @@ gem 'mail', '2.5.4'
 gem 'will_paginate', '~> 3.0.0'
 gem 'jquery-rails'
 gem 'devise'
+gem 'private_pub'
+gem 'thin'
+gem 'strong_parameters', '~> 0.2.3'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

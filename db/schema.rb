@@ -11,7 +11,25 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140819085121) do
+ActiveRecord::Schema.define(:version => 20140912104337) do
+
+  create_table "conversations", :force => true do |t|
+    t.integer  "sender_id"
+    t.integer  "recipient_id"
+    t.datetime "created_at",   :null => false
+    t.datetime "updated_at",   :null => false
+  end
+
+  create_table "messages", :force => true do |t|
+    t.text     "body"
+    t.integer  "conversation_id"
+    t.integer  "user_id"
+    t.datetime "created_at",      :null => false
+    t.datetime "updated_at",      :null => false
+  end
+
+  add_index "messages", ["conversation_id"], :name => "index_messages_on_conversation_id"
+  add_index "messages", ["user_id"], :name => "index_messages_on_user_id"
 
   create_table "questions", :force => true do |t|
     t.string   "question_text"
@@ -45,6 +63,8 @@ ActiveRecord::Schema.define(:version => 20140819085121) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end
+
+ 
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
