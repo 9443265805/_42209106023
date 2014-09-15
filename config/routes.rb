@@ -5,40 +5,39 @@ OTTS::Application.routes.draw do
   resources :questions
 
  
+  resources :admin ,:only => []  do 
+    collection do 
+      get :assignquestions
+      put :markquestions
+      put :unmarkquestions
+    end
+  end
 
-  
+  resources :teacher ,:only => [] do 
+    collection do 
+      get :assignstudents
+      put :markstudents
+      put :unmarkstudents
+    end
+  end
 
-  #resources :admin, :only =>[] do
-   #   put :markquestions
-    #  put :unmarkquestions
-     # post :assignquestions
-    #end
+  resources :student ,:only => [] do 
+    collection do 
+    get :index
+    get :startquiz
+    put :endquiz
+  end 
+end
 
-#  resources :teacher, :only =>[] do
- #     put :markstudents
-  #    put :unmarkstudents
-   #   post :assignstudents
-   # end 
+  #match 'student/startquiz', to: 'student#startquiz'
+  #match 'student/endquiz', to: 'student#endquiz'
+  #match 'student/index', to: 'student#index'
 
- # resources :student, :only =>[:index] do
-  #   member do
-   #   post :startquiz
-    #  post :endquiz
-   # end  
-   # end
 
- match 'admin/assignquestions', to: 'admin#assignquestions'
-  match 'admin/markquestions', to: 'admin#markquestions', via: [:put]
-  match 'admin/unmarkquestions', to: 'admin#unmarkquestions', via: [:put]
-  match 'teacher/assignstudents', to: 'teacher#assignstudents'
-  match 'teacher/markstudents', to: 'teacher#markstudents', via: [:put]
-  match 'teacher/unmarkstudents', to: 'teacher#unmarkstudents', via: [:put]
-  match 'student/startquiz', to: 'student#startquiz'
-  match 'student/endquiz', to: 'student#endquiz'
-  match 'student/index', to: 'student#index'
-
-   resources :conversations do
+   resources :conversations , :controller => 'conversations'  ,:path => 'conversations' do
     resources :messages
+
+
   end
 
   # The priority is based upon order of creation:

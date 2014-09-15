@@ -27,9 +27,9 @@
 		<td><%= f.endtime.strftime('%H:%M') %></td>
 		<td><%= f.date.strftime("%d/%m/%Y") %></td>
 		<% if current_user.role=="Admin" %>
-		<td><%= link_to 'Manage Questions' , admin_assignquestions_path(quiz_id:f.id)  , class: "small button radius" %></td>
+		<td><%= link_to 'Manage Questions' , assignquestions_admin_index_path(quiz_id:f.id)  , class: "small button radius" %></td>
 		<% end %>
-		<td><%= link_to 'Manage Students' , teacher_assignstudents_path(quiz_id:f.id) , class: "small button radius" %></td>
+		<td><%= link_to 'Manage Students' , assignstudents_teacher_index_path(quiz_id:f.id) , class: "small button radius" %></td>
 		<td><%= f.count %></td>
 		<td><%= f.status %></td>
 		<td><%= link_to 'Show', f  , class: "small button radius"%></td>

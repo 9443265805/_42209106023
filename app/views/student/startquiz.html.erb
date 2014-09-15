@@ -1,6 +1,6 @@
 <div id="dur" data-duration=<%= @duration %>></div>
 <div id="timer"></div>
-<%= form_tag student_endquiz_path do %>
+<%= form_tag endquiz_student_index_path ,:method => 'put' do %>
 <table>
 <tr>
 <th>Category</th>
