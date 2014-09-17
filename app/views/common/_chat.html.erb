@@ -1,0 +1,15 @@
+</br>
+<form  >
+<input id="searchName"  type="search" placeholder= "Chat Name" autocomplete="off" >
+</form>
+ <table id ="chatTable">
+<% User.where("id != ?",current_user.id).order("created_at DESC").each_with_index do |user, index| %>
+    <tr>
+      <td id=<%= user.name %> ><%= user.name %></td>
+      <td>
+        <%= link_to "Send Message", "#", class: "small button radius start-conversation",
+                    "data-sid" => current_user.id, "data-rip" => user.id %>
+      </td>
+    </tr>
+<% end %>
+</table>

@@ -1,0 +1,20 @@
+ <h4>Your Conversations</h4>
+ <div style="height: 300px; overflow-y: auto;">
+      <% @conversations = Conversation.involving(current_user).order("created_at DESC")
+      if @conversations.any? %>
+          <ul >
+            <% @conversations.each do |conversation| %>
+                <li >
+                  <%= image_tag("rails.png") %>
+                  <div >
+                    <%= link_to conversation_interlocutor(conversation).name, conversation_path(conversation), class: "conversation", "data-cid" => conversation.id %>
+                        <p><%= conversation.messages.last.nil? ? "No messages" : truncate(conversation.messages.last.body, length: 45) %></p>
+                  </div>
+                </li>
+
+            <% end %>
+          </ul>
+      <% else %>
+          <p>You have no conversations. Click send message with any user to create one.</p>
+      <% end %>
+    </div>
