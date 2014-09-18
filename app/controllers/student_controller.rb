@@ -1,6 +1,8 @@
 class StudentController < ApplicationController
 	before_filter :authenticate_student
 
+	layout "examlayout", :only => :startquiz
+
 	def index
 		@studentquizlist=StudentQuizResult.where(user_id: current_user.id )
 		@studentquizlist_count=@studentquizlist.count
@@ -28,6 +30,9 @@ class StudentController < ApplicationController
 		             starttime=@quiz.starttime
 		             starttime=starttime+(time.year - starttime.year).years + (time.month - starttime.month).months + (time.day - starttime.day).days
 		             #puts @quiz.endtime - @quiz.starttime
+		             puts time 
+		             puts starttime
+		             puts  time <= endtime
 		            if   time >= starttime && time <= endtime
 						@questions=@quiz.questions
 		                @duration=endtime - time  
