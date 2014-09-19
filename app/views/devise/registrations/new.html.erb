@@ -55,6 +55,13 @@
 
   <div class="row collapse">
   <div class="small-3 columns">
+  <%= f.label :Profile_Picture  , class: "right inline" %></div>
+  <div class="small-9 columns">
+  <%=f.file_field :avatar  %></div>
+  </div>
+
+  <div class="row collapse">
+  <div class="small-3 columns">
   <%= f.label :phonenumber , class: "right inline" %></div>
   <div class="small-9 columns">
   <%= f.number_field :phonenumber %></div>

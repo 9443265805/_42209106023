@@ -32,6 +32,10 @@ GEM
     arel (3.0.3)
     bcrypt (3.1.7)
     builder (3.0.4)
+    climate_control (0.0.3)
+      activesupport (>= 3.0)
+    cocaine (0.5.4)
+      climate_control (>= 0.0.3, < 1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -84,6 +88,11 @@ GEM
     mime-types (1.25.1)
     multi_json (1.10.1)
     orm_adapter (0.5.0)
+    paperclip (4.2.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
+      cocaine (~> 0.5.3)
+      mime-types
     polyglot (0.3.5)
     private_pub (1.0.3)
       faye
@@ -162,6 +171,7 @@ DEPENDENCIES
   execjs
   jquery-rails
   mail (= 2.5.4)
+  paperclip (~> 4.2)
   private_pub
   rails (= 3.2.17)
   sass-rails (~> 3.2.3)

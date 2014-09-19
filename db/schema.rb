@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20140912104337) do
+ActiveRecord::Schema.define(:version => 20140919081143) do
 
   create_table "conversations", :force => true do |t|
     t.integer  "sender_id"
@@ -64,7 +64,13 @@ ActiveRecord::Schema.define(:version => 20140912104337) do
     t.datetime "updated_at", :null => false
   end
 
- 
+  create_table "studenttestresults", :force => true do |t|
+    t.integer  "score"
+    t.integer  "quiz_id"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -84,6 +90,10 @@ ActiveRecord::Schema.define(:version => 20140912104337) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "avatar_file_name"
+    t.string   "avatar_content_type"
+    t.integer  "avatar_file_size"
+    t.datetime "avatar_updated_at"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

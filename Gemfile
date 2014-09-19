@@ -27,6 +27,7 @@ gem 'devise'
 gem 'private_pub'
 gem 'thin'
 gem 'strong_parameters', '~> 0.2.3'
+gem "paperclip", "~> 4.2"
 
 #jsenvironment
 gem 'execjs'

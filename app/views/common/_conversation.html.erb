@@ -5,7 +5,7 @@
           <ul >
             <% @conversations.each do |conversation| %>
                 <li >
-                  <%= image_tag("rails.png") %>
+                 <%= image_tag conversation.recipient.avatar.url(:small) %>
                   <div >
                     <%= link_to conversation_interlocutor(conversation).name, conversation_path(conversation), class: "conversation", "data-cid" => conversation.id %>
                         <p><%= conversation.messages.last.nil? ? "No messages" : truncate(conversation.messages.last.body, length: 45) %></p>

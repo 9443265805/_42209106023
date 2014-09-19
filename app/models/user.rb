@@ -5,11 +5,19 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   # Setup accessible (or protected) attributes for your model
-  attr_accessible  :name, :age, :email, :password, :password_confirmation, :remember_me, :role, :phonenumber , :school
+  attr_accessible  :name, :age, :email, :password, :password_confirmation, :remember_me, :role, :phonenumber , :school , :avatar
   # attr_accessible :title, :body
-  validates_presence_of :name ,:age, :phonenumber, :school
+  validates_presence_of :name ,:age, :phonenumber, :school 
   validates :phonenumber , format: { with: /^[0-9]{10}$/, message: " must be 10 digits" }
 
    has_many :conversations, :foreign_key => :sender_id
+
+   has_attached_file :avatar, :styles => { :small => "50x50>" },
+                  :url  => "/assets/products/:id/:style/:basename.:extension",
+                  :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
+
+
+validates_attachment_size :avatar, :less_than => 5.megabytes
+validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']
 end
 

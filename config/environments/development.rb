@@ -40,4 +40,6 @@ OTTS::Application.configure do
 
   # Set mail delivery to true
   config.action_mailer.perform_deliveries = true
+
+  Paperclip.options[:command_path] = "/usr/bin/"
 end
