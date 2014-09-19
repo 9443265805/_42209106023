@@ -19,5 +19,6 @@ $(document).ready ->
     until: $("#dur").data("duration")
     onExpiry: endquiz
     format: "HMS"
+    layout: " {hn} {hl} {mn} {ml}   {sn} {sl}"
 
   return

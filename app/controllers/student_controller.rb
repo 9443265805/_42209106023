@@ -1,5 +1,6 @@
 class StudentController < ApplicationController
 	before_filter :authenticate_student
+	layout 'chatlayout', :only => :startquiz
 
 	def index
 		@studentquizlist=StudentQuizResult.where(user_id: current_user.id )
