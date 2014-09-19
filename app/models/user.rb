@@ -13,8 +13,8 @@ class User < ActiveRecord::Base
    has_many :conversations, :foreign_key => :sender_id
 
    has_attached_file :avatar, :styles => { :small => "50x50>" },
-                  :url  => "/assets/products/:id/:style/:basename.:extension",
-                  :path => ":rails_root/public/assets/products/:id/:style/:basename.:extension"
+                  :url  => "/assets/users/:id/:style/:basename.:extension",
+                  :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension"
 
 
 validates_attachment_size :avatar, :less_than => 5.megabytes
