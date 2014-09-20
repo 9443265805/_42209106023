@@ -8,7 +8,6 @@ $(document).ready ->
     return
 
   $("#Printme").click ->
-    mywin = undefined
     mywin = window.open()
     mywin.document.write $("#printable").html()
     mywin.print()
