@@ -30,9 +30,6 @@ gem 'strong_parameters', '~> 0.2.3'
 gem "paperclip", "~> 4.2"
 
 #jsenvironment
-gem 'execjs'
-
-gem 'therubyracer'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
