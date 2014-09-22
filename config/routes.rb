@@ -5,6 +5,13 @@ OTTS::Application.routes.draw do
   resources :quizzes
   resources :questions
 
+ # match 'avatar/change_avatar_pic', to: 'avatar#change_avatar_pic'
+  
+  resources :avatars ,:only => [] do
+    collection do
+      put :change_Avatar_Pic
+    end
+  end
  
   resources :admin ,:only => []  do 
     collection do 
