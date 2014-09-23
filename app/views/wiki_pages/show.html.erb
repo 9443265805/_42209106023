@@ -2,7 +2,7 @@
 <%= @page.title %>
 
 <p>
-  <%= simple_format wiki_link(h(@page.content)) %>
+  <%= markdown(wiki_link(@page.content)) %>
 </p>
 
 <p>

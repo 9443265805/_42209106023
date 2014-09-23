@@ -31,11 +31,19 @@ gem "paperclip", "~> 4.2"
 
 #jsenvironment
 
-gem 'execjs' 
-gem 'therubyracer'
+#gem 'execjs' 
+#gem 'therubyracer'
 
 #wikipage
 gem 'vestal_versions', '~> 2.0.0'
+
+
+#wikipagemarkup
+
+gem 'pygments.rb', '~> 0.6.0'
+gem 'redcarpet'
+gem 'albino'
+gem 'nokogiri'
 
 
 # To use ActiveModel has_secure_password

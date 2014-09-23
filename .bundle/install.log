@@ -326,3 +326,443 @@ I, [2014-09-20T21:40:34.136805 #8972]  INFO -- : 0:  thin (1.6.2) from /home/eth
 I, [2014-09-20T21:40:34.137948 #8972]  INFO -- : 0:  uglifier (2.5.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/uglifier-2.5.3.gemspec
 I, [2014-09-20T21:40:34.141000 #8972]  INFO -- : 0:  will_paginate (3.0.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/will_paginate-3.0.7.gemspec
 I, [2014-09-20T21:40:34.143468 #8972]  INFO -- : 0:  zurb-foundation (4.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/zurb-foundation-4.3.2.gemspec
+I, [2014-09-23T21:14:27.016409 #2532]  INFO -- : 0:  rake (10.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rake-10.3.2.gemspec
+I, [2014-09-23T21:14:27.029972 #2532]  INFO -- : 0:  i18n (0.6.11) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/i18n-0.6.11.gemspec
+I, [2014-09-23T21:14:27.030931 #2532]  INFO -- : 0:  multi_json (1.10.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.10.1.gemspec
+I, [2014-09-23T21:14:27.031792 #2532]  INFO -- : 0:  activesupport (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activesupport-3.2.17.gemspec
+I, [2014-09-23T21:14:27.032672 #2532]  INFO -- : 0:  builder (3.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/builder-3.0.4.gemspec
+I, [2014-09-23T21:14:27.033569 #2532]  INFO -- : 0:  activemodel (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activemodel-3.2.17.gemspec
+I, [2014-09-23T21:14:27.034406 #2532]  INFO -- : 0:  erubis (2.7.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/erubis-2.7.0.gemspec
+I, [2014-09-23T21:14:27.035259 #2532]  INFO -- : 0:  journey (1.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/journey-1.0.4.gemspec
+I, [2014-09-23T21:14:27.036108 #2532]  INFO -- : 0:  rack (1.4.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-1.4.5.gemspec
+I, [2014-09-23T21:14:27.036938 #2532]  INFO -- : 0:  rack-cache (1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-cache-1.2.gemspec
+I, [2014-09-23T21:14:27.037744 #2532]  INFO -- : 0:  rack-test (0.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-09-23T21:14:27.038573 #2532]  INFO -- : 0:  hike (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/hike-1.2.3.gemspec
+I, [2014-09-23T21:14:27.039360 #2532]  INFO -- : 0:  tilt (1.4.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-09-23T21:14:27.040202 #2532]  INFO -- : 0:  sprockets (2.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sprockets-2.2.2.gemspec
+I, [2014-09-23T21:14:27.041041 #2532]  INFO -- : 0:  actionpack (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionpack-3.2.17.gemspec
+I, [2014-09-23T21:14:27.042793 #2532]  INFO -- : 0:  mime-types (1.25.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-09-23T21:14:27.044804 #2532]  INFO -- : 0:  polyglot (0.3.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/polyglot-0.3.5.gemspec
+I, [2014-09-23T21:14:27.046046 #2532]  INFO -- : 0:  treetop (1.4.15) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/treetop-1.4.15.gemspec
+I, [2014-09-23T21:14:27.046930 #2532]  INFO -- : 0:  mail (2.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mail-2.5.4.gemspec
+I, [2014-09-23T21:14:27.047752 #2532]  INFO -- : 0:  actionmailer (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionmailer-3.2.17.gemspec
+I, [2014-09-23T21:14:27.048614 #2532]  INFO -- : 0:  arel (3.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/arel-3.0.3.gemspec
+I, [2014-09-23T21:14:27.049476 #2532]  INFO -- : 0:  tzinfo (0.3.41) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tzinfo-0.3.41.gemspec
+I, [2014-09-23T21:14:27.050356 #2532]  INFO -- : 0:  activerecord (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activerecord-3.2.17.gemspec
+I, [2014-09-23T21:14:27.051158 #2532]  INFO -- : 0:  activeresource (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activeresource-3.2.17.gemspec
+I, [2014-09-23T21:14:27.051947 #2532]  INFO -- : 0:  addressable (2.3.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/addressable-2.3.6.gemspec
+I, [2014-09-23T21:14:27.052832 #2532]  INFO -- : 0:  bcrypt (3.1.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/bcrypt-3.1.7.gemspec
+I, [2014-09-23T21:14:27.053632 #2532]  INFO -- : 0:  bundler (1.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.0.gemspec
+I, [2014-09-23T21:14:27.054460 #2532]  INFO -- : 0:  climate_control (0.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/climate_control-0.0.3.gemspec
+I, [2014-09-23T21:14:27.055254 #2532]  INFO -- : 0:  cocaine (0.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cocaine-0.5.4.gemspec
+I, [2014-09-23T21:14:27.056077 #2532]  INFO -- : 0:  coffee-script-source (1.8.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-source-1.8.0.gemspec
+I, [2014-09-23T21:14:27.056889 #2532]  INFO -- : 0:  execjs (2.2.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/execjs-2.2.1.gemspec
+I, [2014-09-23T21:14:27.057717 #2532]  INFO -- : 0:  coffee-script (2.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-2.3.0.gemspec
+I, [2014-09-23T21:14:27.058639 #2532]  INFO -- : 0:  rack-ssl (1.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-ssl-1.3.4.gemspec
+I, [2014-09-23T21:14:31.817938 #2532]  INFO -- : 0:  json (1.8.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/json-1.8.1.gemspec
+I, [2014-09-23T21:14:31.819245 #2532]  INFO -- : 0:  rdoc (3.12.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rdoc-3.12.2.gemspec
+I, [2014-09-23T21:14:31.820108 #2532]  INFO -- : 0:  thor (0.19.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thor-0.19.1.gemspec
+I, [2014-09-23T21:14:31.821086 #2532]  INFO -- : 0:  railties (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/railties-3.2.17.gemspec
+I, [2014-09-23T21:14:31.821887 #2532]  INFO -- : 0:  coffee-rails (3.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-rails-3.2.2.gemspec
+I, [2014-09-23T21:14:31.822801 #2532]  INFO -- : 0:  cookiejar (0.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cookiejar-0.3.2.gemspec
+I, [2014-09-23T21:14:31.823597 #2532]  INFO -- : 0:  daemons (1.1.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/daemons-1.1.9.gemspec
+I, [2014-09-23T21:14:31.824671 #2532]  INFO -- : 0:  orm_adapter (0.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/orm_adapter-0.5.0.gemspec
+I, [2014-09-23T21:14:31.830027 #2532]  INFO -- : 0:  thread_safe (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thread_safe-0.3.4.gemspec
+I, [2014-09-23T21:14:31.830931 #2532]  INFO -- : 0:  warden (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/warden-1.2.3.gemspec
+I, [2014-09-23T21:14:31.832123 #2532]  INFO -- : 0:  devise (3.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/devise-3.3.0.gemspec
+I, [2014-09-23T21:14:31.833008 #2532]  INFO -- : 0:  eventmachine (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/eventmachine-1.0.3.gemspec
+I, [2014-09-23T21:14:31.833939 #2532]  INFO -- : 0:  em-socksify (0.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-socksify-0.3.0.gemspec
+I, [2014-09-23T21:14:31.834766 #2532]  INFO -- : 0:  http_parser.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/http_parser.rb-0.6.0.gemspec
+I, [2014-09-23T21:14:31.839535 #2532]  INFO -- : 0:  em-http-request (1.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-http-request-1.1.2.gemspec
+I, [2014-09-23T21:14:31.840868 #2532]  INFO -- : 0:  websocket-driver (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/websocket-driver-0.3.4.gemspec
+I, [2014-09-23T21:14:31.841750 #2532]  INFO -- : 0:  faye-websocket (0.7.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-websocket-0.7.4.gemspec
+I, [2014-09-23T21:14:31.842656 #2532]  INFO -- : 0:  faye (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-1.0.3.gemspec
+I, [2014-09-23T21:14:31.843460 #2532]  INFO -- : 0:  jquery-rails (3.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/jquery-rails-3.1.2.gemspec
+I, [2014-09-23T21:14:31.844275 #2532]  INFO -- : 0:  paperclip (4.2.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/paperclip-4.2.0.gemspec
+I, [2014-09-23T21:14:31.845209 #2532]  INFO -- : 0:  private_pub (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/private_pub-1.0.3.gemspec
+I, [2014-09-23T21:14:31.847873 #2532]  INFO -- : 0:  rails (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rails-3.2.17.gemspec
+I, [2014-09-23T21:14:31.849058 #2532]  INFO -- : 0:  sass (3.4.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sass-3.4.4.gemspec
+I, [2014-09-23T21:14:31.849954 #2532]  INFO -- : 0:  sass-rails (3.2.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sass-rails-3.2.6.gemspec
+I, [2014-09-23T21:14:31.850816 #2532]  INFO -- : 0:  sqlite3 (1.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sqlite3-1.3.9.gemspec
+I, [2014-09-23T21:14:31.856182 #2532]  INFO -- : 0:  strong_parameters (0.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/strong_parameters-0.2.3.gemspec
+I, [2014-09-23T21:14:31.857457 #2532]  INFO -- : 0:  thin (1.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thin-1.6.2.gemspec
+I, [2014-09-23T21:14:31.858443 #2532]  INFO -- : 0:  uglifier (2.5.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/uglifier-2.5.3.gemspec
+I, [2014-09-23T21:14:41.138469 #2532]  INFO -- : 0:  vestal_versions (2.0.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/vestal_versions-2.0.0.gemspec
+I, [2014-09-23T21:14:41.139602 #2532]  INFO -- : 0:  will_paginate (3.0.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/will_paginate-3.0.7.gemspec
+I, [2014-09-23T21:14:41.140444 #2532]  INFO -- : 0:  zurb-foundation (4.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/zurb-foundation-4.3.2.gemspec
+I, [2014-09-23T21:36:32.397140 #2842]  INFO -- : 0:  rake (10.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rake-10.3.2.gemspec
+I, [2014-09-23T21:36:32.398584 #2842]  INFO -- : 0:  i18n (0.6.11) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/i18n-0.6.11.gemspec
+I, [2014-09-23T21:36:32.399655 #2842]  INFO -- : 0:  multi_json (1.10.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.10.1.gemspec
+I, [2014-09-23T21:36:32.400972 #2842]  INFO -- : 0:  activesupport (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activesupport-3.2.17.gemspec
+I, [2014-09-23T21:36:32.402034 #2842]  INFO -- : 0:  builder (3.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/builder-3.0.4.gemspec
+I, [2014-09-23T21:36:32.403022 #2842]  INFO -- : 0:  activemodel (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activemodel-3.2.17.gemspec
+I, [2014-09-23T21:36:32.403947 #2842]  INFO -- : 0:  erubis (2.7.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/erubis-2.7.0.gemspec
+I, [2014-09-23T21:36:32.405591 #2842]  INFO -- : 0:  journey (1.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/journey-1.0.4.gemspec
+I, [2014-09-23T21:36:32.407358 #2842]  INFO -- : 0:  rack (1.4.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-1.4.5.gemspec
+I, [2014-09-23T21:36:32.408338 #2842]  INFO -- : 0:  rack-cache (1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-cache-1.2.gemspec
+I, [2014-09-23T21:36:32.409541 #2842]  INFO -- : 0:  rack-test (0.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-09-23T21:36:32.410552 #2842]  INFO -- : 0:  hike (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/hike-1.2.3.gemspec
+I, [2014-09-23T21:36:32.411534 #2842]  INFO -- : 0:  tilt (1.4.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-09-23T21:36:32.412489 #2842]  INFO -- : 0:  sprockets (2.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sprockets-2.2.2.gemspec
+I, [2014-09-23T21:36:32.413548 #2842]  INFO -- : 0:  actionpack (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionpack-3.2.17.gemspec
+I, [2014-09-23T21:36:32.414536 #2842]  INFO -- : 0:  mime-types (1.25.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-09-23T21:36:32.415534 #2842]  INFO -- : 0:  polyglot (0.3.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/polyglot-0.3.5.gemspec
+I, [2014-09-23T21:36:32.416516 #2842]  INFO -- : 0:  treetop (1.4.15) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/treetop-1.4.15.gemspec
+I, [2014-09-23T21:36:32.417611 #2842]  INFO -- : 0:  mail (2.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mail-2.5.4.gemspec
+I, [2014-09-23T21:36:32.418632 #2842]  INFO -- : 0:  actionmailer (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionmailer-3.2.17.gemspec
+I, [2014-09-23T21:36:32.419681 #2842]  INFO -- : 0:  arel (3.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/arel-3.0.3.gemspec
+I, [2014-09-23T21:36:32.420657 #2842]  INFO -- : 0:  tzinfo (0.3.41) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tzinfo-0.3.41.gemspec
+I, [2014-09-23T21:36:32.421735 #2842]  INFO -- : 0:  activerecord (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activerecord-3.2.17.gemspec
+I, [2014-09-23T21:36:32.423998 #2842]  INFO -- : 0:  activeresource (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activeresource-3.2.17.gemspec
+I, [2014-09-23T21:36:32.425023 #2842]  INFO -- : 0:  addressable (2.3.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/addressable-2.3.6.gemspec
+I, [2014-09-23T21:36:32.426013 #2842]  INFO -- : 0:  bcrypt (3.1.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/bcrypt-3.1.7.gemspec
+I, [2014-09-23T21:36:32.427051 #2842]  INFO -- : 0:  bundler (1.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.0.gemspec
+I, [2014-09-23T21:36:32.428023 #2842]  INFO -- : 0:  climate_control (0.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/climate_control-0.0.3.gemspec
+I, [2014-09-23T21:36:32.428996 #2842]  INFO -- : 0:  cocaine (0.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cocaine-0.5.4.gemspec
+I, [2014-09-23T21:36:32.430003 #2842]  INFO -- : 0:  coffee-script-source (1.8.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-source-1.8.0.gemspec
+I, [2014-09-23T21:36:32.430958 #2842]  INFO -- : 0:  execjs (2.2.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/execjs-2.2.1.gemspec
+I, [2014-09-23T21:36:32.431912 #2842]  INFO -- : 0:  coffee-script (2.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-2.3.0.gemspec
+I, [2014-09-23T21:36:32.432904 #2842]  INFO -- : 0:  rack-ssl (1.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-ssl-1.3.4.gemspec
+I, [2014-09-23T21:36:35.816581 #2842]  INFO -- : 0:  json (1.8.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/json-1.8.1.gemspec
+I, [2014-09-23T21:36:35.818533 #2842]  INFO -- : 0:  rdoc (3.12.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rdoc-3.12.2.gemspec
+I, [2014-09-23T21:36:35.819807 #2842]  INFO -- : 0:  thor (0.19.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thor-0.19.1.gemspec
+I, [2014-09-23T21:36:35.821071 #2842]  INFO -- : 0:  railties (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/railties-3.2.17.gemspec
+I, [2014-09-23T21:36:35.822299 #2842]  INFO -- : 0:  coffee-rails (3.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-rails-3.2.2.gemspec
+I, [2014-09-23T21:36:35.823520 #2842]  INFO -- : 0:  cookiejar (0.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cookiejar-0.3.2.gemspec
+I, [2014-09-23T21:36:35.824570 #2842]  INFO -- : 0:  daemons (1.1.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/daemons-1.1.9.gemspec
+I, [2014-09-23T21:36:35.825960 #2842]  INFO -- : 0:  orm_adapter (0.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/orm_adapter-0.5.0.gemspec
+I, [2014-09-23T21:36:35.827127 #2842]  INFO -- : 0:  thread_safe (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thread_safe-0.3.4.gemspec
+I, [2014-09-23T21:36:35.828310 #2842]  INFO -- : 0:  warden (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/warden-1.2.3.gemspec
+I, [2014-09-23T21:36:35.829531 #2842]  INFO -- : 0:  devise (3.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/devise-3.3.0.gemspec
+I, [2014-09-23T21:36:35.830618 #2842]  INFO -- : 0:  eventmachine (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/eventmachine-1.0.3.gemspec
+I, [2014-09-23T21:36:35.831677 #2842]  INFO -- : 0:  em-socksify (0.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-socksify-0.3.0.gemspec
+I, [2014-09-23T21:36:35.832751 #2842]  INFO -- : 0:  http_parser.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/http_parser.rb-0.6.0.gemspec
+I, [2014-09-23T21:36:35.833818 #2842]  INFO -- : 0:  em-http-request (1.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-http-request-1.1.2.gemspec
+I, [2014-09-23T21:36:35.834843 #2842]  INFO -- : 0:  websocket-driver (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/websocket-driver-0.3.4.gemspec
+I, [2014-09-23T21:36:35.835903 #2842]  INFO -- : 0:  faye-websocket (0.7.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-websocket-0.7.4.gemspec
+I, [2014-09-23T21:36:35.837026 #2842]  INFO -- : 0:  faye (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-1.0.3.gemspec
+I, [2014-09-23T21:36:35.838168 #2842]  INFO -- : 0:  jquery-rails (3.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/jquery-rails-3.1.2.gemspec
+I, [2014-09-23T21:36:35.839231 #2842]  INFO -- : 0:  paperclip (4.2.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/paperclip-4.2.0.gemspec
+I, [2014-09-23T21:36:35.840265 #2842]  INFO -- : 0:  posix-spawn (0.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/posix-spawn-0.3.9.gemspec
+I, [2014-09-23T21:36:35.841390 #2842]  INFO -- : 0:  private_pub (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/private_pub-1.0.3.gemspec
+I, [2014-09-23T21:36:51.515579 #2842]  INFO -- : 0:  yajl-ruby (1.1.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/yajl-ruby-1.1.0.gemspec
+I, [2014-09-23T21:37:09.294111 #2842]  INFO -- : 0:  pygments.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/pygments.rb-0.6.0.gemspec
+I, [2014-09-23T21:37:09.295223 #2842]  INFO -- : 0:  rails (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rails-3.2.17.gemspec
+I, [2014-09-23T21:37:09.296095 #2842]  INFO -- : 0:  sass (3.4.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sass-3.4.4.gemspec
+I, [2014-09-23T21:37:09.296992 #2842]  INFO -- : 0:  sass-rails (3.2.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sass-rails-3.2.6.gemspec
+I, [2014-09-23T21:37:09.297821 #2842]  INFO -- : 0:  sqlite3 (1.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sqlite3-1.3.9.gemspec
+I, [2014-09-23T21:37:09.298630 #2842]  INFO -- : 0:  strong_parameters (0.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/strong_parameters-0.2.3.gemspec
+I, [2014-09-23T21:37:09.299427 #2842]  INFO -- : 0:  thin (1.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thin-1.6.2.gemspec
+I, [2014-09-23T21:37:09.300224 #2842]  INFO -- : 0:  uglifier (2.5.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/uglifier-2.5.3.gemspec
+I, [2014-09-23T21:37:09.301069 #2842]  INFO -- : 0:  vestal_versions (2.0.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/vestal_versions-2.0.0.gemspec
+I, [2014-09-23T21:37:09.301879 #2842]  INFO -- : 0:  will_paginate (3.0.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/will_paginate-3.0.7.gemspec
+I, [2014-09-23T21:37:09.302677 #2842]  INFO -- : 0:  zurb-foundation (4.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/zurb-foundation-4.3.2.gemspec
+I, [2014-09-23T21:39:52.861013 #2985]  INFO -- : 0:  rake (10.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rake-10.3.2.gemspec
+I, [2014-09-23T21:39:52.863066 #2985]  INFO -- : 0:  i18n (0.6.11) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/i18n-0.6.11.gemspec
+I, [2014-09-23T21:39:52.863940 #2985]  INFO -- : 0:  multi_json (1.10.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.10.1.gemspec
+I, [2014-09-23T21:39:52.865759 #2985]  INFO -- : 0:  activesupport (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activesupport-3.2.17.gemspec
+I, [2014-09-23T21:39:52.866709 #2985]  INFO -- : 0:  builder (3.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/builder-3.0.4.gemspec
+I, [2014-09-23T21:39:52.867540 #2985]  INFO -- : 0:  activemodel (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activemodel-3.2.17.gemspec
+I, [2014-09-23T21:39:52.868314 #2985]  INFO -- : 0:  erubis (2.7.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/erubis-2.7.0.gemspec
+I, [2014-09-23T21:39:52.869647 #2985]  INFO -- : 0:  journey (1.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/journey-1.0.4.gemspec
+I, [2014-09-23T21:39:52.870887 #2985]  INFO -- : 0:  rack (1.4.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-1.4.5.gemspec
+I, [2014-09-23T21:39:52.872099 #2985]  INFO -- : 0:  rack-cache (1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-cache-1.2.gemspec
+I, [2014-09-23T21:39:52.873434 #2985]  INFO -- : 0:  rack-test (0.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-09-23T21:39:52.878071 #2985]  INFO -- : 0:  hike (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/hike-1.2.3.gemspec
+I, [2014-09-23T21:39:52.879109 #2985]  INFO -- : 0:  tilt (1.4.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-09-23T21:39:52.879912 #2985]  INFO -- : 0:  sprockets (2.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sprockets-2.2.2.gemspec
+I, [2014-09-23T21:39:52.880687 #2985]  INFO -- : 0:  actionpack (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionpack-3.2.17.gemspec
+I, [2014-09-23T21:39:52.881716 #2985]  INFO -- : 0:  mime-types (1.25.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-09-23T21:39:52.883787 #2985]  INFO -- : 0:  polyglot (0.3.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/polyglot-0.3.5.gemspec
+I, [2014-09-23T21:39:52.886473 #2985]  INFO -- : 0:  treetop (1.4.15) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/treetop-1.4.15.gemspec
+I, [2014-09-23T21:39:52.888037 #2985]  INFO -- : 0:  mail (2.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mail-2.5.4.gemspec
+I, [2014-09-23T21:39:52.889543 #2985]  INFO -- : 0:  actionmailer (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionmailer-3.2.17.gemspec
+I, [2014-09-23T21:39:52.890431 #2985]  INFO -- : 0:  arel (3.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/arel-3.0.3.gemspec
+I, [2014-09-23T21:39:52.891303 #2985]  INFO -- : 0:  tzinfo (0.3.41) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tzinfo-0.3.41.gemspec
+I, [2014-09-23T21:39:52.892487 #2985]  INFO -- : 0:  activerecord (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activerecord-3.2.17.gemspec
+I, [2014-09-23T21:39:52.893405 #2985]  INFO -- : 0:  activeresource (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activeresource-3.2.17.gemspec
+I, [2014-09-23T21:39:52.894255 #2985]  INFO -- : 0:  addressable (2.3.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/addressable-2.3.6.gemspec
+I, [2014-09-23T21:39:52.895383 #2985]  INFO -- : 0:  posix-spawn (0.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/posix-spawn-0.3.9.gemspec
+I, [2014-09-23T21:39:57.362457 #2985]  INFO -- : 0:  albino (1.3.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/albino-1.3.3.gemspec
+I, [2014-09-23T21:39:57.363699 #2985]  INFO -- : 0:  bcrypt (3.1.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/bcrypt-3.1.7.gemspec
+I, [2014-09-23T21:39:57.365234 #2985]  INFO -- : 0:  bundler (1.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.0.gemspec
+I, [2014-09-23T21:39:57.366985 #2985]  INFO -- : 0:  climate_control (0.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/climate_control-0.0.3.gemspec
+I, [2014-09-23T21:39:57.368798 #2985]  INFO -- : 0:  cocaine (0.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cocaine-0.5.4.gemspec
+I, [2014-09-23T21:39:57.370261 #2985]  INFO -- : 0:  coffee-script-source (1.8.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-source-1.8.0.gemspec
+I, [2014-09-23T21:39:57.371368 #2985]  INFO -- : 0:  execjs (2.2.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/execjs-2.2.1.gemspec
+I, [2014-09-23T21:39:57.373637 #2985]  INFO -- : 0:  coffee-script (2.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-2.3.0.gemspec
+I, [2014-09-23T21:39:57.374871 #2985]  INFO -- : 0:  rack-ssl (1.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-ssl-1.3.4.gemspec
+I, [2014-09-23T21:40:01.371244 #2985]  INFO -- : 0:  json (1.8.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/json-1.8.1.gemspec
+I, [2014-09-23T21:40:01.372364 #2985]  INFO -- : 0:  rdoc (3.12.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rdoc-3.12.2.gemspec
+I, [2014-09-23T21:40:01.373223 #2985]  INFO -- : 0:  thor (0.19.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thor-0.19.1.gemspec
+I, [2014-09-23T21:40:01.374078 #2985]  INFO -- : 0:  railties (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/railties-3.2.17.gemspec
+I, [2014-09-23T21:40:01.375092 #2985]  INFO -- : 0:  coffee-rails (3.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-rails-3.2.2.gemspec
+I, [2014-09-23T21:40:01.376065 #2985]  INFO -- : 0:  cookiejar (0.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cookiejar-0.3.2.gemspec
+I, [2014-09-23T21:40:01.377005 #2985]  INFO -- : 0:  daemons (1.1.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/daemons-1.1.9.gemspec
+I, [2014-09-23T21:40:01.377905 #2985]  INFO -- : 0:  orm_adapter (0.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/orm_adapter-0.5.0.gemspec
+I, [2014-09-23T21:40:01.378952 #2985]  INFO -- : 0:  thread_safe (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thread_safe-0.3.4.gemspec
+I, [2014-09-23T21:40:01.379889 #2985]  INFO -- : 0:  warden (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/warden-1.2.3.gemspec
+I, [2014-09-23T21:40:01.380779 #2985]  INFO -- : 0:  devise (3.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/devise-3.3.0.gemspec
+I, [2014-09-23T21:40:01.381661 #2985]  INFO -- : 0:  eventmachine (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/eventmachine-1.0.3.gemspec
+I, [2014-09-23T21:40:01.382553 #2985]  INFO -- : 0:  em-socksify (0.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-socksify-0.3.0.gemspec
+I, [2014-09-23T21:40:01.384955 #2985]  INFO -- : 0:  http_parser.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/http_parser.rb-0.6.0.gemspec
+I, [2014-09-23T21:40:01.387364 #2985]  INFO -- : 0:  em-http-request (1.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-http-request-1.1.2.gemspec
+I, [2014-09-23T21:40:01.388339 #2985]  INFO -- : 0:  websocket-driver (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/websocket-driver-0.3.4.gemspec
+I, [2014-09-23T21:40:01.393054 #2985]  INFO -- : 0:  faye-websocket (0.7.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-websocket-0.7.4.gemspec
+I, [2014-09-23T21:40:01.394801 #2985]  INFO -- : 0:  faye (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-1.0.3.gemspec
+I, [2014-09-23T21:40:01.395779 #2985]  INFO -- : 0:  jquery-rails (3.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/jquery-rails-3.1.2.gemspec
+I, [2014-09-23T21:40:01.396692 #2985]  INFO -- : 0:  mini_portile (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mini_portile-0.6.0.gemspec
+E, [2014-09-23T21:40:06.436961 #2985] ERROR -- : Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    /home/ethi/.rvm/rubies/ruby-2.1.0/bin/ruby extconf.rb --use-system-libraries
+Building nokogiri using system libraries.
+libxml2 version 2.6.21 or later is required!
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/ethi/.rvm/rubies/ruby-2.1.0/bin/ruby
+	--help
+	--clean
+	--use-system-libraries
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-exslt-dir
+	--without-exslt-dir
+	--with-exslt-include
+	--without-exslt-include=${exslt-dir}/include
+	--with-exslt-lib
+	--without-exslt-lib=${exslt-dir}/lib
+	--with-libexslt-config
+	--without-libexslt-config
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/ethi/.rvm/gems/ruby-2.1.0/gems/nokogiri-1.6.3.1 for inspection.
+Results logged to /home/ethi/.rvm/gems/ruby-2.1.0/extensions/x86-linux/2.1.0/nokogiri-1.6.3.1/gem_make.out
+
+/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:89:in `run'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/ext_conf_builder.rb:37:in `block in build'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/tempfile.rb:324:in `open'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/ext_conf_builder.rb:17:in `build'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:161:in `block (2 levels) in build_extension'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:160:in `chdir'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:160:in `block in build_extension'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:159:in `synchronize'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:159:in `build_extension'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:198:in `block in build_extensions'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:195:in `each'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:195:in `build_extensions'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/installer.rb:677:in `build_extensions'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/installer.rb:232:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/source/rubygems.rb:94:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `each'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `each'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:294:in `install_sequentially'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:97:in `run'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:15:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/cli.rb:257:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/cli.rb:10:in `start'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/bin/bundle:22:in `block in <top (required)>'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/bin/bundle:22:in `<top (required)>'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/bin/bundle:23:in `load'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/bin/bundle:23:in `<main>'  \n/home/ethi/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'  \n/home/ethi/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-09-23T21:42:35.758865 #6922]  INFO -- : 0:  rake (10.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rake-10.3.2.gemspec
+I, [2014-09-23T21:42:35.760344 #6922]  INFO -- : 0:  i18n (0.6.11) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/i18n-0.6.11.gemspec
+I, [2014-09-23T21:42:35.761511 #6922]  INFO -- : 0:  multi_json (1.10.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.10.1.gemspec
+I, [2014-09-23T21:42:35.764595 #6922]  INFO -- : 0:  activesupport (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activesupport-3.2.17.gemspec
+I, [2014-09-23T21:42:35.766060 #6922]  INFO -- : 0:  builder (3.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/builder-3.0.4.gemspec
+I, [2014-09-23T21:42:35.767058 #6922]  INFO -- : 0:  activemodel (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activemodel-3.2.17.gemspec
+I, [2014-09-23T21:42:35.767982 #6922]  INFO -- : 0:  erubis (2.7.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/erubis-2.7.0.gemspec
+I, [2014-09-23T21:42:35.768981 #6922]  INFO -- : 0:  journey (1.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/journey-1.0.4.gemspec
+I, [2014-09-23T21:42:35.771361 #6922]  INFO -- : 0:  rack (1.4.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-1.4.5.gemspec
+I, [2014-09-23T21:42:35.772343 #6922]  INFO -- : 0:  rack-cache (1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-cache-1.2.gemspec
+I, [2014-09-23T21:42:35.773328 #6922]  INFO -- : 0:  rack-test (0.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-09-23T21:42:35.774349 #6922]  INFO -- : 0:  hike (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/hike-1.2.3.gemspec
+I, [2014-09-23T21:42:35.776807 #6922]  INFO -- : 0:  tilt (1.4.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-09-23T21:42:35.777797 #6922]  INFO -- : 0:  sprockets (2.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sprockets-2.2.2.gemspec
+I, [2014-09-23T21:42:35.780371 #6922]  INFO -- : 0:  actionpack (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionpack-3.2.17.gemspec
+I, [2014-09-23T21:42:35.782506 #6922]  INFO -- : 0:  mime-types (1.25.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-09-23T21:42:35.783535 #6922]  INFO -- : 0:  polyglot (0.3.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/polyglot-0.3.5.gemspec
+I, [2014-09-23T21:42:35.784464 #6922]  INFO -- : 0:  treetop (1.4.15) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/treetop-1.4.15.gemspec
+I, [2014-09-23T21:42:35.786087 #6922]  INFO -- : 0:  mail (2.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mail-2.5.4.gemspec
+I, [2014-09-23T21:42:35.789055 #6922]  INFO -- : 0:  actionmailer (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionmailer-3.2.17.gemspec
+I, [2014-09-23T21:42:35.790025 #6922]  INFO -- : 0:  arel (3.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/arel-3.0.3.gemspec
+I, [2014-09-23T21:42:35.794173 #6922]  INFO -- : 0:  tzinfo (0.3.41) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tzinfo-0.3.41.gemspec
+I, [2014-09-23T21:42:35.795273 #6922]  INFO -- : 0:  activerecord (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activerecord-3.2.17.gemspec
+I, [2014-09-23T21:42:35.798795 #6922]  INFO -- : 0:  activeresource (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activeresource-3.2.17.gemspec
+I, [2014-09-23T21:42:35.799926 #6922]  INFO -- : 0:  addressable (2.3.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/addressable-2.3.6.gemspec
+I, [2014-09-23T21:42:35.800932 #6922]  INFO -- : 0:  posix-spawn (0.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/posix-spawn-0.3.9.gemspec
+I, [2014-09-23T21:42:35.801874 #6922]  INFO -- : 0:  albino (1.3.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/albino-1.3.3.gemspec
+I, [2014-09-23T21:42:35.804175 #6922]  INFO -- : 0:  bcrypt (3.1.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/bcrypt-3.1.7.gemspec
+I, [2014-09-23T21:42:35.805165 #6922]  INFO -- : 0:  bundler (1.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.0.gemspec
+I, [2014-09-23T21:42:35.806113 #6922]  INFO -- : 0:  climate_control (0.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/climate_control-0.0.3.gemspec
+I, [2014-09-23T21:42:35.809393 #6922]  INFO -- : 0:  cocaine (0.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cocaine-0.5.4.gemspec
+I, [2014-09-23T21:42:35.811510 #6922]  INFO -- : 0:  coffee-script-source (1.8.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-source-1.8.0.gemspec
+I, [2014-09-23T21:42:35.812544 #6922]  INFO -- : 0:  execjs (2.2.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/execjs-2.2.1.gemspec
+I, [2014-09-23T21:42:35.813591 #6922]  INFO -- : 0:  coffee-script (2.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-2.3.0.gemspec
+I, [2014-09-23T21:42:35.816302 #6922]  INFO -- : 0:  rack-ssl (1.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-ssl-1.3.4.gemspec
+I, [2014-09-23T21:42:39.698280 #6922]  INFO -- : 0:  json (1.8.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/json-1.8.1.gemspec
+I, [2014-09-23T21:42:39.699598 #6922]  INFO -- : 0:  rdoc (3.12.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rdoc-3.12.2.gemspec
+I, [2014-09-23T21:42:39.700445 #6922]  INFO -- : 0:  thor (0.19.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thor-0.19.1.gemspec
+I, [2014-09-23T21:42:39.701402 #6922]  INFO -- : 0:  railties (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/railties-3.2.17.gemspec
+I, [2014-09-23T21:42:39.702238 #6922]  INFO -- : 0:  coffee-rails (3.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-rails-3.2.2.gemspec
+I, [2014-09-23T21:42:39.703103 #6922]  INFO -- : 0:  cookiejar (0.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cookiejar-0.3.2.gemspec
+I, [2014-09-23T21:42:39.703914 #6922]  INFO -- : 0:  daemons (1.1.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/daemons-1.1.9.gemspec
+I, [2014-09-23T21:42:39.704738 #6922]  INFO -- : 0:  orm_adapter (0.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/orm_adapter-0.5.0.gemspec
+I, [2014-09-23T21:42:39.706260 #6922]  INFO -- : 0:  thread_safe (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thread_safe-0.3.4.gemspec
+I, [2014-09-23T21:42:39.707141 #6922]  INFO -- : 0:  warden (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/warden-1.2.3.gemspec
+I, [2014-09-23T21:42:39.707999 #6922]  INFO -- : 0:  devise (3.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/devise-3.3.0.gemspec
+I, [2014-09-23T21:42:39.711965 #6922]  INFO -- : 0:  eventmachine (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/eventmachine-1.0.3.gemspec
+I, [2014-09-23T21:42:39.712969 #6922]  INFO -- : 0:  em-socksify (0.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-socksify-0.3.0.gemspec
+I, [2014-09-23T21:42:39.713852 #6922]  INFO -- : 0:  http_parser.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/http_parser.rb-0.6.0.gemspec
+I, [2014-09-23T21:42:39.715589 #6922]  INFO -- : 0:  em-http-request (1.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-http-request-1.1.2.gemspec
+I, [2014-09-23T21:42:39.718404 #6922]  INFO -- : 0:  websocket-driver (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/websocket-driver-0.3.4.gemspec
+I, [2014-09-23T21:42:39.719381 #6922]  INFO -- : 0:  faye-websocket (0.7.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-websocket-0.7.4.gemspec
+I, [2014-09-23T21:42:39.720341 #6922]  INFO -- : 0:  faye (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-1.0.3.gemspec
+I, [2014-09-23T21:42:39.721914 #6922]  INFO -- : 0:  jquery-rails (3.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/jquery-rails-3.1.2.gemspec
+I, [2014-09-23T21:42:39.725448 #6922]  INFO -- : 0:  mini_portile (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mini_portile-0.6.0.gemspec
+E, [2014-09-23T21:42:43.911143 #6922] ERROR -- : Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+    /home/ethi/.rvm/rubies/ruby-2.1.0/bin/ruby extconf.rb --use-system-libraries
+Building nokogiri using system libraries.
+libxml2 version 2.6.21 or later is required!
+*** extconf.rb failed ***
+Could not create Makefile due to some reason, probably lack of necessary
+libraries and/or headers.  Check the mkmf.log file for more details.  You may
+need configuration options.
+
+Provided configuration options:
+	--with-opt-dir
+	--without-opt-dir
+	--with-opt-include
+	--without-opt-include=${opt-dir}/include
+	--with-opt-lib
+	--without-opt-lib=${opt-dir}/lib
+	--with-make-prog
+	--without-make-prog
+	--srcdir=.
+	--curdir
+	--ruby=/home/ethi/.rvm/rubies/ruby-2.1.0/bin/ruby
+	--help
+	--clean
+	--use-system-libraries
+	--with-zlib-dir
+	--without-zlib-dir
+	--with-zlib-include
+	--without-zlib-include=${zlib-dir}/include
+	--with-zlib-lib
+	--without-zlib-lib=${zlib-dir}/lib
+	--with-xml2-dir
+	--without-xml2-dir
+	--with-xml2-include
+	--without-xml2-include=${xml2-dir}/include
+	--with-xml2-lib
+	--without-xml2-lib=${xml2-dir}/lib
+	--with-libxml-2.0-config
+	--without-libxml-2.0-config
+	--with-pkg-config
+	--without-pkg-config
+	--with-xslt-dir
+	--without-xslt-dir
+	--with-xslt-include
+	--without-xslt-include=${xslt-dir}/include
+	--with-xslt-lib
+	--without-xslt-lib=${xslt-dir}/lib
+	--with-libxslt-config
+	--without-libxslt-config
+	--with-exslt-dir
+	--without-exslt-dir
+	--with-exslt-include
+	--without-exslt-include=${exslt-dir}/include
+	--with-exslt-lib
+	--without-exslt-lib=${exslt-dir}/lib
+	--with-libexslt-config
+	--without-libexslt-config
+
+extconf failed, exit code 1
+
+Gem files will remain installed in /home/ethi/.rvm/gems/ruby-2.1.0/gems/nokogiri-1.6.3.1 for inspection.
+Results logged to /home/ethi/.rvm/gems/ruby-2.1.0/extensions/x86-linux/2.1.0/nokogiri-1.6.3.1/gem_make.out
+
+/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:89:in `run'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/ext_conf_builder.rb:37:in `block in build'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/tempfile.rb:324:in `open'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/ext_conf_builder.rb:17:in `build'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:161:in `block (2 levels) in build_extension'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:160:in `chdir'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:160:in `block in build_extension'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:159:in `synchronize'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:159:in `build_extension'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:198:in `block in build_extensions'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:195:in `each'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/ext/builder.rb:195:in `build_extensions'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/installer.rb:677:in `build_extensions'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/site_ruby/2.1.0/rubygems/installer.rb:232:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/source/rubygems.rb:101:in `block in install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/rubygems_integration.rb:118:in `preserve_paths'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/source/rubygems.rb:94:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:111:in `block in install_gem_from_spec'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/rubygems_integration.rb:150:in `with_build_args'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:110:in `install_gem_from_spec'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:295:in `block in install_sequentially'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `each'  \n/home/ethi/.rvm/rubies/ruby-2.1.0/lib/ruby/2.1.0/forwardable.rb:183:in `each'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:294:in `install_sequentially'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:97:in `run'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/installer.rb:15:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/cli.rb:257:in `install'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor/command.rb:27:in `run'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor/invocation.rb:120:in `invoke_command'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor.rb:363:in `dispatch'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/vendor/thor/base.rb:438:in `start'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/cli.rb:10:in `start'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/bin/bundle:22:in `block in <top (required)>'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/lib/bundler/friendly_errors.rb:5:in `with_friendly_errors'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/gems/bundler-1.5.0/bin/bundle:22:in `<top (required)>'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/bin/bundle:23:in `load'  \n/home/ethi/.rvm/gems/ruby-2.1.0@global/bin/bundle:23:in `<main>'  \n/home/ethi/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `eval'  \n/home/ethi/.rvm/gems/ruby-2.1.0/bin/ruby_executable_hooks:15:in `<main>'
+I, [2014-09-23T21:50:01.595127 #11938]  INFO -- : 0:  rake (10.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rake-10.3.2.gemspec
+I, [2014-09-23T21:50:01.596641 #11938]  INFO -- : 0:  i18n (0.6.11) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/i18n-0.6.11.gemspec
+I, [2014-09-23T21:50:01.597711 #11938]  INFO -- : 0:  multi_json (1.10.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/multi_json-1.10.1.gemspec
+I, [2014-09-23T21:50:01.598701 #11938]  INFO -- : 0:  activesupport (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activesupport-3.2.17.gemspec
+I, [2014-09-23T21:50:01.600020 #11938]  INFO -- : 0:  builder (3.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/builder-3.0.4.gemspec
+I, [2014-09-23T21:50:01.602004 #11938]  INFO -- : 0:  activemodel (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activemodel-3.2.17.gemspec
+I, [2014-09-23T21:50:01.603009 #11938]  INFO -- : 0:  erubis (2.7.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/erubis-2.7.0.gemspec
+I, [2014-09-23T21:50:01.603927 #11938]  INFO -- : 0:  journey (1.0.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/journey-1.0.4.gemspec
+I, [2014-09-23T21:50:01.604928 #11938]  INFO -- : 0:  rack (1.4.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-1.4.5.gemspec
+I, [2014-09-23T21:50:01.607647 #11938]  INFO -- : 0:  rack-cache (1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-cache-1.2.gemspec
+I, [2014-09-23T21:50:01.609471 #11938]  INFO -- : 0:  rack-test (0.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-test-0.6.2.gemspec
+I, [2014-09-23T21:50:01.610537 #11938]  INFO -- : 0:  hike (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/hike-1.2.3.gemspec
+I, [2014-09-23T21:50:01.611461 #11938]  INFO -- : 0:  tilt (1.4.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tilt-1.4.1.gemspec
+I, [2014-09-23T21:50:01.612504 #11938]  INFO -- : 0:  sprockets (2.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sprockets-2.2.2.gemspec
+I, [2014-09-23T21:50:01.613641 #11938]  INFO -- : 0:  actionpack (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionpack-3.2.17.gemspec
+I, [2014-09-23T21:50:01.614715 #11938]  INFO -- : 0:  mime-types (1.25.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mime-types-1.25.1.gemspec
+I, [2014-09-23T21:50:01.615727 #11938]  INFO -- : 0:  polyglot (0.3.5) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/polyglot-0.3.5.gemspec
+I, [2014-09-23T21:50:01.616782 #11938]  INFO -- : 0:  treetop (1.4.15) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/treetop-1.4.15.gemspec
+I, [2014-09-23T21:50:01.617858 #11938]  INFO -- : 0:  mail (2.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mail-2.5.4.gemspec
+I, [2014-09-23T21:50:01.618834 #11938]  INFO -- : 0:  actionmailer (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/actionmailer-3.2.17.gemspec
+I, [2014-09-23T21:50:01.621064 #11938]  INFO -- : 0:  arel (3.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/arel-3.0.3.gemspec
+I, [2014-09-23T21:50:01.622019 #11938]  INFO -- : 0:  tzinfo (0.3.41) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/tzinfo-0.3.41.gemspec
+I, [2014-09-23T21:50:01.622987 #11938]  INFO -- : 0:  activerecord (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activerecord-3.2.17.gemspec
+I, [2014-09-23T21:50:01.623920 #11938]  INFO -- : 0:  activeresource (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/activeresource-3.2.17.gemspec
+I, [2014-09-23T21:50:01.624918 #11938]  INFO -- : 0:  addressable (2.3.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/addressable-2.3.6.gemspec
+I, [2014-09-23T21:50:01.627999 #11938]  INFO -- : 0:  posix-spawn (0.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/posix-spawn-0.3.9.gemspec
+I, [2014-09-23T21:50:01.629567 #11938]  INFO -- : 0:  albino (1.3.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/albino-1.3.3.gemspec
+I, [2014-09-23T21:50:01.630552 #11938]  INFO -- : 0:  bcrypt (3.1.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/bcrypt-3.1.7.gemspec
+I, [2014-09-23T21:50:01.631460 #11938]  INFO -- : 0:  bundler (1.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0@global/specifications/bundler-1.5.0.gemspec
+I, [2014-09-23T21:50:01.632419 #11938]  INFO -- : 0:  climate_control (0.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/climate_control-0.0.3.gemspec
+I, [2014-09-23T21:50:01.633368 #11938]  INFO -- : 0:  cocaine (0.5.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cocaine-0.5.4.gemspec
+I, [2014-09-23T21:50:01.634350 #11938]  INFO -- : 0:  coffee-script-source (1.8.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-source-1.8.0.gemspec
+I, [2014-09-23T21:50:01.636899 #11938]  INFO -- : 0:  execjs (2.2.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/execjs-2.2.1.gemspec
+I, [2014-09-23T21:50:01.639119 #11938]  INFO -- : 0:  coffee-script (2.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-script-2.3.0.gemspec
+I, [2014-09-23T21:50:01.640035 #11938]  INFO -- : 0:  rack-ssl (1.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rack-ssl-1.3.4.gemspec
+I, [2014-09-23T21:50:05.418542 #11938]  INFO -- : 0:  json (1.8.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/json-1.8.1.gemspec
+I, [2014-09-23T21:50:05.420035 #11938]  INFO -- : 0:  rdoc (3.12.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rdoc-3.12.2.gemspec
+I, [2014-09-23T21:50:05.421121 #11938]  INFO -- : 0:  thor (0.19.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thor-0.19.1.gemspec
+I, [2014-09-23T21:50:05.422103 #11938]  INFO -- : 0:  railties (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/railties-3.2.17.gemspec
+I, [2014-09-23T21:50:05.423103 #11938]  INFO -- : 0:  coffee-rails (3.2.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/coffee-rails-3.2.2.gemspec
+I, [2014-09-23T21:50:05.424048 #11938]  INFO -- : 0:  cookiejar (0.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/cookiejar-0.3.2.gemspec
+I, [2014-09-23T21:50:05.425013 #11938]  INFO -- : 0:  daemons (1.1.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/daemons-1.1.9.gemspec
+I, [2014-09-23T21:50:05.426017 #11938]  INFO -- : 0:  orm_adapter (0.5.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/orm_adapter-0.5.0.gemspec
+I, [2014-09-23T21:50:05.426949 #11938]  INFO -- : 0:  thread_safe (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thread_safe-0.3.4.gemspec
+I, [2014-09-23T21:50:05.427932 #11938]  INFO -- : 0:  warden (1.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/warden-1.2.3.gemspec
+I, [2014-09-23T21:50:05.428962 #11938]  INFO -- : 0:  devise (3.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/devise-3.3.0.gemspec
+I, [2014-09-23T21:50:05.430230 #11938]  INFO -- : 0:  eventmachine (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/eventmachine-1.0.3.gemspec
+I, [2014-09-23T21:50:05.431299 #11938]  INFO -- : 0:  em-socksify (0.3.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-socksify-0.3.0.gemspec
+I, [2014-09-23T21:50:05.432273 #11938]  INFO -- : 0:  http_parser.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/http_parser.rb-0.6.0.gemspec
+I, [2014-09-23T21:50:05.433331 #11938]  INFO -- : 0:  em-http-request (1.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/em-http-request-1.1.2.gemspec
+I, [2014-09-23T21:50:05.434300 #11938]  INFO -- : 0:  websocket-driver (0.3.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/websocket-driver-0.3.4.gemspec
+I, [2014-09-23T21:50:05.435293 #11938]  INFO -- : 0:  faye-websocket (0.7.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-websocket-0.7.4.gemspec
+I, [2014-09-23T21:50:05.436220 #11938]  INFO -- : 0:  faye (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/faye-1.0.3.gemspec
+I, [2014-09-23T21:50:05.437194 #11938]  INFO -- : 0:  jquery-rails (3.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/jquery-rails-3.1.2.gemspec
+I, [2014-09-23T21:50:05.438172 #11938]  INFO -- : 0:  mini_portile (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/mini_portile-0.6.0.gemspec
+I, [2014-09-23T21:50:32.827003 #11938]  INFO -- : 0:  nokogiri (1.6.3.1) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/nokogiri-1.6.3.1.gemspec
+I, [2014-09-23T21:50:32.828261 #11938]  INFO -- : 0:  paperclip (4.2.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/paperclip-4.2.0.gemspec
+I, [2014-09-23T21:50:32.829251 #11938]  INFO -- : 0:  private_pub (1.0.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/private_pub-1.0.3.gemspec
+I, [2014-09-23T21:50:32.830155 #11938]  INFO -- : 0:  yajl-ruby (1.1.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/yajl-ruby-1.1.0.gemspec
+I, [2014-09-23T21:50:32.831058 #11938]  INFO -- : 0:  pygments.rb (0.6.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/pygments.rb-0.6.0.gemspec
+I, [2014-09-23T21:50:32.831969 #11938]  INFO -- : 0:  rails (3.2.17) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/rails-3.2.17.gemspec
+I, [2014-09-23T21:50:50.860105 #11938]  INFO -- : 0:  redcarpet (3.1.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/redcarpet-3.1.2.gemspec
+I, [2014-09-23T21:50:50.861412 #11938]  INFO -- : 0:  sass (3.4.4) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sass-3.4.4.gemspec
+I, [2014-09-23T21:50:50.862381 #11938]  INFO -- : 0:  sass-rails (3.2.6) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sass-rails-3.2.6.gemspec
+I, [2014-09-23T21:50:50.863286 #11938]  INFO -- : 0:  sqlite3 (1.3.9) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/sqlite3-1.3.9.gemspec
+I, [2014-09-23T21:50:50.864152 #11938]  INFO -- : 0:  strong_parameters (0.2.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/strong_parameters-0.2.3.gemspec
+I, [2014-09-23T21:50:50.865061 #11938]  INFO -- : 0:  thin (1.6.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/thin-1.6.2.gemspec
+I, [2014-09-23T21:50:50.865948 #11938]  INFO -- : 0:  uglifier (2.5.3) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/uglifier-2.5.3.gemspec
+I, [2014-09-23T21:50:50.866827 #11938]  INFO -- : 0:  vestal_versions (2.0.0) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/vestal_versions-2.0.0.gemspec
+I, [2014-09-23T21:50:50.867692 #11938]  INFO -- : 0:  will_paginate (3.0.7) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/will_paginate-3.0.7.gemspec
+I, [2014-09-23T21:50:50.868561 #11938]  INFO -- : 0:  zurb-foundation (4.3.2) from /home/ethi/.rvm/gems/ruby-2.1.0/specifications/zurb-foundation-4.3.2.gemspec
