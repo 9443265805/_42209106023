@@ -155,6 +155,9 @@ GEM
     uglifier (2.5.3)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
+    vestal_versions (2.0.0)
+      activerecord (>= 3, < 5)
+      activesupport (>= 3, < 5)
     warden (1.2.3)
       rack (>= 1.0)
     websocket-driver (0.3.4)
@@ -180,5 +183,6 @@ DEPENDENCIES
   therubyracer
   thin
   uglifier (>= 1.0.3)
+  vestal_versions (~> 2.0.0)
   will_paginate (~> 3.0.0)
   zurb-foundation

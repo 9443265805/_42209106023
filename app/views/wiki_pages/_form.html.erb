@@ -1,0 +1,12 @@
+<%= form_for @page do |f| %>
+ 
+  <p>
+    <%= f.label :title, "Title (use CamelCase)" %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :content %><br />
+    <%= f.text_area :content %>
+  </p>
+  <p><%= f.submit "Submit" %></p>
+<% end %>
