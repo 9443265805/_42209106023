@@ -5,7 +5,7 @@
 <%= link_to "New Quiz", new_quiz_path , class: "small button radius right " %> 
 </div>
 </div>
-<table class="responsive" > 
+<table class="scroll-table pagination-table" > 
 <tr>
 <th>Quiz Name</th>
 <th>Category</th>
@@ -36,14 +36,13 @@
 		<td><%= link_to 'Show', f  , class: "small button radius"%></td>
 		<% if current_user.role=="Admin" %>
 		<td><%= link_to 'Edit' ,edit_quiz_path(f) , class: "small button radius"%></td>
-		<td><%= link_to 'Delete', f , method: :Delete ,date: {confrim:"Are you sure?" } , class: "small button radius" %></td>
+		<td><%= link_to 'Delete', f , :params=>params[:page] ,method: :Delete ,data: {confirm:"Are you sure?" } , class: "small button radius" %></td>
 		<% end %>
 	</tr>
 	<% end %>
 </table>
 
-
-<%if  @quizzes_count > 10 %>
+<%if  @quizzes_count > 5 %>
 <div class="apple_pagination">
 <%= will_paginate @quizzes   %>
 </div>

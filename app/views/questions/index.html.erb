@@ -1,6 +1,6 @@
 <%= link_to "New Question", new_question_path , class: "small button radius"%> 
 <h1>Listing Questions</h1>
-<table>
+<table class="scroll-table pagination-table" >
 <tr>
 <th>Category</th>
 <th>Question</th>
@@ -25,7 +25,7 @@
 </tr>
 <% end %>
 </table>
-<% if  @questions_count > 10 %>
+<% if  @questions_count > 5 %>
 <div class="apple_pagination">
 <%= will_paginate @questions  %>
 </div>

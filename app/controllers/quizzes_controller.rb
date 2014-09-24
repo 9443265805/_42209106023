@@ -5,7 +5,7 @@ class QuizzesController < ApplicationController
 	def index 
 		@quizzes =Quiz.all
 		@quizzes_count = @quizzes.count
-		@quizzes=@quizzes.paginate(:page => params[:page], :per_page => 10)		
+		@quizzes=@quizzes.paginate(:page => params[:page], :per_page => 5)		
 	
 	end 
 
@@ -45,6 +45,7 @@ class QuizzesController < ApplicationController
 	def destroy
 		@quiz=Quiz.find(params[:id])
 		@quiz.destroy
+		puts params[:page_no]
 		redirect_to quizzes_path
 	end
 

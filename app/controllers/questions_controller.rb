@@ -5,7 +5,7 @@ class QuestionsController < ApplicationController
 	def index 
 		@questions=Question.all
 		@questions_count=@questions.count
-		@questions=@questions.paginate(:page => params[:page], :per_page => 10) 
+		@questions=@questions.paginate(:page => params[:page], :per_page => 5) 
 	end 
 
 	def new
