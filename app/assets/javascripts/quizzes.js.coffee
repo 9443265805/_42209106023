@@ -6,6 +6,13 @@ $(document).ready ->
     changeMonth: true
     minDate: 0
     changeYear: true
+    altField: "#quiz_date"
+    altFormat: "yy-mm-dd"
 
+  $("#starttimepicker").timepicker
+  	altField: "#quiz_starttime"
+  
+  $("#endtimepicker").timepicker
+  	altField: "#quiz_endtime"
+  
   return
-

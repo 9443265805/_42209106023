@@ -26,7 +26,7 @@
 		<td><%= f.category %></td>
 		<td><%= f.starttime.strftime('%H:%M') %></td>
 		<td><%= f.endtime.strftime('%H:%M') %></td>
-		<td><%= f.date.strftime("%d/%m/%Y") %></td>
+		<td><%= f.date %></td>
 		<% if current_user.role=="Admin" %>
 		<td><%= link_to 'Manage Questions' , assignquestions_admin_index_path(quiz_id:f.id)  , class: "small button radius" %></td>
 		<% end %>

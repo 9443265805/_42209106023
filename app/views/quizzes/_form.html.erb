@@ -21,21 +21,25 @@
   <div class="small-3 columns">
 <%= f.label :starttime, class: "right inline" %></div>
 <div class="small-9 columns  " >
-<%= f.time_select :starttime ,{minute_step: 15} %></div>
+<%= f.hidden_field :starttime %>
+<%= text_field_tag   "starttimepicker" %></div>
+
 </div>
 
 <div class="row collapse">
   <div class="small-3 columns">
 <%= f.label :endtime,  class: "right inline" %></div>
 <div class="small-9 columns ">
-<%= f.time_select :endtime ,{minute_step: 15}  %></div>
+<%= f.hidden_field :endtime %>
+<%= text_field_tag   "endtimepicker" %></div>
 </div>
 
 <div class="row collapse">
   <div class="small-3 columns">
 <%= f.label :date,  class: "right inline"  %></div>
 <div class="small-9 columns "  >
-<%= f.text_field :date , id: "datepicker"%></div>
+<%= f.hidden_field :date %>
+<%= text_field_tag   "datepicker" %></div>
 </div>
 
 <div class="row collapse">
