@@ -14,7 +14,9 @@
   <div class="small-3 columns">
 <%= f.label :quizname, class: "right inline" %></div>
 <div class="small-9 columns">
-<%= f.text_field :quizname %></div>
+<%= f.text_field :quizname , :required => true  %>
+<%= content_tag(:small, "This field is required", class: "error") %>
+</div>
 </div>
 
 <div class="row collapse">
