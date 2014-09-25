@@ -8,10 +8,11 @@ class Quiz < ActiveRecord::Base
 	
     
     def valid_starttime
-    	
+    	unless date > Date.today
     	if starttime.hour < Time.now.hour # + 2
 		self.errors.add :base, ("Minimun Start time hour  is two hour after the current hour ")
 		end
+	end
 	
 	end
 

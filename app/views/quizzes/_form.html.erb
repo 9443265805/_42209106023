@@ -1,4 +1,4 @@
-<%= form_for(@quiz ,  html: { class: :custom }) do |f| %>
+<%= form_for(@quiz ,  html: { class: :custom  , data: {abide: ''} } ) do |f| %>
 
 <% if @quiz.errors.any? %>
 <div id="Error-Explanation" >  
@@ -21,8 +21,9 @@
   <div class="small-3 columns">
 <%= f.label :starttime, class: "right inline" %></div>
 <div class="small-9 columns  " >
-<%= f.hidden_field :starttime %>
-<%= text_field_tag   "starttimepicker" %></div>
+<%= f.hidden_field :starttime   %>
+<%= text_field_tag   "starttimepicker" , nil, :required => true %>
+<%= content_tag(:small, "This field is required", class: "error") %></div>
 
 </div>
 
@@ -31,7 +32,8 @@
 <%= f.label :endtime,  class: "right inline" %></div>
 <div class="small-9 columns ">
 <%= f.hidden_field :endtime %>
-<%= text_field_tag   "endtimepicker" %></div>
+<%= text_field_tag   "endtimepicker" , nil, :required => true %>
+<%= content_tag(:small, "This field is required", class: "error") %></div>
 </div>
 
 <div class="row collapse">
@@ -39,7 +41,8 @@
 <%= f.label :date,  class: "right inline"  %></div>
 <div class="small-9 columns "  >
 <%= f.hidden_field :date %>
-<%= text_field_tag   "datepicker" %></div>
+<%= text_field_tag   "datepicker" , nil, :required => true %>
+<%= content_tag(:small, "This field is required", class: "error") %></div>
 </div>
 
 <div class="row collapse">
