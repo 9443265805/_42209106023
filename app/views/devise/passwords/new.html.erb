@@ -1,14 +1,14 @@
 <h2>Forgot your password?</h2>
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post ,class: :custom , data: {abide: ''}  }) do |f| %>
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post ,class: :custom  }) do |f| %>
   <%= devise_error_messages! %>
-
-   <div class="row collapse">
+   
+  <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :email  , class: "right inline" %></div>
   <div class="small-9 columns">
-  <%= f.email_field :email, autofocus: true , :required => true  %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  <%= f.email_field :email, autofocus: true ,:required => true  %>
+  </div>
   </div>
 
  <div class="row collapse">

@@ -51,4 +51,15 @@
 margin-bottom:0px 
 }
 
+.spacer
+{
+  height: 60px;
+}
+
+.title-spacer
+{
+  height: 15px;
+}
+
+
 @import 'jquery.countdown';

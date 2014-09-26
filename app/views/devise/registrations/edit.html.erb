@@ -1,6 +1,6 @@
 <h2>Edit <%= resource_name.to_s.humanize %></h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put , class: :custom , data: {abide: ''} }) do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name), html: { method: :put , class: :custom   }) do |f| %>
   <%= devise_error_messages! %>
 
   <div class="row collapse">
@@ -8,7 +8,7 @@
   <%= f.label :name  , class: "right inline" %></div>
   <div class="small-9 columns">
   <%= f.text_field :name , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
 
@@ -18,7 +18,7 @@
   <%= f.label :age , class: "right inline"  %></div>
   <div class="small-9 columns" >
   <%= f.number_field :age ,:min =>  5,:max => 60 , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
   <div class="row collapse">
@@ -26,7 +26,7 @@
   <%= f.label :email , class: "right inline"  %></div>
   <div class="small-9 columns">
   <%= f.email_field :email, autofocus: true , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
 </div>
 
   <% if devise_mapping.confirmable? && resource.pending_reconfirmation? %>
@@ -35,10 +35,10 @@
 
   <div class="row collapse">
   <div class="small-3 columns">
-  <%= f.label :password, class: "right inline"  %> <small>(leave blank if you don't want to change it)</</small>></div>
+  <%= f.label :password, class: "right inline"  %> </div>
   <div class="small-9 columns">
-  <%= f.password_field :password, autocomplete: "off" , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %>
+  <%= f.password_field :password, autocomplete: "off" , title: "leave blank if you don't want to change it"  %>
+  
   </div>
   </div>
 
@@ -46,16 +46,16 @@
   <div class="small-3 columns">
   <%= f.label :password_confirmation, class: "right inline"  %></div>
   <div class="small-9 columns">
-  <%= f.password_field :password_confirmation, autocomplete: "off" , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  <%= f.password_field :password_confirmation, autocomplete: "off"  %>
+  </div>
   </div>
 
   <div class="row collapse">
   <div class="small-3 columns">
-  <%= f.label :current_password , class: "right inline" %> <i>(we need your current password to confirm your changes)</i></div>
+  <%= f.label :current_password , class: "right inline" %> </div>
   <div class="small-9 columns">
   <%= f.password_field :current_password, autocomplete: "off" , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
   
   <div class="row collapse">
@@ -70,7 +70,7 @@
   <%= f.label :school, class: "right inline"  %></div>
   <div class="small-9 columns">
   <%=f.text_field :school , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
  <div class="row collapse">
@@ -86,7 +86,7 @@
 </div>
 <div class="small-9 columns">
   <%= f.number_field :phonenumber , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
   <div><%= f.submit "Update"  , class: "small button radius" %></div>

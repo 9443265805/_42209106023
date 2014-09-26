@@ -1,6 +1,6 @@
 <h2>Sign up</h2>
 
-<%= form_for(resource, as: resource_name, url: registration_path(resource_name) , html: { class: :custom , data: { abide: ''} } )   do |f| %>
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name) , html: { class: :custom   } )   do |f| %>
   <%= devise_error_messages! %>
   
   <div class="row collapse">
@@ -8,7 +8,7 @@
   <%= f.label :name , class: "right inline"  %></div>
   <div class="small-9 columns">
   <%= f.text_field :name , :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
 
@@ -17,7 +17,7 @@
   <%= f.label :age , class: "right inline" %></div>
   <div class="small-9 columns">
   <%= f.number_field :age ,:min =>  5,:max => 60 , :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
   <div class="row collapse">
@@ -25,7 +25,7 @@
   <%= f.label :email , class: "right inline" %></div>
   <div class="small-9 columns">
   <%= f.email_field :email, autofocus: true , :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
   <div class="row collapse">
@@ -33,7 +33,7 @@
   <%= f.label :password  , class: "right inline" %></div>
   <div class="small-9 columns">
   <%= f.password_field :password, autocomplete: "off", :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
   <div class="row collapse">
@@ -41,7 +41,7 @@
   <%= f.label :password_confirmation  , class: "right inline" %></div>
   <div class="small-9 columns">
   <%= f.password_field :password_confirmation, autocomplete: "off" , :required => true%>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+  </div>
   </div>
 
   <div class="row collapse">
@@ -55,7 +55,7 @@
   <div class="small-3 columns">
   <%= f.label :school  , class: "right inline" %></div>
   <div class="small-9 columns">
-  <%=f.text_field :school , :required => true %><%= content_tag(:small, "This field is required", class: "error") %></div>
+  <%=f.text_field :school , :required => true %>  </div>
   </div>
 
   <div class="row collapse">
@@ -69,7 +69,7 @@
   <div class="small-3 columns">
   <%= f.label :phonenumber , class: "right inline" %></div>
   <div class="small-9 columns">
-  <%= f.number_field :phonenumber , :required => true%><%= content_tag(:small, "This field is required", class: "error") %></div>
+  <%= f.number_field :phonenumber , :required => true%> </div>
   </div>
 
 <div class="row collapse">

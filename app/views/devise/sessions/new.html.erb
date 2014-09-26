@@ -1,20 +1,20 @@
 <h2>Sign in</h2>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)  html: {  class: :custom , data: {abide: ''} } ) do |f| %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)  ) do |f| %>
   <div class="row collapse">
   <div class="small-3 columns"><%= f.label :email, class: "right inline"  %>
   </div>
   <div class="small-9 columns">
-  <%= f.email_field :email, autofocus: true  , :required => true %>
-  <%= content_tag(:small, "This field is required", class: "error") %></div>
+  <%= f.email_field :email, autofocus: true ,:required => true  %>
+  </div>
   </div>
 
   <div class="row collapse">
   <div class="small-3 columns"><%= f.label :password , class: "right inline" %>
   </div>
   <div class="small-9 columns">
-    <%= f.password_field :password, autocomplete: "off", class: "right inline"  , :required => true %>
-    <%= content_tag(:small, "This field is required", class: "error") %></div>
+    <%= f.password_field :password, autocomplete: "off", class: "right inline" , :required => true %>
+  </div>
   </div>
 
   <% if devise_mapping.rememberable? -%>

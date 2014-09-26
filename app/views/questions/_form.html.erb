@@ -1,4 +1,4 @@
-<%= form_for(@question ,  html: { class: :custom  , data: {abide: ''} } )  do |f| %>
+<%= form_for(@question ,  html: { class: :custom   } )  do |f| %>
 <%if @question.errors.any? %>
 <div id="error-explanantion">
 <h3><%= pluralize(@question.errors.count, "error") %> prohibited  this question from being saved :</h3>
@@ -14,7 +14,7 @@
 <%= f.label :question , class: "right inline" %></div>
 <div class="small-9 columns">
 <%= f.text_area :question_text , :required => true  %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+</div>
 </div>
 
 <div class="row collapse">
@@ -22,7 +22,7 @@
   <%= f.label :option1 , class: "right inline"  %></div>
   <div class="small-9 columns">
 <%= f.text_field :option1 , :required => true  %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+</div>
 </div>
 
 <div class="row collapse">
@@ -30,7 +30,7 @@
 <%= f.label :option2 , class: "right inline"  %></div>
 <div class="small-9 columns">
 <%= f.text_field :option2 , :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+</div>
 </div>
 
 <div class="row collapse">
@@ -38,7 +38,7 @@
 <%= f.label :option3 , class: "right inline" %></div>
 <div class="small-9 columns">
 <%= f.text_field :option3 , :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+</div>
 </div>
 
 <div class="row collapse">
@@ -46,7 +46,7 @@
 <%= f.label :option4  , class: "right inline" %></div>
 <div class="small-9 columns">
 <%= f.text_field :option4 , :required => true %>
-<%= content_tag(:small, "This field is required", class: "error") %></div>
+</div>
 </div>
 
 <div class="row collapse">
