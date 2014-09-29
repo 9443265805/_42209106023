@@ -45,6 +45,9 @@ gem 'redcarpet'
 gem 'albino'
 gem 'nokogiri'
 
+#process
+gem 'foreman', '~> 0.75.0'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
