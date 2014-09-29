@@ -1,12 +1,14 @@
 <%= form_for @page do |f| %>
- 
+ <div class="form-error-spacer"><ul><% @page.errors.full_messages.each do |msg|	%>
+<li><%= msg %></li></div>
+<% end %>
   <p>
-    <%= f.label :title, "Title (use CamelCase)" %><br />
-    <%= f.text_field :title %>
+    <%= f.label :title %><br />
+    <%= f.text_field :title , :placeholder=> "MyWikiTitle" , :required => true %>
   </p>
   <p>
     <%= f.label :content %><br />
-    <%= f.text_area :content %>
+    <%= f.text_area :content , :placeholder=> "Your Content goes here" , :required => true  %>
   </p>
   <p><%= f.submit "Submit" %></p>
 <% end %>

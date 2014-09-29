@@ -1,5 +1,5 @@
 <div id="myModal" class="reveal-modal small" data-reveal>
- <%= image_tag current_user.avatar.url(:medium) %>
+ <%= image_tag current_user.avatar.url(:medium) , :alt => "noprofile" %>
   <%= form_tag(change_Avatar_Pic_avatars_path, method: :put , :multipart => true ) do |f| %>
   <br>
   <%= file_field_tag :avatar  %>

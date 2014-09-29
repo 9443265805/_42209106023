@@ -61,5 +61,10 @@ margin-bottom:0px
   height: 15px;
 }
 
+.form-error-spacer
+{
+  margin-left: 16px;
+}
+
 
 @import 'jquery.countdown';

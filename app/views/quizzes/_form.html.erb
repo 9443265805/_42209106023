@@ -1,14 +1,9 @@
 <%= form_for(@quiz ,  html: { class: :custom  } ) do |f| %>
 
 <% if @quiz.errors.any? %>
-<div id="Error-Explanation" >  
-
-<h3><%= pluralize(@quiz.errors.count,"error") %> prohibited this quiz from being saved : </h3>
-<ul><% @quiz.errors.full_messages.each do |msg|	%>
-<li><%= msg %></li>
+<div class="form-error-spacer"><ul><% @quiz.errors.full_messages.each do |msg|	%>
+<li><%= msg %></li></div>
 <% end %>
-</ul>
-</div> 
 <% end %>
 <div class="row collapse">
   <div class="small-3 columns">

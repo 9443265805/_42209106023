@@ -1,13 +1,8 @@
 <%= form_for(@question ,  html: { class: :custom   } )  do |f| %>
 <%if @question.errors.any? %>
-<div id="error-explanantion">
-<h3><%= pluralize(@question.errors.count, "error") %> prohibited  this question from being saved :</h3>
-<ul>
-<% @question.errors.full_messages.each do |msg| %>
-<li><%= msg %></li>
+<div class="form-error-spacer"><ul><% @question.errors.full_messages.each do |msg|  %>
+<li><%= msg %></li></div>
 <% end %>
-</ul>
-</div>
 <% end %>
 <div class="row collapse">
   <div class="small-3 columns">

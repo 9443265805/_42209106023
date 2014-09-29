@@ -1,4 +1,10 @@
 class WikiPagesController < ApplicationController
+  
+  def index
+  @wiki_pages=WikiPage.all.paginate(:page => params[:page], :per_page => 2) 
+  end
+
+
   def show
     @page = WikiPage.find(params[:id])
     @page.revert_to(params[:version].to_i) if params[:version]
