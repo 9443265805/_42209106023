@@ -14,6 +14,8 @@
 //= require jquery_ujs
 //= require jquery-ui
 //= require jquery.ui.timepicker
+//= require jquery.Jcrop
+//= require jquery.color
 //= require foundation
 //= require jquery.plugin
 //= require jquery.countdown

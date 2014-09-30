@@ -13,6 +13,7 @@
  *= require jquery-ui.structure
  *= require jquery-ui.theme
  *= require jquery.ui.timepicker
+ *= require jquery.Jcrop
  *= require foundation_and_overrides
  *= require_tree .
  */
