@@ -30,7 +30,7 @@ class StudentController < ApplicationController
 		             starttime=starttime+(time.year - starttime.year).years + (time.month - starttime.month).months + (time.day - starttime.day).days
 		             #puts @quiz.endtime - @quiz.starttime
 		            if   time >= starttime && time <= endtime
-						@questions=@quiz.questions
+						@questions=@quiz.questions.paginate(:page => params[:page], :per_page => 3)
 		                @duration=endtime - time  
 					else
 						redirect_to student_index_path,notice: "you cannot take the test now"

@@ -1,0 +1,14 @@
+
+<div class="panel">
+<p><b>Question : </b><%= quizquestion.question_text %></p>
+<p><b>Option 1 : </b><%= quizquestion.option1 %></p>
+<p><b>Option 2 : </b><%= quizquestion.option2 %></p>
+<p><b>Option 3 : </b><%= quizquestion.option3 %></p>
+<p><b>Option 4 : </b><%= quizquestion.option4 %></p>
+<div class="row collapse">
+  <div class="small-2 columns">
+<%= label_tag :Answer ,nil, :class => "right inline"  %></div>
+<div class="small-3 columns end">
+<%=  select_tag("answers_#{quizquestion.id}",options_for_select(["option1","option2","option3","option4"]))%></div>
+</div>
+</div>

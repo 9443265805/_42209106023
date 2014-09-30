@@ -6,7 +6,7 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :name  , class: "right inline" %></div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%= f.text_field :name , :required => true %>
   </div>
   </div>
@@ -16,7 +16,7 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :age , class: "right inline"  %></div>
-  <div class="small-9 columns" >
+  <div class="small-3 columns end" >
   <%= f.number_field :age ,:min =>  5,:max => 60 , :required => true %>
   </div>
   </div>
@@ -24,7 +24,7 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :email , class: "right inline"  %></div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%= f.email_field :email, autofocus: true , :required => true %>
   </div>
 </div>
@@ -36,7 +36,7 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :password, class: "right inline"  %> </div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%= f.password_field :password, autocomplete: "off" , title: "leave blank if you don't want to change it"  %>
   
   </div>
@@ -45,7 +45,7 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :password_confirmation, class: "right inline"  %></div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%= f.password_field :password_confirmation, autocomplete: "off"  %>
   </div>
   </div>
@@ -53,7 +53,7 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :current_password , class: "right inline" %> </div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%= f.password_field :current_password, autocomplete: "off" , :required => true %>
   </div>
   </div>
@@ -61,14 +61,14 @@
   <div class="row collapse">
   <div class="small-3 columns">
   <%=f.label :role, class: "right inline"  %></div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%= f.select :role,["Admin","Teacher","Student"] %></div>
   </div>
 
   <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :school, class: "right inline"  %></div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%=f.text_field :school , :required => true %>
   </div>
   </div>
@@ -76,7 +76,7 @@
  <div class="row collapse">
   <div class="small-3 columns">
   <%= f.label :Profile_Picture  , class: "right inline" %></div>
-  <div class="small-9 columns">
+  <div class="small-3 columns end">
   <%=f.file_field :avatar  %></div>
   </div>
 
@@ -84,7 +84,7 @@
   <div class="small-3 columns">
   <%= f.label :phonenumber, class: "right inline"  %>
 </div>
-<div class="small-9 columns">
+<div class="small-3 columns end">
   <%= f.number_field :phonenumber , :required => true %>
   </div>
   </div>

@@ -1,4 +1,4 @@
 <div class="panel">
-<h2><%= wiki_page.title %></h2>
+<h2><%= link_to wiki_page.title , wiki_page_path(wiki_page.id)%></h2>
   <div><%= wiki_page.content %></div>
   </div>

@@ -1,6 +1,8 @@
 class RegistrationsController < Devise::RegistrationsController
- protected
-
+ 
+    
+    
+    protected
     def after_update_path_for(user)
       if user.role=="Student"
     	student_index_path
@@ -8,4 +10,6 @@ class RegistrationsController < Devise::RegistrationsController
  	    quizzes_path
     end
     end
+
+
 end 
