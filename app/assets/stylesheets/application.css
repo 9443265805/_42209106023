@@ -51,6 +51,11 @@
 margin-bottom:0px 
 }
 
+.cleaner
+{
+margin: 5px
+}
+
 .spacer
 {
   height: 60px;
@@ -66,5 +71,11 @@ margin-bottom:0px
   margin-left: 16px;
 }
 
+.small-heading
+{
+  margin-bottom: 10px
+}
+
 
 @import 'jquery.countdown';
+
