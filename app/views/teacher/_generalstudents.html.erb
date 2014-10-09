@@ -1,4 +1,4 @@
-
+<div class="panel">
 <%= form_tag markstudents_teacher_index_path ,:method => :put do %> 
 
 <table>
@@ -10,7 +10,7 @@
 </tr>
 <% for student in @students %>
 <tr>
-<td><%= check_box_tag "generalstudent_ids[]", student.id %> 
+<td><%= check_box_tag "generalstudent_ids[]", student.id %> </td>
 <td><%= student.name %></td>	
 <td><%=student.age %></td>
 <td><%=student.school %></td>
@@ -25,3 +25,4 @@
 <br>
 <%= submit_tag "Tag Students"  , class: "small button radius"%> 
 <% end %>
+</div>

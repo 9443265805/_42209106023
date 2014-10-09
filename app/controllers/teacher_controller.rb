@@ -4,6 +4,7 @@ class TeacherController < ApplicationController
 
 	def assignstudents
 		session[:quiz_id]=params[:quiz_id]
+		@quizname=Quiz.find(session[:quiz_id]).quizname
 		@students=User.where(role: 'Student')
 		@students_count=@students.count
 		@students=@students.paginate(:page => params[:page], :per_page => 10)		

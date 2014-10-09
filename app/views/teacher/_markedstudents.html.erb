@@ -1,14 +1,15 @@
+<div class="panel">
 <%= form_tag unmarkstudents_teacher_index_path ,:method => :put do %> 
 <table>
 <tr>
-<th><%= check_box_tag "Select_All" %> Untag Student </th>
+<th><%= check_box_tag "Select_All" ,nil,false,:title => "Untag Students" %></th>
 <th>Name</th>
 <th>Age</th>
 <th>School</th>
 </tr>
 <% for student in @markedstudents %>
 <tr>
-<td><%= check_box_tag "markedstudent_ids[]", student.id %> 
+<td><%= check_box_tag "markedstudent_ids[]", student.id %> </td>
 <td><%= student.name %></td>	
 <td><%=student.age %></td>
 <td><%=student.school %></td>
@@ -17,3 +18,4 @@
 </table>
 <%= submit_tag "Untag Students" , class: "small button radius" %> 
 <% end %>
+</div>
