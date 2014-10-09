@@ -13,7 +13,7 @@ gem 'sqlite3'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
-  gem 'foundation-icons-sass-rails'
+ 
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
@@ -32,8 +32,8 @@ gem "paperclip", "~> 4.2"
 
 #jsenvironment
 
-#gem 'execjs' 
-#gem 'therubyracer'
+gem 'execjs' 
+gem 'therubyracer'
 
 #wikipage
 gem 'vestal_versions', '~> 2.0.0'
