@@ -47,9 +47,13 @@
       <li class="divider"></li>
       <li><%= link_to  image_tag current_user.avatar.url(:small) , "data-reveal-id"=>"myModal" %></li>
       <li class="divider"></li>
-      <li><%= link_to "Edit Profile",edit_user_registration_path %></li>
+      <li><%= link_to (edit_user_registration_path) do  %>
+      <i style="font-size: 30px ; color: #fff" class="fi-torso" title="User Profile" ></i> 
+      <% end %></li>
       <li class="divider"></li>
-      <li><%= link_to "Logout", destroy_user_session_path, method: :delete  %>
+      <li><%= link_to(destroy_user_session_path, method: :delete) do  %>
+      <i style="font-size: 30px ; color: #fff" class="fi-power" title="Logout" ></i>
+      <% end %></li>
       <li class="divider"></li>
       <li><%= link_to "Contact Me" %></li>
       </ul>
@@ -100,7 +104,7 @@
 
     
    <div class="spacer"></div>
-  <div  class="top-bar" id="footer" ><p>Copyright@Ethiraj</p></div> 
+  <nav  class="top-bar" id="footer" ><p>Copyright@Ethiraj</p></nav> 
   
   </body>
 

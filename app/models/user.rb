@@ -12,7 +12,7 @@ class User < ActiveRecord::Base
 
    has_many :conversations, :foreign_key => :sender_id
 
-   has_attached_file :avatar, :styles => { :small => "43x43>" , :medium => "600x600>" }, 
+   has_attached_file :avatar, :styles => { :small => "40x40>" , :medium => "600x600>" }, 
                   :url  => "/assets/users/:id/:style/:basename.:extension",
                   :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension"
 

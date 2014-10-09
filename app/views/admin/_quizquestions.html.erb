@@ -1,7 +1,8 @@
+<div class="panel">
 <%= form_tag unmarkquestions_admin_index_path ,:method => :put  do %>  
 <table>
 <tr>
-<th><%= check_box_tag "Select_All" %> Delete Question </th>
+<th><%= check_box_tag "Select_All" , nil , false , title:  "Select All Questions" %>  </th>
 <th>Category</th>
 <th>Question</th>
 <th>Option1</th>
@@ -12,7 +13,7 @@
 </tr>
 <% @quizquestions.each do |question| %>
 <tr>
-<td><%= check_box_tag "question_ids[]", question.id %> 
+<td><%= check_box_tag "question_ids[]", question.id %> </td>
 <td><%= question.category %></td>
 <td><%= question.question_text %></td>
 <td><%= question.option1 %></td>
@@ -28,3 +29,4 @@
 </table>
 <%= submit_tag "Delete Quiz Questions" , class: "small button radius" %> 
 <% end %>
+</div>
