@@ -89,7 +89,6 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
-    libv8 (3.16.14.7)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -137,7 +136,6 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     redcarpet (3.1.2)
-    ref (1.0.5)
     sass (3.4.4)
     sass-rails (3.2.6)
       railties (~> 3.2.0)
@@ -154,9 +152,6 @@ GEM
       activemodel (~> 3.0)
       activesupport (~> 3.0)
       railties (~> 3.0)
-    therubyracer (0.12.1)
-      libv8 (~> 3.16.14.0)
-      ref
     thin (1.6.2)
       daemons (>= 1.0.9)
       eventmachine (>= 1.0.0)
@@ -189,7 +184,6 @@ DEPENDENCIES
   albino
   coffee-rails (~> 3.2.1)
   devise
-  execjs
   foreman (~> 0.75.0)
   jquery-rails
   mail (= 2.5.4)
@@ -202,7 +196,6 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   strong_parameters (~> 0.2.3)
-  therubyracer
   thin
   uglifier (>= 1.0.3)
   vestal_versions (~> 2.0.0)

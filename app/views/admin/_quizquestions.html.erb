@@ -1,6 +1,6 @@
 <div class="panel">
 <%= form_tag unmarkquestions_admin_index_path ,:method => :put  do %>  
-<table>
+<table class="scroll-table pagination-table" >
 <tr>
 <th><%= check_box_tag "Select_All" , nil , false , title:  "Select All Questions" %>  </th>
 <th>Category</th>
@@ -27,6 +27,7 @@
 </tr>
 <% end %>
 </table>
+<div class="cleaner"></div>
 <%= submit_tag "Delete Quiz Questions" , class: "small button radius" %> 
 <% end %>
 </div>

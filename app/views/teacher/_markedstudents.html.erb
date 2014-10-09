@@ -1,6 +1,6 @@
 <div class="panel">
 <%= form_tag unmarkstudents_teacher_index_path ,:method => :put do %> 
-<table>
+<table class="scroll-table pagination-table" >
 <tr>
 <th><%= check_box_tag "Select_All" ,nil,false,:title => "Untag Students" %></th>
 <th>Name</th>
@@ -16,6 +16,7 @@
 </tr>
 <% end %>
 </table>
+<div class="cleaner" ></div>
 <%= submit_tag "Untag Students" , class: "small button radius" %> 
 <% end %>
 </div>

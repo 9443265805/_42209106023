@@ -1,6 +1,6 @@
 <div class="panel">
 <%= form_tag markquestions_admin_index_path ,:method => :put  do %>
-<table>
+<table class="scroll-table pagination-table" >
 <tr>
 <th>Add Question</th>
 <th>Category</th>
@@ -32,6 +32,7 @@
 <%= will_paginate @generalquestions  %>
 </div>
 <% end %>
+<div class="cleaner"></div>
 <%= submit_tag "Update Quiz Questions" , class: "small button radius" %> 
 <% end %>
 </div>

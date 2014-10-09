@@ -1,7 +1,7 @@
 <div class="panel">
 <%= form_tag markstudents_teacher_index_path ,:method => :put do %> 
 
-<table>
+<table class="scroll-table pagination-table" >
 <tr>
 <th>tag Students</th>
 <th>Name</th>
@@ -23,6 +23,7 @@
 </div>
 <% end %>
 <br>
+<div class="cleaner"></div>
 <%= submit_tag "Tag Students"  , class: "small button radius"%> 
 <% end %>
 </div>

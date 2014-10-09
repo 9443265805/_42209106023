@@ -53,7 +53,7 @@ margin-bottom:0px
 
 .cleaner
 {
-margin: 5px
+margin: 10px
 }
 
 .spacer
@@ -74,6 +74,12 @@ margin: 5px
 .small-heading
 {
   margin-bottom: 17px
+}
+
+
+.anchorfix
+{
+  height: 45px
 }
 
 
