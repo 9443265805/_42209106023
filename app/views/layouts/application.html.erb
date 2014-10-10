@@ -37,6 +37,11 @@
    <section class="top-bar-section">
     <ul class="right">
     <% if current_user.role != "Student" %>
+      <li><%= form_tag(applicationsearch_searchcontent_path,method: :get) do%>
+      <li><%=search_field_tag(:searchable) %><li>
+      <% end %>
+</li>
+
       <li class="divider"></li>
       <li><%= link_to "My Wiki",wiki_pages_path %></li>
       <li class="divider"></li>

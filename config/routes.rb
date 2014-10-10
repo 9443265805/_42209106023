@@ -48,11 +48,14 @@ end
   #match 'student/index', to: 'student#index'
 
 
-   resources :conversations , :controller => 'conversations'  ,:path => 'conversations' do
-    resources :messages
+  resources :conversations , :controller => 'conversations'  ,:path => 'conversations' do
+  resources :messages
 
 
   end
+
+
+  match 'applicationsearch/searchcontent' , to: 'applicationsearch#searchcontent' , via: [:get]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
