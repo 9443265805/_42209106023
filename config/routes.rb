@@ -1,5 +1,7 @@
 OTTS::Application.routes.draw do
   
+  mount Ckeditor::Engine => '/ckeditor'
+
   devise_for :users, :controllers => {:registrations => "registrations"}
 
   resources :quizzes
@@ -54,6 +56,7 @@ end
 
   end
 
+ 
 
   match 'applicationsearch/searchcontent' , to: 'applicationsearch#searchcontent' , via: [:get]
 

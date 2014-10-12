@@ -1,6 +1,7 @@
 <br>
 <%= @page.title %>
 
+Last edited by <%= @page.author %> 
 <p>
   <%= markdown(wiki_link(@page.content)) %>
 </p>

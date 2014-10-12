@@ -38,7 +38,7 @@
     <ul class="right">
     <% if current_user.role != "Student" %>
       <li><%= form_tag(applicationsearch_searchcontent_path,method: :get) do%>
-      <li><%=search_field_tag(:searchable) %><li>
+      <li><%= search_field_tag(:searchable , nil,hmtl_options = { placeholder:  "Search" } )%><li>
       <% end %>
 </li>
 
@@ -62,8 +62,6 @@
       <li><%= link_to( destroy_user_session_path , html_options = { class: "anchorfix" , method: :delete } ) do  %>
       <span style="font-size: 30px ; color: #fff" class="fi-power" title="Logout" ></span>
       <% end %></li>
-      <li class="divider"></li>
-      <li><%= link_to "Contact Me" %></li>
       </ul>
   </section>
 
@@ -81,8 +79,6 @@
       <li><%= link_to "Sign in", new_session_path(resource_name) %>
       <li class="divider"></li>
       <li><%=  link_to "Sign up", new_registration_path(resource_name) %>
-      <li class="divider"></li>
-      <li><%= link_to "Contact Me" %></li>
       </ul>
   </section>
 
@@ -112,7 +108,29 @@
 
     
    <div class="spacer"></div>
-  <nav  class="top-bar" id="footer" ><p>Copyright@Ethiraj</p></nav> 
+  <div   id="footer" >
+    <div class="text-center">
+      <div class="cleaner">Copyright 2014 © Ethiraj Inc. All Rights Reserved</div>
+      <div class="cleaner">Connect with me</div>
+      <div class="horispace" >
+      <ul class="inline-list horispace " >
+
+      <li><%= link_to("https://www.facebook.com/ethiraj.chandru") do  %> 
+      <span style="font-size: 30px ; color: #fff" class="fi-social-facebook" title="User Profile" ></span> 
+      <% end %></li>
+      <li>
+      <%= link_to("https://www.github.com/ethirajsrinivasan") do  %> 
+      <span style="font-size: 30px ; color: #fff" class="fi-social-github" title="User Profile" > 
+      <% end %></li>
+      <li>
+      <%= link_to("https://www.linkedin.com/pub/ethiraj-srinivasan/") do  %> 
+      <span style="font-size: 30px ; color: #fff" class="fi-social-linkedin" title="User Profile" > 
+      <% end %>
+    </ul> 
+    </div>
+    </div>
+    </div>
+    </div> 
   
   </body>
 

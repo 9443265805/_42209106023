@@ -32,12 +32,18 @@ gem "paperclip", "~> 4.2"
 
 #jsenvironment
 
-gem 'execjs' 
-gem 'therubyracer'
+#gem 'execjs' 
+#gem 'therubyracer'
 
 #wikipage
 gem 'vestal_versions', '~> 2.0.0'
 
+
+#editor
+gem 'ckeditor'
+
+#truncate
+gem 'truncate_html', '~> 0.9.3'
 
 #wikipagemarkup
 

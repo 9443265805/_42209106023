@@ -1,4 +1,6 @@
 <div class="panel">
-<h2><%= link_to wiki_page.title , wiki_page_path(wiki_page.id)%></h2>
-  <div><%= markdown(wiki_link(truncate(wiki_page.content,:length => 60))) %></div>
+<h3><%= link_to wiki_page.title , wiki_page_path(wiki_page.id)%></h3> 
+<h4>Last edited by <%= wiki_page.author %></h4>
+  <div><%= markdown(wiki_link(truncate_html(wiki_page.content,:length => 40))) %></div>
   </div>
+

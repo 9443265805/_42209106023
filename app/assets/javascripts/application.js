@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require ckeditor/init
 //= require jquery-ui
 //= require jquery.ui.timepicker
 //= require foundation

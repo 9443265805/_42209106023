@@ -60,5 +60,9 @@ module OTTS
     config.assets.version = '1.0'
 
     config.assets.paths << File.join(Rails.root,'/vendor/assets/images/')
+
+    config.autoload_paths += %W(#{config.root}/app/models/ckeditor)
+    
+
   end
 end
