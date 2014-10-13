@@ -1,96 +1,108 @@
-<div class="text-center"><h4>Question</h4></div>
-<div class ="row">
-<div class ="small-4 small-centered columns">
-<table class="text-center" >
-<tr>
-<td>
-<b>Category</b></td>
-<td><%= @question.category %></td>
-</tr>
-<tr>
-<td>
-<b>Question</b></td>
-<td><%= @question.question_text %></td></tr>
-<tr>
-<td>
+<div class="text-center"><h3>Question Details</h3></div>
+<div class="panel">
+		
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Category</b></div>
+<div class="small-10 columns">
+<%= @question.category %></div>
+</div><br>
 
-<b>Option1</b></td>
-<td>
-<%= @question.option1 %></td></tr>
-<tr>
-<td>
-<b>Option2</b></td>
-<td>
-<%= @question.option2 %></td></tr>
-<tr>
-<td>
-<b>Option3</b></td>
-<td>
-<%= @question.option3 %></td></tr>
-<tr>
-<td>
-<b>Option4</b></td>
-<td>
-<%= @question.option4 %></td></tr>
-<tr>
-<td>
-<b>Answer</b></td>
-<td>
-<%= @question.answer %></td></tr>
-</table>
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Question</b></div>
+<div class="small-10 columns">
+<%= @question.question_text %>
+</div>
+</div><br>
+
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Option1</b></div>
+<div class="small-10 columns">
+<%= @question.option1 %></div>
+</div><br>
+
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Option2</b></div>
+<div class="small-10 columns">
+<%= @question.option2 %></div>
+</div><br>
+
+
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Option2</b></div>
+<div class="small-10 columns">
+<%= @question.option2 %></div>
+</div><br>
+
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Option4</b></div>
+<div class="small-10 columns">
+<%= @question.option4 %></div>
+</div><br>
+
+
+<div class="row collapse">
+  <div class="small-2 columns">
+<b>Answer</b></div>
+<div class="small-10 columns">
+<%= @question.answer %></div>
+</div><br>
 <%= link_to 'Edit',edit_question_path  ,class: "small button radius"%>
 <%= link_to 'Back',:back  ,class: "small button radius" %>
 </div>
-</div>
-
 
 
 <!--
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Category</b></div>
 <div class="small-9 columns">
 <%= @question.category %></div>
 </div></p>
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Question</b></div>
 <div class="small-9 columns">
 <%= @question.question_text %></div>
 </div></p>
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Option1</b></div>
 <div class="small-9 columns">
 <%= @question.option1 %></div>
 </div></p>
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Option1</b></div>
 <div class="small-9 columns">
 <%= @question.option2 %></div>
 </div></p>
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Option1</b></div>
 <div class="small-9 columns">
-<%= @question.option3 %></div>
+<%= @question.option2 %></div>
 </div></p>
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Option1</b></div>
 <div class="small-9 columns">
 <%= @question.option4 %></div>
 </div></p>
 
 <p><div class="row collapse">
-  <div class="small-3 columns">
+  <div class="small-2 columns">
 <b>Answer</b></div>
 <div class="small-9 columns">
 <%= @question.answer %></div>
