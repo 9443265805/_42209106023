@@ -18,7 +18,7 @@
  */
 
 #footer {
-   position:fixed;
+   /*position:fixed; */
    left:0px;
    bottom:0px;
    height:auto;
@@ -49,7 +49,7 @@ margin-bottom:0px
 
 .cleaner
 {
-margin: 10px
+padding: 15px
 }
 .width-cleaner
 {
@@ -57,7 +57,8 @@ margin: 10px
 
 .spacer
 {
-  margin-top:25%;
+  margin-bottom:30px;
+
 }
 
 .title-spacer
@@ -81,9 +82,19 @@ margin: 10px
   height: 45px
 }
 
-.horispace
+
+.inline-list-center ul {
+ list-style-type:none;
+}
+
+.inline-list-center li {
+ display: inline;
+ padding: 10px
+}
+
+.footerbg
 {
-  margin-left: 44%
+  background: #363636
 }
 
 @import 'jquery.countdown';

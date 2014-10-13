@@ -1,4 +1,10 @@
-<h1>MyWiki</h1>
+<div class="row collapse">
+<div class="small-9  columns "><h3 >MyWiki </h3></div>
+<div class="small-3  columns ">
+<%= link_to "New Wiki", new_wiki_page_path , class: "small button radius  " %> 
+</div>
+</div>
+
 <div class="wiki_endless">
 <%= render(:partial => "wiki_page", :collection => @wiki_pages) %>
 

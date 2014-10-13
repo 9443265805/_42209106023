@@ -1,10 +1,8 @@
-<br>
-<%= @page.title %>
 
-Last edited by <%= @page.author %> 
-<p>
+<h4 ><%= @page.title %>  <small>last edited by <%= @page.author %></small> </h4> <br>
+ 
+
   <%= markdown(wiki_link(@page.content)) %>
-</p>
 
 <p>
   <%= link_to "Edit", edit_wiki_page_path(@page) %>
