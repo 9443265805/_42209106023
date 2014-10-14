@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  bookname: MyString
+  author: MyString
+  category: MyString
+  type: 
+  price: 1
+  lenddate: 2014-10-14
+  duedate: 2014-10-14
+  renewcount: 1
+  status: MyString
+
+two:
+  bookname: MyString
+  author: MyString
+  category: MyString
+  type: 
+  price: 1
+  lenddate: 2014-10-14
+  duedate: 2014-10-14
+  renewcount: 1
+  status: MyString

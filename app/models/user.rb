@@ -11,7 +11,7 @@ class User < ActiveRecord::Base
   validates :phonenumber , format: { with: /^[0-9]{10}$/, message: " must be 10 digits" }
 
    has_many :conversations, :foreign_key => :sender_id
-
+   has_many :books
    has_attached_file :avatar, :styles => { :small => "40x40>" , :medium => "600x600>" }, 
                   :url  => "/assets/users/:id/:style/:basename.:extension",
                   :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension"

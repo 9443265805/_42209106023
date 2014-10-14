@@ -52,8 +52,13 @@ end
 
   resources :conversations , :controller => 'conversations'  ,:path => 'conversations' do
   resources :messages
+  end
 
-
+  resources :books do
+    member do
+      get :adminbookportal
+      get :userbookportal
+    end
   end
 
  

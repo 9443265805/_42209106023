@@ -11,7 +11,22 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141013005339) do
+ActiveRecord::Schema.define(:version => 20141014115734) do
+
+  create_table "books", :force => true do |t|
+    t.string   "bookname"
+    t.string   "author"
+    t.string   "category"
+    t.string   "type"
+    t.integer  "price"
+    t.date     "lenddate"
+    t.date     "duedate"
+    t.integer  "renewcount"
+    t.string   "status"
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "ckeditor_assets", :force => true do |t|
     t.string   "data_file_name",                  :null => false
@@ -34,6 +49,12 @@ ActiveRecord::Schema.define(:version => 20141013005339) do
     t.integer  "recipient_id"
     t.datetime "created_at",   :null => false
     t.datetime "updated_at",   :null => false
+  end
+
+  create_table "libraries", :force => true do |t|
+    t.integer  "user_id"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
   end
 
   create_table "messages", :force => true do |t|
