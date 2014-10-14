@@ -31948,3 +31948,2506 @@ ActiveRecord::SubclassNotFound (The single-table inheritance mechanism failed to
   Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.0ms)
   Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (0.8ms)
   Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (6.2ms)
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35m (175.6ms)[0m  DROP TABLE "books"
+  [1m[36m (182.0ms)[0m  [1mDELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20141014115734'[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+  [1m[36m (1.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to DeviseCreateUsers (20140806132808)
+Migrating to CreateQuestions (20140808092540)
+Migrating to CreateQuizzes (20140808104640)
+Migrating to CreateStudentQuizResults (20140819085121)
+Migrating to CreateConversations (20140912104134)
+Migrating to CreateMessages (20140912104337)
+Migrating to AddAttachmentAvatarToUsers (20140919081143)
+Migrating to CreateVestalVersions (20140923074019)
+Migrating to CreateWikiPages (20140923095945)
+Migrating to AddAuthorToWikiPages (20141012040043)
+Migrating to CreateCkeditorAssets (20141013005339)
+Migrating to CreateBooks (20141014115734)
+  [1m[35m (0.0ms)[0m  select sqlite_version(*)
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  CREATE TABLE "books" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "bookname" varchar(255), "author" varchar(255), "category" varchar(255), "booktype" varchar(255), "price" integer, "lenddate" date, "duedate" date, "renewcount" integer, "status" varchar(255), "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20141014115734')[0m
+  [1m[35m (189.6ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Connecting to database specified by database.yml
+
+
+Started GET "/quizzes" for 127.0.0.1 at 2014-10-14 18:29:09 +0530
+Processing by QuizzesController#index as HTML
+Completed 401 Unauthorized in 5.4ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-10-14 18:29:09 +0530
+Processing by Devise::SessionsController#new as HTML
+  Rendered devise/shared/_links.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (41.8ms)
+Completed 200 OK in 310.8ms (Views: 248.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /application.css - 304 Not Modified (78ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery-ui.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.structure.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery-ui.structure.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.theme.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery-ui.theme.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery.ui.timepicker.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation_and_overrides.css - 304 Not Modified (6ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /admin.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /books.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/chat.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /chat.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /conversations.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /font-awesome.min.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation-icons.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /layout.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /messages.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /pagination.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /questions.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /quizzes.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /student.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /teacher.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /ckeditor/init.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery-ui.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery.ui.timepicker.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.forms.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.section.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/foundation.abide.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /foundation/index.js - 304 Not Modified (12ms)
+
+
+Started GET "/assets/jquery.plugin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery.plugin.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /jquery.countdown.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /admin.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /books.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /chat.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/chatsearch.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /chatsearch.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/basepath.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /ckeditor/basepath.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/config.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /conversations.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/endless_scroll.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /endless_scroll.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /messages.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /private_pub.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /questions.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /quizzes.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /student.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/teacher.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /teacher.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /users.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/wiki_pages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /wiki_pages.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /application.js - 304 Not Modified (79ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:10 +0530
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/foundation-icons.woff" for 127.0.0.1 at 2014-10-14 18:29:11 +0530
+Served asset /foundation-icons.woff - 304 Not Modified (1ms)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2014-10-14 18:29:16 +0530
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9WCOptdAWBl4APzmX1Xqt/dQsa68HGIPN1yxHpHtfEU=", "user"=>{"email"=>"ethirajsrinivasan@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."email" = 'ethirajsrinivasan@gmail.com' LIMIT 1[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = '2014-10-14 12:39:44.592292', "current_sign_in_at" = '2014-10-14 12:59:16.501911', "sign_in_count" = 105, "updated_at" = '2014-10-14 12:59:16.504347' WHERE "users"."id" = 1[0m
+  [1m[35m (190.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/quizzes
+Completed 302 Found in 357.6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/quizzes" for 127.0.0.1 at 2014-10-14 18:29:16 +0530
+Processing by QuizzesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mQuiz Load (0.2ms)[0m  SELECT "quizzes".* FROM "quizzes" 
+  Rendered quizzes/index.html.erb within layouts/application (13.3ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC[0m
+  Rendered common/_chat.html.erb (43.7ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  Rendered common/_conversation.html.erb (161.0ms)
+  Rendered common/_changeAvatar.html.erb (1.3ms)
+Completed 200 OK in 261.2ms (Views: 242.8ms | ActiveRecord: 7.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.structure.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery-ui.structure.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery-ui.theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery.ui.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation_and_overrides.css - 304 Not Modified (42ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /chat.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /conversations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /font-awesome.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation-icons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /quizzes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /student.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /ckeditor/init.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery.ui.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /foundation/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.plugin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery.plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /jquery.countdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /chat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chatsearch.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /chatsearch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/basepath.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /ckeditor/basepath.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /conversations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endless_scroll.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /endless_scroll.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /private_pub.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /quizzes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /student.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /teacher.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wiki_pages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /wiki_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:17 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC
+  Rendered common/_chat.html.erb (5.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)[0m
+  [1m[35mConversation Load (0.3ms)[0m  SELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  Rendered common/_conversation.html.erb (92.3ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 132.1ms (Views: 121.7ms | ActiveRecord: 7.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.structure.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery-ui.structure.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery-ui.theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery.ui.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /chat.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /conversations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /font-awesome.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation-icons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /quizzes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /student.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /ckeditor/init.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery.ui.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /foundation/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.plugin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery.plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /jquery.countdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /chat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chatsearch.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /chatsearch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/basepath.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /ckeditor/basepath.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /conversations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endless_scroll.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /endless_scroll.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /private_pub.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /quizzes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /student.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /teacher.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wiki_pages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /wiki_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:23 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/books?page=2" for 127.0.0.1 at 2014-10-14 18:29:24 +0530
+Processing by BooksController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC[0m
+  Rendered common/_chat.html.erb (5.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  Rendered common/_conversation.html.erb (46.9ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 122.2ms (Views: 114.9ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:24 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.7ms)
+
+
+Started GET "/books/new" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Processing by BooksController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/_form.html.erb (2.9ms)
+  Rendered books/new.html.erb within layouts/application (3.6ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC[0m
+  Rendered common/_chat.html.erb (5.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  Rendered common/_conversation.html.erb (48.4ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 142.3ms (Views: 123.2ms | ActiveRecord: 6.1ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.structure.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery-ui.structure.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery-ui.theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery.ui.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation_and_overrides.css - 304 Not Modified (44ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /chat.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /conversations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /font-awesome.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation-icons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /quizzes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /student.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /ckeditor/init.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery.ui.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /foundation/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.plugin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery.plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /jquery.countdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /chat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chatsearch.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /chatsearch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/basepath.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /ckeditor/basepath.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /conversations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endless_scroll.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /endless_scroll.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /private_pub.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /quizzes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /student.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /teacher.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wiki_pages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /wiki_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /application.js - 304 Not Modified (46ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:28 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/books/new?page=2" for 127.0.0.1 at 2014-10-14 18:29:29 +0530
+Processing by BooksController#new as */*
+  Parameters: {"page"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  Rendered books/_form.html.erb (2.3ms)
+  Rendered books/new.html.erb within layouts/application (3.4ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC[0m
+  Rendered common/_chat.html.erb (5.1ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1[0m
+  [1m[35mMessage Load (2.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  Rendered common/_conversation.html.erb (88.0ms)
+  Rendered common/_changeAvatar.html.erb (1.1ms)
+Completed 200 OK in 130.0ms (Views: 120.7ms | ActiveRecord: 7.9ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:29 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started POST "/books" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Processing by BooksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VX7m2XbNvWoSY1rl9fywo3QCJ8c9fZYjhXEcYQ2KndQ=", "book"=>{"bookname"=>"x", "author"=>"y", "category"=>"technology", "price"=>"4", "booktype"=>"reference"}, "commit"=>"Create Book"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "books" ("author", "bookname", "booktype", "category", "created_at", "duedate", "lenddate", "price", "renewcount", "status", "updated_at", "user_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["author", "y"], ["bookname", "x"], ["booktype", "reference"], ["category", "technology"], ["created_at", Tue, 14 Oct 2014 12:59:40 UTC +00:00], ["duedate", nil], ["lenddate", nil], ["price", 4], ["renewcount", nil], ["status", nil], ["updated_at", Tue, 14 Oct 2014 12:59:40 UTC +00:00], ["user_id", nil]]
+  [1m[36m (235.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/books/1
+Completed 302 Found in 243.3ms (ActiveRecord: 236.5ms)
+
+
+Started GET "/books/1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Processing by BooksController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1[0m  [["id", "1"]]
+  Rendered books/show.html.erb within layouts/application (0.7ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC
+  Rendered common/_chat.html.erb (5.2ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)[0m
+  [1m[35mConversation Load (0.3ms)[0m  SELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  Rendered common/_conversation.html.erb (49.6ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 96.6ms (Views: 86.5ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.structure.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery-ui.structure.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery-ui.theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery.ui.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation_and_overrides.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /chat.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /conversations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /font-awesome.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation-icons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /quizzes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /student.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /ckeditor/init.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery.ui.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /foundation/index.js - 304 Not Modified (41ms)
+
+
+Started GET "/assets/jquery.plugin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery.plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /jquery.countdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /chat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chatsearch.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /chatsearch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/basepath.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /ckeditor/basepath.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /conversations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endless_scroll.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:40 +0530
+Served asset /endless_scroll.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /private_pub.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /quizzes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /student.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /teacher.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wiki_pages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /wiki_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/books/1?page=2" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+Processing by BooksController#show as */*
+  Parameters: {"page"=>"2", "id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" WHERE "books"."id" = ? LIMIT 1  [["id", "1"]]
+  Rendered books/show.html.erb within layouts/application (1.1ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC[0m
+  Rendered common/_chat.html.erb (5.3ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  Rendered common/_conversation.html.erb (46.8ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 126.9ms (Views: 119.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:41 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/books" for 127.0.0.1 at 2014-10-14 18:29:46 +0530
+Processing by BooksController#index as HTML
+  [1m[35mUser Load (1.8ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1
+  [1m[36mBook Load (0.2ms)[0m  [1mSELECT "books".* FROM "books" [0m
+  Rendered books/index.html.erb within layouts/application (0.1ms)
+  [1m[35mUser Load (0.6ms)[0m  SELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC
+  Rendered common/_chat.html.erb (5.6ms)
+  [1m[36m (0.1ms)[0m  [1mSELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)[0m
+  [1m[35mConversation Load (0.3ms)[0m  SELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  Rendered common/_conversation.html.erb (50.2ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 136.1ms (Views: 125.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery-ui.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery-ui.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.structure.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery-ui.structure.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery-ui.theme.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery-ui.theme.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery.ui.timepicker.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation_and_overrides.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation_and_overrides.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/admin.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /admin.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /books.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /chat.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /conversations.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/font-awesome.min.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /font-awesome.min.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation-icons.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation-icons.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/layout.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /layout.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /messages.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pagination.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /pagination.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /questions.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /quizzes.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /student.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.css?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /teacher.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery_ujs.js - 304 Not Modified (44ms)
+
+
+Started GET "/assets/ckeditor/init.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /ckeditor/init.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/ckeditor/ckeditor.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /ckeditor/ckeditor.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery-ui.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery-ui.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.ui.timepicker.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery.ui.timepicker.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.alerts.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.alerts.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.clearing.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.clearing.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.cookie.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.cookie.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.dropdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.dropdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.forms.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.forms.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.joyride.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.joyride.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.magellan.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.magellan.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.orbit.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.orbit.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.reveal.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.reveal.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.section.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.section.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.tooltips.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.tooltips.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.topbar.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.topbar.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.interchange.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.interchange.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.placeholder.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.placeholder.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/foundation.abide.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/foundation.abide.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/foundation/index.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /foundation/index.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery.plugin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery.plugin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.countdown.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /jquery.countdown.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/admin.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /admin.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/books.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /books.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chat.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /chat.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/chatsearch.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /chatsearch.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/basepath.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /ckeditor/basepath.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/ckeditor/config.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /ckeditor/config.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/conversations.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /conversations.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/endless_scroll.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /endless_scroll.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/messages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /messages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/private_pub.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /private_pub.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/questions.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /questions.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/quizzes.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /quizzes.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/student.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /student.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/teacher.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /teacher.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /users.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/wiki_pages.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /wiki_pages.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /application.js - 304 Not Modified (5ms)
+
+
+Started GET "/assets/vendor/custom.modernizr.js?body=1" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Served asset /vendor/custom.modernizr.js - 304 Not Modified (0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.5ms)
+
+
+Started GET "/books?page=2" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+Processing by BooksController#index as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 1 LIMIT 1[0m
+  [1m[35mBook Load (0.1ms)[0m  SELECT "books".* FROM "books" 
+  Rendered books/index.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT "users".* FROM "users" WHERE (id != 1) ORDER BY created_at DESC[0m
+  Rendered common/_chat.html.erb (5.2ms)
+  [1m[35m (0.1ms)[0m  SELECT COUNT(*) FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1)
+  [1m[36mConversation Load (0.3ms)[0m  [1mSELECT "conversations".* FROM "conversations" WHERE (conversations.sender_id =1 OR conversations.recipient_id =1) ORDER BY created_at DESC[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 41 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 28 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 22 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 24 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 38 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 23 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 32 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 22 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 30 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 21 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 31 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 20 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 33 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 19 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 28 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 18 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 20 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 17 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 29 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 16 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 36 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 12 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 34 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 11 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 37 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 10 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 7 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 9 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 24 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 8 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 27 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 6 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 25 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 5 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 35 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 4 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE "users"."id" = 39 LIMIT 1
+  [1m[36mMessage Load (0.1ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 3 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 26 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 2 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users".* FROM "users" WHERE "users"."id" = 40 LIMIT 1[0m
+  [1m[35mMessage Load (0.1ms)[0m  SELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "messages".* FROM "messages" WHERE "messages"."conversation_id" = 1 ORDER BY "messages"."id" DESC LIMIT 1[0m
+  Rendered common/_conversation.html.erb (46.9ms)
+  Rendered common/_changeAvatar.html.erb (0.8ms)
+Completed 200 OK in 123.8ms (Views: 116.0ms | ActiveRecord: 6.0ms)
+
+
+Started GET "/avatars/small/missing.png" for 127.0.0.1 at 2014-10-14 18:29:47 +0530
+
+ActionController::RoutingError (No route matches [GET] "/avatars/small/missing.png"):
+  actionpack (3.2.17) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.17) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.17) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.17) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.17) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.17) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.17) lib/rails/engine.rb:484:in `call'
+  railties (3.2.17) lib/rails/application.rb:231:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.17) lib/rails/rack/log_tailer.rb:17:in `call'
+  thin (1.6.2) lib/thin/connection.rb:86:in `block in pre_process'
+  thin (1.6.2) lib/thin/connection.rb:84:in `catch'
+  thin (1.6.2) lib/thin/connection.rb:84:in `pre_process'
+  thin (1.6.2) lib/thin/connection.rb:53:in `process'
+  thin (1.6.2) lib/thin/connection.rb:39:in `receive_data'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run_machine'
+  eventmachine (1.0.3) lib/eventmachine.rb:187:in `run'
+  thin (1.6.2) lib/thin/backends/base.rb:73:in `start'
+  thin (1.6.2) lib/thin/server.rb:162:in `start'
+  rack (1.4.5) lib/rack/handler/thin.rb:13:in `run'
+  rack (1.4.5) lib/rack/server.rb:268:in `start'
+  railties (3.2.17) lib/rails/commands/server.rb:70:in `start'
+  railties (3.2.17) lib/rails/commands.rb:55:in `block in <top (required)>'
+  railties (3.2.17) lib/rails/commands.rb:50:in `tap'
+  railties (3.2.17) lib/rails/commands.rb:50:in `<top (required)>'
+  script/rails:6:in `require'
+  script/rails:6:in `<main>'
+
+
+  Rendered /home/haji/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.17/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)

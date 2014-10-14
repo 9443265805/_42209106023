@@ -4,7 +4,7 @@ class CreateBooks < ActiveRecord::Migration
       t.string :bookname
       t.string :author
       t.string :category
-      t.string :type
+      t.string :booktype
       t.integer :price
       t.date :lenddate
       t.date :duedate

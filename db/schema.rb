@@ -17,7 +17,7 @@ ActiveRecord::Schema.define(:version => 20141014115734) do
     t.string   "bookname"
     t.string   "author"
     t.string   "category"
-    t.string   "type"
+    t.string   "booktype"
     t.integer  "price"
     t.date     "lenddate"
     t.date     "duedate"
