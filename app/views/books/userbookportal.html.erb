@@ -22,7 +22,7 @@
 <td><%=book.fine %></td>
 <td><%=link_to "Renew" , renew_book_path(book) , method: :put %></td>
 <td><%=link_to "Return" , return_book_path(book), method: :put %></td>
-<td><%=link_to "Pay Fine" ,edit_book_path(book)%></td>
+<td><%=link_to "Pay Fine" ,pay_book_path(book), method: :put%></td>
 
 </tr>
 <% end %>

@@ -7,4 +7,11 @@ has_attached_file :efile ,:url  => "/assets/books/:id/:basename.:extension",
 belongs_to :user
 
 do_not_validate_attachment_file_type :efile
+
+
+
+def calcfine
+(Date.today - self.duedate) *2 if Date.today > self.duedate
+end
+
 end

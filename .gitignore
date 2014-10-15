@@ -15,5 +15,6 @@
 /tmp
 tmp
 
-/public/assets
+
 /public/ckeditor_assets
+/public/assets

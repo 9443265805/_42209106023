@@ -13,6 +13,7 @@ end
 def create
 	@book=Book.new(params[:book])
 	@book.renewcount=0
+	@book.fine=0
 	if @book.save
      redirect_to @book
 	else 
@@ -25,7 +26,7 @@ def edit
 end
 
 def update
-	@book=@book=Book.find(params[:id])
+	@book=Book.find(params[:id])
 	if @book.update_attributes(params[:book])
 		redirect_to @book
 	else 
@@ -46,6 +47,12 @@ end
 
 def userbookportal
 @books=current_user.books
+
+@books.each do |book|
+	
+	book.fine=book.fine.to_i + book.calcfine.to_i
+	book.save
+end
 end
 
 def adminbookportal
@@ -53,6 +60,8 @@ end
 
 
 def takebook
+if current_user.books.count<=3	
+
 @book=Book.find(params[:id])
 @book.user_id=current_user.id
 @book.lenddate=Date.today
@@ -62,6 +71,10 @@ if @book.save
 	redirect_to action: "userbookportal"
 else
  redirect_to action: :index 
+end
+
+else
+	redirect_to :back ,notice: "You can take only 3 books"
 end
 end
 
@@ -80,8 +93,19 @@ end
 
 end
 
-def return
+
+def pay
 @book=Book.find(params[:id])
+@book.fine=0
+@book.save
+redirect_to :back ,notice: "Fine payed sucessfully"
+end
+	
+
+def return
+
+@book=Book.find(params[:id])
+if @book.fine == 0
 @book.renewcount=0
 @book.lenddate=nil
 @book.duedate=nil
@@ -89,6 +113,10 @@ def return
 @book.status=nil
 @book.save
 redirect_to :back ,notice: "Book returned sucessfully"
+
+else
+	redirect_to :back ,notice: "You have pay your fine"
 end
 
+end
 end

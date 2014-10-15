@@ -59,6 +59,7 @@ end
     put :takebook
     put :renew
     put :return
+    put :pay
     end     
     collection do 
       get :adminbookportal
