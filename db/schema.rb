@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141014115734) do
+ActiveRecord::Schema.define(:version => 20141015103443) do
 
   create_table "books", :force => true do |t|
     t.string   "bookname"
@@ -23,9 +23,14 @@ ActiveRecord::Schema.define(:version => 20141014115734) do
     t.date     "duedate"
     t.integer  "renewcount"
     t.string   "status"
+    t.integer  "fine"
     t.integer  "user_id"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
+    t.datetime "created_at",         :null => false
+    t.datetime "updated_at",         :null => false
+    t.string   "efile_file_name"
+    t.string   "efile_content_type"
+    t.integer  "efile_file_size"
+    t.datetime "efile_updated_at"
   end
 
   create_table "ckeditor_assets", :force => true do |t|

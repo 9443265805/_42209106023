@@ -1,11 +1,44 @@
-<h3>Book details</h3>
+<div class="text-center"><h3>Book Details</h3></div>
+<div class ="row">
+	<div class="small-6 small-centered columns">
+		<div class="panel">
+<div class="row collapse">
+  <div class="small-6 columns">
+  <b class: "right inline" >Book Name</b></div>
+<div class="small-6 columns">
 <%= @book.bookname %>
+</div>
+</div><br>
+<div class="row collapse">
+  <div class="small-6 columns">
+  <b class: "right inline" >Author</b></div>
+<div class="small-6 columns">
 <%= @book.author %>
+</div>
+</div><br>
+<div class="row collapse">
+  <div class="small-6 columns">
+  <b class: "right inline" >Category</b></div>
+<div class="small-6 columns">
 <%= @book.category %>
+</div>
+</div><br>
+<div class="row collapse">
+  <div class="small-6 columns">
+  <b class: "right inline" >Price</b></div>
+<div class="small-6 columns">
 <%= @book.price %>
+</div>
+</div><br>
+<div class="row collapse">
+  <div class="small-6 columns">
+  <b class: "right inline" >Type</b></div>
+<div class="small-6 columns">
 <%= @book.booktype %>
-<%= @book.duedate %>
-<%= @book.lenddate %>
-<%= @book.renewcount %>
-<%= @book.status %>
-
+</div>
+</div><br>
+<%= link_to 'Edit',edit_book_path(@quiz) , class: "small button radius"%>
+<%= link_to 'Back',books_path , class: "small button radius"%>
+</div>
+</div>
+</div>

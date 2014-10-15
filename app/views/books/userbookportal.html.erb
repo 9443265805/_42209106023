@@ -1,0 +1,29 @@
+ 
+<div class="row collapse">
+<div class="small-9  columns "><h3 >Books List </h3></div>
+</div>
+<table class="scroll-table pagination-table" > 
+<tr>
+<th>Title</th>
+<th>Lend Date</th>
+<th>Due Date</th>
+<th>Renew Count</th>
+<th>Fine</th>
+<th></th>
+<th></th>
+
+
+<% for book in @books %>
+<tr>
+<td><%=book.bookname %></td>
+<td><%=book.lenddate %></td>
+<td><%=book.duedate %></td>
+<td><%=book.renewcount %></td>
+<td><%=book.fine %></td>
+<td><%=link_to "Renew" , renew_book_path(book) , method: :put %></td>
+<td><%=link_to "Return" , return_book_path(book), method: :put %></td>
+<td><%=link_to "Pay Fine" ,edit_book_path(book)%></td>
+
+</tr>
+<% end %>
+</table>

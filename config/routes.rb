@@ -56,6 +56,11 @@ end
 
   resources :books do
     member do
+    put :takebook
+    put :renew
+    put :return
+    end     
+    collection do 
       get :adminbookportal
       get :userbookportal
     end

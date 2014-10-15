@@ -1,5 +1,23 @@
-<h3>Books List </h3>
-<table>
+ 
+<div class="row collapse">
+<div class="small-9  columns "><h3 >Books List </h3></div>
+<div class="small-3  columns ">
+<%= link_to "New Book", new_book_path , class: "small button radius  " %> 
+</div>
+</div>
+<table class="scroll-table pagination-table" > 
+<tr>
+<th>Title</th>
+<th>Author</th>
+<th>Category</th>
+<th>Price</th>
+<th>Type</th>
+<th></th>
+<th></th>
+<th></th>
+<th></th>
+
+
 <% for book in @books %>
 <tr>
 <td><%=book.bookname %></td>
@@ -7,10 +25,23 @@
 <td><%=book.category %></td>
 <td><%=book.price %></td>
 <td><%=book.booktype %></td>
-<td><%=book.duedate %></td>
-<td><%=book.lenddate %></td>
-<td><%=book.renewcount %></td>
-<td><%=book.status %></td>
+<% if book.booktype=="standard" %>
+<td><%=link_to "Take Book" ,  takebook_book_path(book) , method: :put %></td>
+<% elsif book.booktype=="ebook" %>
+<td><%=link_to "Read Book"  %></td>	
+<% else %>
+<td></td>	
+<% end %>
+
+<td><%=link_to "Show" , book_path(book)%></td>
+<td><%=link_to "Edit" ,edit_book_path(book)%></td>
+<td><%=link_to "Delete" , book, method: :delete ,data: {confirm: "Are you sure you want to delete?"} %></td>
 </tr>
 <% end %>
 </table>
+<%if  @books_count > 5 %>
+<div class="apple_pagination">
+<%= will_paginate @books   %>
+</div>
+<% end %>
+

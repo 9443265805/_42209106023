@@ -1,7 +1,9 @@
 class BooksController < ApplicationController
 
 def index
-@books = Book.all.paginate(:page => params[:page], :per_page => 5)
+@books = Book.where(:status=>nil)
+@books_count=@books.count
+@books=@books.paginate(:page => params[:page], :per_page => 5)
 end
 
 def new
@@ -10,6 +12,7 @@ end
 
 def create
 	@book=Book.new(params[:book])
+	@book.renewcount=0
 	if @book.save
      redirect_to @book
 	else 
@@ -42,9 +45,50 @@ def destroy
 end
 
 def userbookportal
+@books=current_user.books
 end
 
 def adminbookportal
+end
+
+
+def takebook
+@book=Book.find(params[:id])
+@book.user_id=current_user.id
+@book.lenddate=Date.today
+@book.duedate=@book.lenddate+15.days
+@book.status="available"
+if @book.save
+	redirect_to action: "userbookportal"
+else
+ redirect_to action: :index 
+end
+end
+
+
+def renew
+@book=Book.find(params[:id])
+@book.renewcount+=1
+if @book.renewcount > 3
+	redirect_to :back ,notice: "No of renew count exceeded.You can only return the book"
+else
+@book.lenddate=Date.today
+@book.duedate=@book.lenddate+15.days
+@book.save
+redirect_to :back ,notice: "Book renewed sucessfully"
+end 
+
+end
+
+def return
+@book=Book.find(params[:id])
+@book.renewcount=0
+@book.lenddate=nil
+@book.duedate=nil
+@book.user_id=nil
+@book.status=nil
+@book.save
+redirect_to :back ,notice: "Book returned sucessfully"
 end
 
 end

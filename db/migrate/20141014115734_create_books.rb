@@ -10,6 +10,7 @@ class CreateBooks < ActiveRecord::Migration
       t.date :duedate
       t.integer :renewcount
       t.string :status
+      t.integer :fine
       t.belongs_to :user
       t.timestamps
     end
