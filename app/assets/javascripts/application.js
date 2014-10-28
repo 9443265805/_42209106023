@@ -15,6 +15,7 @@
 //= require ckeditor/init
 //= require jquery-ui
 //= require jquery.ui.timepicker
+//= require gritter
 //= require foundation
 //= require jquery.plugin
 //= require jquery.countdown

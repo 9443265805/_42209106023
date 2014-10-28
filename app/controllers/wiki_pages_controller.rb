@@ -19,7 +19,7 @@ class WikiPagesController < ApplicationController
     puts params[:title]
     if @page.save
       flash[:notice] = "Successfully created page."
-      redirect_to @page
+      redirect_to @page 
     else
       render :action => 'new'
     end
@@ -33,7 +33,7 @@ class WikiPagesController < ApplicationController
     @page = WikiPage.find(params[:id])
     if @page.update_attributes(params[:wiki_page])
       flash[:notice] = "Successfully updated page."
-      redirect_to @page
+       redirect_to @page 
     else
       render :action => 'edit'
     end

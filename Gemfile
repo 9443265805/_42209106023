@@ -55,6 +55,9 @@ gem 'nokogiri'
 #process
 gem 'foreman', '~> 0.75.0'
 
+#flash
+gem 'gritter', '~> 1.1.0'
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
