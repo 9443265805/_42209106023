@@ -4,8 +4,12 @@ OTTS::Application.routes.draw do
 
   devise_for :users, :controllers => {:registrations => "registrations"}
 
-  resources :quizzes
-  resources :questions
+  resources :quizzes 
+  resources :questions do 
+    collection do 
+      get :download
+    end
+  end
 
   resources :wiki_pages do 
     collection do 

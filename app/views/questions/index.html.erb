@@ -4,7 +4,11 @@
 <%= link_to "New Question", new_question_path , class: "small button radius  " %> 
 </div>
 </div>
-
+<p>
+  Download:
+  <%= link_to "CSV",  download_questions_path(format: "csv") %> |
+  <%= link_to "Excel",  download_questions_path(format: "xls") %>
+</p>
 
 <table class="scroll-table pagination-table" >
 <tr>

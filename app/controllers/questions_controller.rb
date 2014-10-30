@@ -49,4 +49,12 @@ class QuestionsController < ApplicationController
 			redirect_to student_index_path,notice: "you dont have the permission to see this page"	
 		end
 	end
+
+	def download
+  @questions = Question.order(:id)
+  respond_to do |format|
+    format.csv { send_data @questions.to_csv }
+    format.xls # { send_data @products.to_csv(col_sep: "\t") }
+  end
+end
 end
