@@ -51,10 +51,15 @@ class QuestionsController < ApplicationController
 	end
 
 	def download
-  @questions = Question.order(:id)
-  respond_to do |format|
-    format.csv { send_data @questions.to_csv }
-    format.xls # { send_data @products.to_csv(col_sep: "\t") }
-  end
-end
+	  	@questions = Question.order(:id)
+	  	respond_to do |format|
+	    format.csv { send_data @questions.to_csv }
+	    format.xls # { send_data @products.to_csv(col_sep: "\t") }
+	  	end
+	end
+
+	def import
+    Question.import(params[:file])
+    redirect_to questions_path, notice: "Questions imported."
+  	end
 end

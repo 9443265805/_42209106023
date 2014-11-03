@@ -8,6 +8,7 @@ OTTS::Application.routes.draw do
   resources :questions do 
     collection do 
       get :download
+      post :import
     end
   end
 
