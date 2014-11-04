@@ -50,7 +50,7 @@ def userbookportal
 
 @books.each do |book|
 	
-	book.fine=book.fine.to_i + book.calcfine.to_i
+	book.fine=book.calcfine.to_i
 	book.save
 end
 end
@@ -83,15 +83,19 @@ end
 
 def renew
 @book=Book.find(params[:id])
-@book.renewcount+=1
-if @book.renewcount > 3
-	redirect_to :back ,notice: "No of renew count exceeded.You can only return the book"
-else
-@book.lenddate=Date.today
-@book.duedate=@book.lenddate+15.days
-@book.save
-redirect_to :back ,notice: "Book renewed sucessfully"
-end 
+if @book.fine==0
+	@book.renewcount+=1
+	if @book.renewcount > 3
+		redirect_to :back ,notice: "No of renew count exceeded.You can only return the book"
+	else
+	@book.lenddate=Date.today
+	@book.duedate=@book.lenddate+15.days
+	@book.save
+	redirect_to :back ,notice: "Book renewed sucessfully"
+	end 
+	else
+		redirect_to :back ,notice: "Pay your fine"
+	end
 
 end
 
