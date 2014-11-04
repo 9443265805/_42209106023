@@ -46,7 +46,7 @@ OTTS::Application.routes.draw do
     collection do 
     get :index
     get :startquiz
-    put :endquiz
+    post :endquiz
   end 
 end
 

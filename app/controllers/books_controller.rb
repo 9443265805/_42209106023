@@ -56,6 +56,8 @@ end
 end
 
 def adminbookportal
+@books=Book.where("user_id != ?", "nil")
+
 end
 
 

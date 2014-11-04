@@ -2,11 +2,11 @@
 <br>
 
 <div id="dur" data-duration=<%= @duration %>></div>
-<div id="timer"></div>
+Time left:<br><br><div id="timer"></div>
 <br>
 <br>
 <div class="panel">
-<%= form_tag endquiz_student_index_path ,:method => 'put' ,:class => 'custom' do %>
+<%= form_tag endquiz_student_index_path ,:method => 'post' ,:class => 'custom' do %>
 <%= render(:partial => "quizquestion", :collection => @questions) %>
 <div class="apple_pagination">
 <%= will_paginate @questions   %>

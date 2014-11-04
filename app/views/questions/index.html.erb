@@ -8,19 +8,23 @@
   Download:
   <%= link_to "CSV",  download_questions_path(format: "csv") %> |
   <%= link_to "Excel",  download_questions_path(format: "xls") %>
-</p>
-<h3>Import a CSV File</h3>
-  <%= form_tag import_questions_path, multipart: true do %>
+</p><p>Import CSV:
+<%= link_to  "Click Here" ,"#" ,html_options = {"data-reveal-id"=>"question_import"} %></p>
+<div id="question_import" class="reveal-modal small" data-reveal>
+ <%= form_tag import_questions_path, multipart: true do %>
     <%= file_field_tag :file %>
     <%= submit_tag "Import CSV" %>
   <% end %>
+  <a class="close-reveal-modal">&#215;</a>
+</div>
+ 
 <table class="scroll-table pagination-table" >
 <tr>
 <th>Category</th>
 <th>Question</th>
 <th>Option1</th>
 <th>Option2</th>
-<th>Option3</th>
+<th>Option3</th> 
 <th>Option4</th>
 <th>Answer</th>
 </tr>

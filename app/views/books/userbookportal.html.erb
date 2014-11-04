@@ -2,6 +2,7 @@
 <div class="row collapse">
 <div class="small-9  columns "><h3 >Books List </h3></div>
 </div>
+<% if @books.count >0 %>
 <table class="scroll-table pagination-table" > 
 <tr>
 <th>Title</th>
@@ -27,3 +28,6 @@
 </tr>
 <% end %>
 </table>
+<% else %>
+No Books are taken under your account.<%= link_to "Click here" , books_path %> to go to Books Collection 
+<%end %>

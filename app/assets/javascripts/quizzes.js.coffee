@@ -2,8 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://jashkenas.github.com/coffee-script/
 $(document).ready ->
-  $("#quiz_starttime").val("")   
-  $("#quiz_endtime").val("")
+  
   $("#datepicker").val($("#quiz_date").val()) if $("#quiz_date").val() isnt null  and $("#quiz_date").val() isnt  ""
   if $("#quiz_starttime").val() isnt null and $("#quiz_starttime").val() isnt "" and $("#quiz_endtime").val() isnt null and $("#quiz_starttime").val() isnt ""
     tstart = new Date($("#quiz_starttime").val())
