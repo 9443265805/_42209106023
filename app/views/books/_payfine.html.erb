@@ -1,0 +1,26 @@
+<div id="payfine" class="reveal-modal small" data-reveal>
+  
+ <%= form_tag(pay_book_path(book), method: :put,:class=> "custom") do  %>
+    <div class="text-center" >Please Select a Action to Continue</div><br>
+   <div class="row">
+   <div class="small-5 small-centered columns">
+   <div class="row collapse">
+  <div class="small-1 columns">
+<%= radio_button_tag :mode, "renew", class: "right inline" %></div>
+<div class="small-3 columns">
+<%=label_tag :mode, "Renew"  %>
+</div>
+<div class="small-1 small-offset-3 columns ">
+<%= radio_button_tag :mode, "return", class: "right inline" %></div>
+<div class="small-3 columns  end">
+<%=label_tag :mode, "Return"  %>
+</div>
+</div>
+ <div class="text-center" ><%= submit_tag "Proceed" ,:class=>"small button radius" %></div><br>
+</div>
+</div>
+    
+  <% end %>
+ 
+  <a class="close-reveal-modal">&#215;</a>
+</div>

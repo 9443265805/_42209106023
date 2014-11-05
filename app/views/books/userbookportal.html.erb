@@ -21,13 +21,16 @@
 <td><%=book.duedate %></td>
 <td><%=book.renewcount %></td>
 <td><%=book.fine %></td>
-<td><%=link_to "Renew" , renew_book_path(book) , method: :put %></td>
-<td><%=link_to "Return" , return_book_path(book), method: :put %></td>
-<td><%=link_to "Pay Fine" ,pay_book_path(book), method: :put%></td>
-
+<td><%=link_to "Renew" , renew_book_path(book) , method: :get %></td>
+<td><%=link_to "Return" , return_book_path(book), method: :get %></td>
+<td><% if book.fine >0 %>
+<%= link_to  "Pay Fine" ,"#" ,html_options = {"data-reveal-id"=>"payfine"} %></td>
+<%= render :partial =>"payfine" , :locals => {:book=> book} %>
+<% end %>
 </tr>
 <% end %>
 </table>
 <% else %>
 No Books are taken under your account.<%= link_to "Click here" , books_path %> to go to Books Collection 
 <%end %>
+

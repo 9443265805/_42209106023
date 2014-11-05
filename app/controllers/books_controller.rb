@@ -91,10 +91,10 @@ if @book.fine==0
 	@book.lenddate=Date.today
 	@book.duedate=@book.lenddate+15.days
 	@book.save
-	redirect_to :back ,notice: "Book renewed sucessfully"
+	redirect_to userbookportal_books_path ,notice: "Book renewed sucessfully"
 	end 
 	else
-		redirect_to :back ,notice: "Pay your fine"
+		redirect_to userbookportal_books_path ,notice: "Pay your fine"
 	end
 
 end
@@ -104,9 +104,12 @@ def pay
 @book=Book.find(params[:id])
 @book.fine=0
 @book.save
-redirect_to :back ,notice: "Fine payed sucessfully"
+if(params[:mode]=="renew")
+redirect_to renew_book_path(@book)
+else
+redirect_to return_book_path(@book)	
 end
-	
+end
 
 def return
 
@@ -118,10 +121,10 @@ if @book.fine == 0
 @book.user_id=nil
 @book.status=nil
 @book.save
-redirect_to :back ,notice: "Book returned sucessfully"
+redirect_to userbookportal_books_path ,notice: "Book returned sucessfully"
 
 else
-	redirect_to :back ,notice: "You have pay your fine"
+	redirect_to userbookportal_books_path ,notice: "You have pay your fine"
 end
 
 end

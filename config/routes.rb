@@ -1,53 +1,56 @@
 OTTS::Application.routes.draw do
-  
+
   mount Ckeditor::Engine => '/ckeditor'
+
+
 
   devise_for :users, :controllers => {:registrations => "registrations"}
 
-  resources :quizzes 
-  resources :questions do 
-    collection do 
+  root :to => "quizzes#index"
+  resources :quizzes
+  resources :questions do
+    collection do
       get :download
       post :import
     end
   end
 
-  resources :wiki_pages do 
-    collection do 
+  resources :wiki_pages do
+    collection do
       get :named
     end
   end
 
  # match 'avatar/change_avatar_pic', to: 'avatar#change_avatar_pic'
-  
+
   resources :avatars ,:only => [] do
     collection do
       put :change_Avatar_Pic
     end
   end
- 
-  resources :admin ,:only => []  do 
-    collection do 
+
+  resources :admin ,:only => []  do
+    collection do
       get :assignquestions
       put :markquestions
       put :unmarkquestions
     end
   end
 
-  resources :teacher ,:only => [] do 
-    collection do 
+  resources :teacher ,:only => [] do
+    collection do
       get :assignstudents
       put :markstudents
       put :unmarkstudents
     end
   end
 
-  resources :student ,:only => [] do 
-    collection do 
+  resources :student ,:only => [] do
+    collection do
     get :index
     get :startquiz
     post :endquiz
-  end 
+  end
 end
 
   #match 'student/startquiz', to: 'student#startquiz'
@@ -62,17 +65,17 @@ end
   resources :books do
     member do
     put :takebook
-    put :renew
-    put :return
+    get :renew
+    get :return
     put :pay
-    end     
-    collection do 
+    end
+    collection do
       get :adminbookportal
       get :userbookportal
     end
   end
 
- 
+
 
   match 'applicationsearch/searchcontent' , to: 'applicationsearch#searchcontent' , via: [:get]
 
@@ -131,5 +134,5 @@ end
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.
-  
+
 end
