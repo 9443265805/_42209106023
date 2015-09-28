@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20141015103443) do
+ActiveRecord::Schema.define(:version => 20150707091857) do
 
   create_table "books", :force => true do |t|
     t.string   "bookname"
@@ -120,7 +120,7 @@ ActiveRecord::Schema.define(:version => 20141015103443) do
     t.string   "role",                                   :null => false
     t.string   "name",                                   :null => false
     t.integer  "age",                                    :null => false
-    t.integer  "phonenumber",                            :null => false
+    t.string   "phonenumber",                            :null => false
     t.string   "school",                                 :null => false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
@@ -136,6 +136,7 @@ ActiveRecord::Schema.define(:version => 20141015103443) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "rpx_identifier"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
