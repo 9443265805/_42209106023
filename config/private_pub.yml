@@ -1,10 +1,11 @@
 development:
-  server: "http://localhost:9292/faye"
-  secret_token: "secret"
+  server: "https://ethifayeserver.herokuapp.com/faye"
+  secret_token: "ethi"
+  signature_expiration: 86400 # one hour
 test:
   server: "http://localhost:9292/faye"
   secret_token: "secret"
 production:
-  server: "http://ethifayeserver.herokuapp.com/faye"
+  server: "https://ethifayeserver.herokuapp.com/faye"
   secret_token: "ethi"
   signature_expiration: 86400 # one hour
