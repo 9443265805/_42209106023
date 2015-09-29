@@ -17,11 +17,19 @@ class User < ActiveRecord::Base
                   :path => ":rails_root/public/assets/users/:id/:style/:basename.:extension"
 
 
-validates_attachment_size :avatar, :less_than => 5.megabytes
-validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png']
+  validates_attachment_size :avatar, :less_than => 5.megabytes
+  validates_attachment_content_type :avatar, :content_type => ['image/jpeg', 'image/png','image/jpg']
 
+ after_create :grab_avatar
  
-  
+
+ def grab_avatar
+  if avatar_file_name.blank?
+    gravatar_id = Digest::MD5::hexdigest(email).downcase
+    self.avatar = URI.parse("http://gravatar.com/avatar/#{gravatar_id}.png")
+    self.save
+  end
+ end
 
 end
 
