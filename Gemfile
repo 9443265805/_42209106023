@@ -29,7 +29,7 @@ gem 'private_pub'
 gem 'thin'
 gem 'strong_parameters', '~> 0.2.3'
 gem "paperclip", "~> 4.2"
-
+gem "font-awesome-rails"
 #jsenvironment
 
 #gem 'execjs'
