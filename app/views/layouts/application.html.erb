@@ -18,135 +18,121 @@
   	<title><%= content_for?(:title) ? yield(:title) : "OTTS" %></title>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-    <!-- <%= stylesheet_link_tag '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css' %> !-->
-  	<%= javascript_include_tag "vendor/custom.modernizr" %>
+    <%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
-
   <body>
-  <% if user_signed_in?  %>
-  <nav class="top-bar">
-    <ul class="title-area">
-      <li class="name">
-    <% path_temp=quizzes_path
-    if current_user.role=="Student"
-    	path_temp=student_index_path 
-    	end %>
-      <h1><%= link_to "Online Test Taking System", path_temp  %></a></h1>
-    </li>
-  </ul>
-   <section class="top-bar-section">
-    <ul class="right">
-     <li><%= form_tag(applicationsearch_searchcontent_path,method: :get) do%>
-      <li><%= search_field_tag(:searchable , nil,hmtl_options = { placeholder:  "Search" } )%><li>
-      <% end %>
-</li>
-      <li class="divider"></li>
-      <li class="has-dropdown"><a href="#">My Books</a>
-         <ul class="dropdown">
-      <li><%= link_to "Book Store",books_path %></li>
-      <li><%= link_to "My collection",userbookportal_books_path %></li>
-    </ul></li>   
-      <li class="divider"></li>
-      <li><%= link_to "My Wiki",wiki_pages_path %></li>
-      
-    <% if current_user.role != "Student" %>
-     <li class="divider"></li>
-      <li class="has-dropdown"><a href="#">OTTS</a>
-         <ul class="dropdown">
-      <li><%= link_to "Quizzes",quizzes_path %></li>
-      <li><%= link_to "Questions",questions_path %></li>
-    </ul></li>
-      <% end %>
-      <li class="divider"></li>
-
-      <li><%= link_to  image_tag current_user.avatar.url(:small) , "data-reveal-id"=>"myModal" %></li>
-      <li class="divider"></li>
-      <li><%= link_to( edit_user_registration_path , html_options = { class: "anchorfix"  }) do  %> 
-      <span style="font-size: 30px ; color: #fff" class="fi-torso" title="User Profile" ></span> 
-      <% end %></li>
-      <li class="divider"></li>
-      <li><%= link_to( destroy_user_session_path , html_options = { class: "anchorfix" , method: :delete } ) do  %>
-      <span style="font-size: 30px ; color: #fff" class="fi-power" title="Logout" ></span>
-      <% end %></li>
-      </ul>
-  </section>
-
-</nav>
-<% else %>
-<nav class="top-bar">
-    <ul class="title-area">
-      <li class="name">
-      <h1><%= link_to "Online Test Taking System" %></a></h1>
-    </li>
-  </ul>
-   <section class="top-bar-section">
-    <ul class="right">
-      <li class="divider"></li>
-      <li><%= link_to "Sign in", new_session_path(resource_name) %>
-      <li class="divider"></li>
-      <li><%=  link_to "Sign up", new_registration_path(resource_name) %>
-      </ul>
-  </section>
-
-</nav>
-<% end %>
-
-
-
-
-<%= js add_gritter(flash[:notice]) %>
-<div class= "row ">
-<div class= "small-3 columns">
- <% if user_signed_in?  %>
-<%= render 'common/chat' %>
-<%= render 'common/conversation' %>
-<%= render 'common/changeAvatar' %>
-<% end %>
-</div> 
-<div class="small-9 columns">
-    <div class="title-spacer"></div>
-         <%= yield %>
+    <div id="wrapper">
+      <div id="header">
+        <% if user_signed_in?  %>
+          <nav class="top-bar">
+            <ul class="title-area">
+              <li class="name">
+                <% path_temp=quizzes_path %>
+                <% if current_user.role=="Student" %>
+                <%	path_temp=student_index_path %>
+                <%	end %>
+                <h1><%= link_to "Online Test Taking System", path_temp  %></a></h1>
+              </li>
+            </ul>
+            <section class="top-bar-section">
+              <ul class="right">
+                <li><%= form_tag(applicationsearch_searchcontent_path,method: :get) do%>
+                  <li><%= search_field_tag(:searchable , nil,hmtl_options = { placeholder:  "Search" } )%><li>
+                <% end %>
+                </li>
+                <li class="divider"></li>
+                <li class="has-dropdown"><a href="#">My Books</a>
+                  <ul class="dropdown">
+                    <li><%= link_to "Book Store",books_path %></li>
+                    <li><%= link_to "My collection",userbookportal_books_path %></li>
+                  </ul>
+                </li>
+                <li class="divider"></li>
+                <li><%= link_to "My Wiki",wiki_pages_path %></li>
+                <% if current_user.role != "Student" %>
+                  <li class="divider"></li>
+                  <li class="has-dropdown"><a href="#">OTTS</a>
+                    <ul class="dropdown">
+                      <li><%= link_to "Quizzes",quizzes_path %></li>
+                      <li><%= link_to "Questions",questions_path %></li>
+                    </ul></li>
+                <% end %>
+                <li class="divider"></li>
+                <li><%= link_to  image_tag current_user.avatar.url(:small) , "data-reveal-id"=>"myModal" %></li>
+                <li class="divider"></li>
+                <li><%= link_to( edit_user_registration_path , html_options = { class: "anchorfix"  }) do  %>
+                  <span style="font-size: 30px ; color: #fff" class="fi-torso" title="User Profile" ></span>
+                <% end %></li>
+                <li class="divider"></li>
+                <li><%= link_to( destroy_user_session_path , html_options = { class: "anchorfix" , method: :delete } ) do  %>
+                  <span style="font-size: 30px ; color: #fff" class="fi-power" title="Logout" ></span>
+                  <% end %>
+                </li>
+              </ul>
+            </section>
+          </nav>
+        <% else %>
+          <nav class="top-bar">
+              <ul class="title-area">
+                <li class="name">
+                <h1><%= link_to "Online Test Taking System" %></a></h1>
+              </li>
+            </ul>
+             <section class="top-bar-section">
+              <ul class="right">
+                <li class="divider"></li>
+                <li><%= link_to "Sign in", new_session_path(resource_name) %>
+                <li class="divider"></li>
+                <li><%=  link_to "Sign up", new_registration_path(resource_name) %>
+                </ul>
+            </section>
+          </nav>
+        <% end %>
+      </div>
+      <div id="content">
+        <%= js add_gritter(flash[:notice]) %>
+        <div class= "row ">
+          <div class= "small-3 columns">
+            <% if user_signed_in?  %>
+              <%= render 'common/chat' %>
+              <%= render 'common/conversation' %>
+              <%= render 'common/changeAvatar' %>
+            <% end %>
+          </div>
+          <div class="small-9 columns">
+              <div class="title-spacer"></div>
+                   <%= yield %>
+              </div>
+        </div>
+        <div class="spacer"></div>
+      </div>
+      <div id="footer">
+        <div class= "row footerbg ">
+          <div class= "small-12 columns">
+          <div   id="footer" >
+            <div class="text-center">
+              <div class="cleaner">Copyright 2014 © Ethiraj Inc. All Rights Reserved</div>
+              <div class="cleaner">Connect with me</div>
+              <ul class="inline-list-center " >
+                <li><%= link_to("https://www.facebook.com/ethiraj.chandru") do  %>
+                  <span style="font-size: 30px ; color: #fff" class="fi-social-facebook" title="User Profile" >
+                  </span>
+                  <% end %>
+                </li>
+                <li><%= link_to("https://www.github.com/ethirajsrinivasan") do  %>
+                  <span style="font-size: 30px ; color: #fff" class="fi-social-github" title="User Profile" >
+                  </span>
+                  <% end %>
+                </li>
+                <li><%= link_to("https://www.linkedin.com/pub/ethiraj-srinivasan/") do  %>  <span style="font-size: 30px ; color: #fff" class="fi-social-linkedin"    title="User Profile" > </span>
+                  <% end %>
+                </li>
+              </ul>
+            </div>
+          </div></div>
+        </div>
+      </div>
     </div>
-    </div>
-  <div class="spacer"></div>
-  <div class= "row footerbg ">
-  <div class= "small-12 columns">
-  <div   id="footer" >
-    <div class="text-center">
-      <div class="cleaner">Copyright 2014 © Ethiraj Inc. All Rights Reserved</div>
-      <div class="cleaner">Connect with me</div>
-  
-      <ul class="inline-list-center " >
-
-      <li><%= link_to("https://www.facebook.com/ethiraj.chandru") do  %> 
-      <span style="font-size: 30px ; color: #fff" class="fi-social-facebook" title="User Profile" >
-      </span> 
-      <% end %>
-      </li>
-      <li>
-      <%= link_to("https://www.github.com/ethirajsrinivasan") do  %> 
-      <span style="font-size: 30px ; color: #fff" class="fi-social-github" title="User Profile" >
-      </span> 
-      <% end %>
-      </li>
-      <li>
-      <%= link_to("https://www.linkedin.com/pub/ethiraj-srinivasan/") do  %> 
-      <span style="font-size: 30px ; color: #fff" class="fi-social-linkedin" title="User Profile" > </span>
-      <% end %>
-      </li>
-      </ul>
-      </div>
-      </div>
-      </div>
-      </div>
-      
-      
-
-    
- 
-                  
-  
   </body>
-
 </html>
