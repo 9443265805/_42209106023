@@ -39,7 +39,6 @@ body {
   @extend %extend_1;
 }
 #wrapper {
-  min-height: 100%;
   position: relative;
 }
 #content {
@@ -47,10 +46,8 @@ body {
 }
 #footer {
   width: 100%;
-  height: 100px;
+  height: 200px;
   position: absolute;
-  bottom: 0;
-  left: 0;
   background-color: $color_tuatara_approx;
   color: $white;
 }
@@ -68,6 +65,14 @@ body {
 
 .pagination-table {
 margin-bottom:0px 
+}
+
+.top-bar {
+  background: #363636 !important
+}
+
+.top-bar-section li a:not(.button) {
+  background: #363636 !important
 }
 
 .cleaner
