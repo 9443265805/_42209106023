@@ -30,6 +30,7 @@ gem 'thin'
 gem 'strong_parameters', '~> 0.2.3'
 gem "paperclip", "~> 4.2"
 gem "font-awesome-rails"
+gem 'pry'
 #jsenvironment
 
 #gem 'execjs'
